@@ -20,14 +20,22 @@ Framico - это свободный фреймворк для разработк
 
 ## Быстрый старт
 
-Several quick start options are available:
+Как установить Framico на ваш сайт?
 
-* [Download the latest release](https://github.com/twbs/bootstrap/archive/v3.3.6.zip).
-* Clone the repo: `git clone https://github.com/twbs/bootstrap.git`.
-* Install with [Bower](http://bower.io): `bower install bootstrap`.
-* Install with [npm](https://www.npmjs.com): `npm install bootstrap@3`.
-* Install with [Meteor](https://www.meteor.com): `meteor add twbs:bootstrap`.
-* Install with [Composer](https://getcomposer.org): `composer require twbs/bootstrap`.
+* [Инструкция по подключению](http://framico.thebrooons.ru/connect.php).
+* ├──CSS
+* │   ├──[Вёрстка](http://framico.thebrooons.ru/blocks.php).
+* │   ├──[Оформление текста](http://framico.thebrooons.ru/text.php).
+* │   ├──[Кнопки и формы](http://framico.thebrooons.ru/button.php).
+* │   ├──[Таблицы](http://framico.thebrooons.ru/table.php).
+* │   ├──[Картинки](http://framico.thebrooons.ru/images.php).
+* ├──Скрипты
+* │   ├──[Навигация](http://framico.thebrooons.ru/navigation.php).
+* │   ├──[Слайдер](http://framico.thebrooons.ru/slider.php).
+* │   ├──[Модальные окна](http://framico.thebrooons.ru/modal.php).
+* │   └──[Вкладки](http://framico.thebrooons.ru/tabs.php).
+* ├──[Иконки](http://framico.thebrooons.ru/icons.php).
+* └──[Подсказки](http://framico.thebrooons.ru/hint.php).
 
 
 ### Структура файлов
