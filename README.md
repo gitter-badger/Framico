@@ -3,19 +3,15 @@
 
 Framico - это свободный фреймворк для разработки адаптивных дизайнов для сайтов.
 
-Официальный сайт фрамико, там же Вы там сможете найти все инструкции по использованию <http://framico.thebrooons.ru>!
+Официальный сайт framico, там же Вы там сможете найти все инструкции по использованию <http://framico.thebrooons.ru>!
 
 
-## Table of contents
+## Навигация
 
 * [Быстрый старт](#Быстрый-старт)
 * [Нахождение багов](#Нахождение-багов)
-* [Contributing](#contributing)
-* [Community](#community)
-* [Versioning](#versioning)
-* [Creators](#creators)
-* [Copyright and license](#copyright-and-license)
-
+* [Сообщество](#Сообщество)
+* [Создатель](#Создатель)
 
 ## Быстрый старт
 
@@ -82,6 +78,6 @@ framico/
 
 **Валерий Стрелец (TheBrooonS)**
 
-* <vk.com/brooons>
+* <http://vk.com/brooons>
 * Skype broooons
 * Email brooons@yandex.ru
