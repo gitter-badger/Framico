@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="description" content="Описание сайта">
+		<meta name="keywords" content="Теги, через, запятую">
+		<meta name="author" content="Имя автора">
+		<link rel="stylesheet" href="/css/framico.css">
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="/js/framico.js"></script>
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<title>Название будущего сайта · Тестовая страница</title>
+	</head>
+	<body>
+		<div class="content-full">
+			<header>
+
+				<a id="touch-nav" class="mobile-nav" href="#"><i class="fa fa-bars"></i> Меню</a>
+				<div class="navigation">
+					<ul class="nav content">
+						<li class="active"><a href="/">Главная</a></li>
+						<li><a href="#">Ссылка</a></li>
+						<li><a href="#">Выпадение</a>
+							<ul>
+								<li><a href="#">Ещё ссылка</a></li>
+								<li><a href="#">Ещё выпадение?</a>
+									<ul>
+										<li><a href="#">Ссылка в уровне 3</a></li>
+										<li><a href="#">Ссылка в уровне 3</a></li>
+										<li><a href="#">Ссылка в уровне 3</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="#">Ссылка</a></li>
+						<li><a href="#">Ссылка</a></li>
+						<li><a href="#">Выпадение</a>
+							<ul>
+								<li><a href="#">Ещё ссылка</a></li>
+								<li><a href="#">Ещё выпадение?</a>
+									<ul>
+										<li><a href="#">Ссылка в уровне 3</a></li>
+										<li><a href="#">Ссылка в уровне 3</a></li>
+										<li><a href="#">Ссылка в уровне 3</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+          
+			</header>
+		</div>
+		<div class="content">
+			<div class="cont-line">
+				<div class="column-9">
+					<p class="title">Слайдер</p>
+
+					<div class="slider">
+						<ul class="slides">
+							<li class="slide"><span>Текст</span><img src="http://framico.thebrooons.ru/img/slide.png" alt="Слайд"></li>
+							<li class="slide"><span>Текст</span><img src="http://framico.thebrooons.ru/img/slide.png" alt="Слайд"></li>
+							<li class="slide"><span>Текст</span><img src="http://framico.thebrooons.ru/img/slide.png" alt="Слайд"></li>
+							<li class="slide"><span>Текст</span><img src="http://framico.thebrooons.ru/img/slide.png" alt="Слайд"></li>
+							<li class="slide"><span>Текст</span><img src="http://framico.thebrooons.ru/img/slide.png" alt="Слайд"></li>
+						</ul>
+					</div>
+
+					<p class="title">Дополнительные заголовки</p>
+
+					<a href="#" class="title-article">Заголовок статьи</a>
+
+					<p class="title">Модальное окно</p>
+					<div class="remodal" data-remodal-id="modaltest">
+						<button data-remodal-action="close" class="remodal-close"></button> <!-- Кнопка закрытия модального окна -->
+						<div class="remodal-content">
+							<!-- Начало контента -->
+							<p class="title">Модальные окна</p>
+							<p>
+						 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+						 		Nihil alias deserunt libero adipisci soluta pariatur ipsum earum a nesciunt esse animi voluptates, 
+						 		officiis dolores voluptate veniam blanditiis tempora assumenda voluptas.
+							</p>
+							<button data-remodal-action="cancel" class="btn red">Отмена</button>
+							<button data-remodal-action="confirm" class="btn green active">ОК</button>
+							<!-- Конец контента -->
+						</div>
+					</div>
+					<div class="center">
+						<a href="#modaltest" class="btn blue">Модальное окно</a>
+					</div>
+
+					<p class="title">Вкладки</p>
+					<ul class="accordion-tabs">
+					    <li class="tab-head-cont">
+					        <a href="#" class="is-active">Первая вкладка</a> <!-- Активная вкладка .is-active -->
+					        <section>
+					            <p>
+					            	Отличные вкладки использующие несколько строк кода.
+									Вкладки преобразуются в вертикальный аккордион при изменении размера окна браузера.
+								</p>
+					        </section>
+					    </li>
+					    <li class="tab-head-cont">
+					        <a href="#">Вторая вкладка</a>
+					        <section>
+					            <p>
+					            	Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+					            	Molestiae, ipsa, voluptas, iure fugiat, 
+					            	provident praesentium repudiandae aut dolore ullam asperiores minima. 
+					            	Facere aliquam, non numquam assumenda voluptatem consectetur rem labore.
+					            </p>
+					        </section>
+					    </li>
+					    <li class="tab-head-cont">
+					        <a href="#">Третья</a>
+					        <section>
+					            <p>
+					            	Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+					           		Vero consequatur eos non hic sapiente sequi, pariatur corporis, 
+					           		rem aut cumque nemo alias commodi consequuntur id aliquam ex laborum assumenda aperiam.
+					            </p>   
+					        </section>
+					    </li>
+					    <li class="tab-head-cont">
+					        <a href="#">Четвертая</a>
+					        <section>
+					            <p>
+					           		Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+					           		Similique iusto, veniam nisi aliquid amet molestiae repellat natus cum vitae obcaecati, 
+					           		sequi rem. Asperiores, eligendi! Ex mollitia ullam debitis aliquam iste.
+					            </p>
+					        </section>
+					    </li>
+					</ul>
+
+				</div>
+				<div class="column-3">
+					<div class="form">
+						<input type="text" placeholder="Логин" class="full-w">
+						<i class="fa fa-user"></i>
+					</div>
+					<div class="form">
+						<input type="password" placeholder="Пароль" class="full-w">
+						<i class="fa fa-key"></i>
+					</div>
+					<div class="form">
+						<textarea placeholder="Описание чего-то там" class="full-w"></textarea>
+						<i class="fa fa-file-text-o"></i>
+					</div>
+				</div>
+				<footer>
+					<div class="div column-12"></div>
+				</footer>
+			</div>
+		</div>
+		<script>$('.slider').glide();</script>
+	</body>
+</html>
