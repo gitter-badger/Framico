@@ -22,22 +22,18 @@ Framico - это свободный фреймворк для разработк
 
 Как установить Framico на ваш сайт?
 
-```
-[Инструкция по подключению](http://framico.thebrooons.ru/connect.php).
-├──CSS
-│   ├──[Вёрстка](http://framico.thebrooons.ru/blocks.php).
-│   ├──[Оформление текста](http://framico.thebrooons.ru/text.php).
-│   ├──[Кнопки и формы](http://framico.thebrooons.ru/button.php).
-│   ├──[Таблицы](http://framico.thebrooons.ru/table.php).
-│   ├──[Картинки](http://framico.thebrooons.ru/images.php).
-├──Скрипты
-│   ├──[Навигация](http://framico.thebrooons.ru/navigation.php).
-│   ├──[Слайдер](http://framico.thebrooons.ru/slider.php).
-│   ├──[Модальные окна](http://framico.thebrooons.ru/modal.php).
-│   └──[Вкладки](http://framico.thebrooons.ru/tabs.php).
-├──[Иконки](http://framico.thebrooons.ru/icons.php).
-└──[Подсказки](http://framico.thebrooons.ru/hint.php).
-```
+* [Инструкция по подключению](http://framico.thebrooons.ru/connect.php).
+* ├──[Вёрстка](http://framico.thebrooons.ru/blocks.php).
+* ├──[Оформление текста](http://framico.thebrooons.ru/text.php).
+* ├──[Кнопки и формы](http://framico.thebrooons.ru/button.php).
+* ├──[Таблицы](http://framico.thebrooons.ru/table.php).
+* ├──[Картинки](http://framico.thebrooons.ru/images.php).
+* ├──[Навигация](http://framico.thebrooons.ru/navigation.php).
+* ├──[Слайдер](http://framico.thebrooons.ru/slider.php).
+* ├──[Модальные окна](http://framico.thebrooons.ru/modal.php).
+* ├──[Вкладки](http://framico.thebrooons.ru/tabs.php).
+* ├──[Иконки](http://framico.thebrooons.ru/icons.php).
+* └──[Подсказки](http://framico.thebrooons.ru/hint.php).
 
 
 ### Структура файлов
@@ -55,9 +51,10 @@ framico/
 └── fonts/
     ├── FontAwesome.otf
     ├── fontawesome-webfont.eot
-    ├── glyphicons-halflings-regular.ttf
-    ├── glyphicons-halflings-regular.woff
-    └── glyphicons-halflings-regular.woff2
+    ├── fontawesome-webfont.svg
+    ├── fontawesome-webfont.ttf
+    ├── fontawesome-webfont.woff
+    └── fontawesome-webfont.woff2
 ```
 
 We provide compiled CSS and JS (`bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*`). CSS [source maps](https://developer.chrome.com/devtools/docs/css-preprocessors) (`bootstrap.*.map`) are available for use with certain browsers' developer tools. Fonts from Glyphicons are included, as is the optional Bootstrap theme.
