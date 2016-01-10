@@ -3,10 +3,10 @@
     Framico v1.5.6 (http://framico.thebrooons.ru)
     =============================================
 
-    Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ÑÑ normalize.css v3.0.2 | necolas.github.io/normalize.css 
-    Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚ÑÑ Ð½Ð°Ð±Ð¾Ñ€ Ð¸ÐºÐ¾Ð½Ð¾Ðº Font Awesome 4.4.0 Ð¾Ñ‚ @davegandy - http://fontawesome.io - @fontawesome 
-    Ð’ÑÑ‚Ñ€Ð¾ÐµÐ½ Hint.css - v1.3.5 | http://kushagragour.in/lab/hint/ 
-    ÐœÐ¾Ð´Ð°Ð»ÑŒÐ½Ñ‹Ðµ Ð¾ÐºÐ½Ð° Remodal - v1.0.6 | http://vodkabears.github.io/remodal/ */
+    Используется normalize.css v3.0.2 | necolas.github.io/normalize.css 
+    Используется набор иконок Font Awesome 4.5 от @davegandy - http://fontawesome.io - @fontawesome 
+    Встроен Hint.css - v1.3.5 | http://kushagragour.in/lab/hint/ 
+    Модальные окна Remodal - v1.0.6 | http://vodkabears.github.io/remodal/ */
 
 * {
     box-sizing: border-box;
@@ -307,7 +307,7 @@ blockquote {
     float: left !important;
 }
 
-/* Clearfix ÑÐ´ÐµÐ»Ð°Ð½ Nicolas Gallagher | http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* Clearfix создан Nicolas Gallagher | http://nicolasgallagher.com/micro-clearfix-hack/ */
 
 .clearfix:before,
 .clearfix:after {
@@ -384,8 +384,7 @@ blockquote {
     clear: both;
 }
 
-
-/* ÐšÐ¾Ð»Ð¾Ð½ÐºÐ¸ */
+/* Колонки */
 
 .content {
     margin: 0 auto;
@@ -584,7 +583,7 @@ blockquote {
     }
 }
 
-/* Ð¢ÐµÐºÑÑ‚ */
+/* Текст */
 
 .title {
     margin: 10px 0;
@@ -745,7 +744,7 @@ pre > code {
     font-size: 100%;
 }
 
-/* Ð’ÑÐ¿Ð¾Ð¼Ð¾Ð³Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ðµ ÐºÐ»Ð°ÑÑÑ‹ */
+/* Вспомогательные классы */
 
 .full-w {
     width: 100%;
@@ -773,7 +772,7 @@ div.center {
     display: table;
 }
 
-/* Ð¤Ð¾Ð½Ñ‹ */
+/* Фоны */
 
 .bg.default,
 .bg.red,
@@ -819,7 +818,7 @@ div.center {
 }
 
 
-/* ÐšÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ¸ */
+/* Картинки */
 
 img.rounded {
     border-radius: 5px;
@@ -839,7 +838,7 @@ img.opacity {
 }
 
 
-/* ÐšÐ½Ð¾Ð¿ÐºÐ¸ */
+/* Кнопки */
 
 .btn {
     -webkit-transition: all 0.2s;
@@ -1056,8 +1055,7 @@ a.btn:hover {
     text-decoration: none;
 }
 
-
-/* Ð¤Ð¾Ñ€Ð¼Ñ‹ Ñ Ð¸ÐºÐ¾Ð½ÐºÐ°Ð¼Ð¸ */
+/* Иконки в input и textarea¸ */
 
 .form {
     position: relative;
@@ -1075,8 +1073,7 @@ a.btn:hover {
     padding-left: 35px;
 }
 
-
-/* Ð¡Ð»Ð°Ð¹Ð´ÐµÑ€ */
+/* Слайдер */
 
 .slider {
     position: relative;
@@ -1207,7 +1204,7 @@ a.btn:hover {
 }
 
 
-/* ÐÐ°Ð²Ð¸Ð³Ð°Ñ†Ð¸Ñ */
+/* Навигация */
 
 .navigation {
     text-align: left;
@@ -1488,7 +1485,7 @@ a.btn:hover {
     }
 }
 
-/* Ð¢Ð°Ð±Ð»Ð¸Ñ†Ñ‹ */
+/* Таблицы */
 
 .table {
     width: 100%;
