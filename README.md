@@ -22,6 +22,7 @@ Framico - это свободный фреймворк для разработк
 
 Как установить Framico на ваш сайт?
 
+```
 [Инструкция по подключению](http://framico.thebrooons.ru/connect.php).
 ├──CSS
 │   ├──[Вёрстка](http://framico.thebrooons.ru/blocks.php).
@@ -36,6 +37,7 @@ Framico - это свободный фреймворк для разработк
 │   └──[Вкладки](http://framico.thebrooons.ru/tabs.php).
 ├──[Иконки](http://framico.thebrooons.ru/icons.php).
 └──[Подсказки](http://framico.thebrooons.ru/hint.php).
+```
 
 
 ### Структура файлов
