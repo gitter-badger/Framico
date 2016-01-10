@@ -1,21 +1,14 @@
-# [Bootstrap](http://getbootstrap.com)
+# [Framico](http://framico.thebrooons.ru)
 
-[![Slack](https://bootstrap-slack.herokuapp.com/badge.svg)](https://bootstrap-slack.herokuapp.com)
-![Bower version](https://img.shields.io/bower/v/bootstrap.svg)
-[![npm version](https://img.shields.io/npm/v/bootstrap.svg)](https://www.npmjs.com/package/bootstrap)
-[![Build Status](https://img.shields.io/travis/twbs/bootstrap/master.svg)](https://travis-ci.org/twbs/bootstrap)
-[![devDependency Status](https://img.shields.io/david/dev/twbs/bootstrap.svg)](https://david-dm.org/twbs/bootstrap#info=devDependencies)
-[![NuGet](https://img.shields.io/nuget/v/bootstrap.svg)](https://www.nuget.org/packages/Bootstrap)
-[![Selenium Test Status](https://saucelabs.com/browser-matrix/bootstrap.svg)](https://saucelabs.com/u/bootstrap)
 
-Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development, created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thornton](https://twitter.com/fat), and maintained by the [core team](https://github.com/orgs/twbs/people) with the massive support and involvement of the community.
+Framico - это свободный фреймворк для разработки адаптивных дизайнов для сайтов.
 
-To get started, check out <http://getbootstrap.com>!
+Официальный сайт фрамико, там же Вы там сможете найти все инструкции по использованию <http://framico.thebrooons.ru>!
 
 
 ## Table of contents
 
-* [Quick start](#quick-start)
+* [БЫчтрый старт](#quick-start)
 * [Bugs and feature requests](#bugs-and-feature-requests)
 * [Documentation](#documentation)
 * [Contributing](#contributing)
@@ -36,29 +29,22 @@ Several quick start options are available:
 * Install with [Meteor](https://www.meteor.com): `meteor add twbs:bootstrap`.
 * Install with [Composer](https://getcomposer.org): `composer require twbs/bootstrap`.
 
-Read the [Getting started page](http://getbootstrap.com/getting-started/) for information on the framework contents, templates and examples, and more.
 
-### What's included
+### Структура файлов
 
 Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
 
 ```
-bootstrap/
+framico/
 ├── css/
-│   ├── bootstrap.css
-│   ├── bootstrap.css.map
-│   ├── bootstrap.min.css
-│   ├── bootstrap.min.css.map
-│   ├── bootstrap-theme.css
-│   ├── bootstrap-theme.css.map
-│   ├── bootstrap-theme.min.css
-│   └── bootstrap-theme.min.css.map
+│   ├── framico.css
+│   ├── framico.min.css
 ├── js/
-│   ├── bootstrap.js
-│   └── bootstrap.min.js
+│   ├── framico.js
+│   └── framico.min.js
 └── fonts/
-    ├── glyphicons-halflings-regular.eot
-    ├── glyphicons-halflings-regular.svg
+    ├── FontAwesome.otf
+    ├── fontawesome-webfont.eot
     ├── glyphicons-halflings-regular.ttf
     ├── glyphicons-halflings-regular.woff
     └── glyphicons-halflings-regular.woff2
