@@ -8,7 +8,7 @@ Framico - это свободный фреймворк для разработк
 
 ## Table of contents
 
-* [БЫчтрый старт](#quick-start)
+* [Быстрый старт](#Быстрый-старт)
 * [Bugs and feature requests](#bugs-and-feature-requests)
 * [Documentation](#documentation)
 * [Contributing](#contributing)
@@ -18,7 +18,7 @@ Framico - это свободный фреймворк для разработк
 * [Copyright and license](#copyright-and-license)
 
 
-## Quick start
+## Быстрый старт
 
 Several quick start options are available:
 
