@@ -1,7 +1,5 @@
 # [Framico](http://framico.thebrooons.ru)
 
-### [Скачать](https://github.com/TheBrooonS/Framico/releases)
-
 Framico - это свободный фреймворк для разработки адаптивных дизайнов для сайтов.
 
 Официальный сайт framico, там же Вы там сможете найти все инструкции по использованию <http://framico.thebrooons.ru>!
