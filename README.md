@@ -23,15 +23,17 @@ Framico - это свободный фреймворк для разработк
 Как установить Framico на ваш сайт?
 
 * [Инструкция по подключению](http://framico.thebrooons.ru/connect.php).
-* ├──[Вёрстка](http://framico.thebrooons.ru/blocks.php).
-* ├──[Оформление текста](http://framico.thebrooons.ru/text.php).
-* ├──[Кнопки и формы](http://framico.thebrooons.ru/button.php).
-* ├──[Таблицы](http://framico.thebrooons.ru/table.php).
-* ├──[Картинки](http://framico.thebrooons.ru/images.php).
-* ├──[Навигация](http://framico.thebrooons.ru/navigation.php).
-* ├──[Слайдер](http://framico.thebrooons.ru/slider.php).
-* ├──[Модальные окна](http://framico.thebrooons.ru/modal.php).
-* ├──[Вкладки](http://framico.thebrooons.ru/tabs.php).
+* ├──CSS
+* │   ├──[Вёрстка](http://framico.thebrooons.ru/blocks.php).
+* │   ├──[Оформление текста](http://framico.thebrooons.ru/text.php).
+* │   ├──[Кнопки и формы](http://framico.thebrooons.ru/button.php).
+* │   ├──[Таблицы](http://framico.thebrooons.ru/table.php).
+* │   ├──[Картинки](http://framico.thebrooons.ru/images.php).
+* ├──Скрипты
+* │   ├──[Навигация](http://framico.thebrooons.ru/navigation.php).
+* │   ├──[Слайдер](http://framico.thebrooons.ru/slider.php).
+* │   ├──[Модальные окна](http://framico.thebrooons.ru/modal.php).
+* │   └──[Вкладки](http://framico.thebrooons.ru/tabs.php).
 * ├──[Иконки](http://framico.thebrooons.ru/icons.php).
 * └──[Подсказки](http://framico.thebrooons.ru/hint.php).
 
