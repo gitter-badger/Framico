@@ -1,4 +1,4 @@
-// Framico v1.5.6 (http://framico.thebrooons.ru) 
+// Framico v1.5.7 (http://framico.thebrooons.ru) 
 
 // Плавная прокрутка при ID
 

@@ -1,6 +1,6 @@
 /*
     =============================================
-    Framico v1.5.6 (http://framico.thebrooons.ru)
+    Framico v1.5.7 (http://framico.thebrooons.ru)
     =============================================
 
     Используется normalize.css v3.0.2 | necolas.github.io/normalize.css 
@@ -1047,6 +1047,7 @@ img.opacity {
     background-size: 1000%;
 }
 
+div.btn,
 a.btn {
     display: inline-block;
 }
