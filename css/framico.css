@@ -1,6 +1,6 @@
 /*
     =============================================
-    Framico v1.5.7 (http://framico.thebrooons.ru)
+    Framico v1.6 (http://framico.thebrooons.ru)
     =============================================
 
     Используется normalize.css v3.0.2 | necolas.github.io/normalize.css 
@@ -37,18 +37,18 @@ body {
 
 a {
     text-decoration: none;
-    color: #517AE2;
+    color: #329BEE;
     background-color: transparent;
     cursor: pointer;
 }
 
 a:hover {
-    color: #3D65CC;
+    color: #2A84CC;
     text-decoration: underline;
 }
 
 a:focus {
-    color: #2A55C5;
+    color: #226BA5;
 }
 
 article,
@@ -159,7 +159,8 @@ input[type=password],
 input[type=number] {
     margin: 3px 0;
     padding: 10px;
-    border: 2px solid #CCC;
+    border: 0;
+    border-bottom: 1px solid #CCC;
     background-image: none;
     -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
@@ -173,7 +174,7 @@ input[type=text]:hover,
 input[type=email]:hover,
 input[type=password]:hover,
 input[type=number]:hover {
-    border-color: #1279CB;
+    border-color: #329AEC;
 }
 
 optgroup:focus,
@@ -183,10 +184,9 @@ input[type=text]:focus,
 input[type=email]:focus,
 input[type=password]:focus,
 input[type=number]:focus {
-    border-color: #1279CB;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);
+    border-color: #329AEC;
     outline: none;
+    box-shadow: inset 0 -1px #329AEC, inset 0 -7px 10px -10px #8E8E8E;
 }
 
 textarea input {
@@ -297,14 +297,6 @@ blockquote {
     margin: 0 0 18px;
     padding: 9px 20px 0 19px;
     border-left: 5px solid #ccc;
-}
-
-.right {
-    float: right !important;
-}
-
-.left {
-    float: left !important;
 }
 
 /* Clearfix создан Nicolas Gallagher | http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -590,12 +582,12 @@ blockquote {
     padding: 10px 0;
     font-size: 22px;
     margin-bottom: 10px;
-    border-bottom: 2px solid #1279CB;
+    border-bottom: 2px solid #329AEC;
 }
 
 .title-article {
     font-size: 30px;
-    background: linear-gradient(to left, transparent 50%, #E8E8E8 50%);
+    background: linear-gradient(to left, transparent 50%, #F7F7F7 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all 1s ease;
@@ -683,33 +675,15 @@ h6 small {
     color: #BBB;
 }
 
-.default {
-    color: #444;
-}
-
-.gray {
-    color: #ddd;
-}
-
-.red {
-    color: #e51c23;
-}
-
-.blue {
-    color: #279AF5;
-}
-
-.green {
-    color: #4caf50;
-}
-
-.purple {
-    color: #9c27b0;
-}
-
-.orange {
-    color: #ff9800;
-}
+.default { color: #444; }
+.light_gray { color: #F5F5F5; }
+.gray { color: #ddd; }
+.dark_gray { color: #ADADAD; }
+.red { color: #e51c23; }
+.blue { color: #279AF5; }
+.green { color: #4caf50; }
+.purple { color: #9c27b0; }
+.orange { color: #ff9800; }
 
 mark {
     padding: 2px 4px;
@@ -739,7 +713,7 @@ code {
 
 pre > code {
     display: block;
-    border-left: 3px solid #1279CB;
+    border-left: 2px solid #329AEC;
     padding: 10px;
     font-size: 100%;
 }
@@ -772,9 +746,28 @@ div.center {
     display: table;
 }
 
+.right {
+    float: right !important;
+}
+
+.left {
+    float: left !important;
+}
+
+.marg-10 { margin: 10px; }
+.marg-5 { margin: 5px; }
+.marg-2 { margin: 2px; }
+
+.pad-10 { padding: 10px; }
+.pad-5 { padding: 5px; }
+.pad-2 { padding: 2px; }
+
 /* Фоны */
 
 .bg.default,
+.bg.light_gray,
+.bg.gray,
+.bg.dark_gray,
 .bg.red,
 .bg.blue,
 .bg.green,
@@ -783,30 +776,21 @@ div.center {
     color: #fff;
 }
 
+.bg.gray,
+.bg.light_gray,
 .bg.default {
     background: #fff;
     color: #444;
 }
 
-.bg.red {
-    background: #e51c23;
-}
-
-.bg.blue {
-    background: #279AF5;
-}
-
-.bg.green {
-    background: #4caf50;
-}
-
-.bg.purple {
-    background: #9c27b0;
-}
-
-.bg.orange {
-    background: #ff9800;
-}
+.bg.light_gray { background: #F5F5F5; }
+.bg.gray       { background: #dddddd; }
+.bg.dark_gray  { background: #ADADAD; }
+.bg.red        { background: #e51c23; }
+.bg.blue       { background: #279AF5; }
+.bg.green      { background: #4caf50; }
+.bg.purple     { background: #9c27b0; }
+.bg.orange     { background: #ff9800; }
 
 .bg > a {
     color: #fff;
@@ -817,6 +801,10 @@ div.center {
     color: #444;
 }
 
+.bg code {
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(240,240,240,0.5);
+}
 
 /* Картинки */
 
@@ -1056,22 +1044,68 @@ a.btn:hover {
     text-decoration: none;
 }
 
-/* Иконки в input и textarea¸ */
+/* Формы */
 
-.form {
+.form-icon,
+.form-hide,
+.form-top {
     position: relative;
 }
 
-.form i {
+.form-hide label,
+.form-top label {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    color: #A9A9A9;
+    transition: 0.2s;
+    pointer-events: none;
+}
+
+/* Поле с иконками */
+
+.form-icon i {
     position: absolute;
     left: 10px;
     top: 12px;
     font-size: 20px;
 }
 
-.form input,
-.form textarea {
+/* Анимация исчезновения текста вниз */
+
+.form-hide textarea:valid ~ label,
+.form-hide textarea:focus ~ label,
+.form-hide input:valid ~ label,
+.form-hide input:focus ~ label {
+    top: 20px;
+    opacity: 0;
+}
+
+/* Анимация поднятия текста вверх */
+
+.form-top {
+    margin-top: 10px;
+}
+
+.form-top textarea:valid ~ label,
+.form-top textarea:focus ~ label,
+.form-top input:valid ~ label,
+.form-top input:focus ~ label {
+    top: -10px;
+    color: #329AEC;
+    font-size: 12px;
+}
+
+/* Комбинация полей с иконками */
+
+.form-icon input,
+.form-icon textarea {
     padding-left: 35px;
+}
+
+.form-icon.form-hide label,
+.form-icon.form-top label {
+    padding-left: 25px;
 }
 
 /* Слайдер */
@@ -1100,13 +1134,12 @@ a.btn:hover {
 
 .slide span {
     position: absolute;
-    bottom: 51px;
-    left: 0;
-    right: 0;
+    top: 20px;
+    left: 20px;
     text-align: center;
-    font-size: 16px;
+    font-size: 24px;
     color: white;
-    text-shadow: 1px 1px #000;
+    text-shadow: 0 -2px #000;
 }
 
 .slide img {
@@ -1116,11 +1149,11 @@ a.btn:hover {
 .slider-arrows {
     opacity: 0;
     transition: 0.2s;
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .slider-arrows a {
-    color: #1279CB;
+    color: #329AEC;
 }
 
 .slider:hover .slider-arrows {
@@ -1130,29 +1163,33 @@ a.btn:hover {
 .slider-arrow {
     position: absolute;
     top: calc(50% - 30px);
-    padding: 20px;
-    background: white;
+    padding: 5px 20px;
+    background: #fff;
     transition: 0.1s;
 }
 
 .slider-arrow:hover {
-    transform: scale(1.1);
+   color: #444;
 }
 
 .slider-arrow-right:active {
-    transform: translateX(5px) scale(1.1);
+    transform: translateX(5px);
 }
 
 .slider-arrow-left:active {
-    transform: translateX(-5px) scale(1.1);
+    transform: translateX(-5px);
 }
 
 .slider-arrow-right {
     right: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .slider-arrow-left {
     left: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .slider-nav {
@@ -1168,15 +1205,16 @@ a.btn:hover {
     display: block;
     margin: 0 5px;
     background: #fff;
+    border-radius: 50%;
 }
 
 .slider-nav-item:hover {
-    background: #1279CB;
+    background: #329AEC;
 }
 
 .slider-nav-item-current {
-    background: #1279CB;
-    box-shadow: 0 0 0 2px #1279CB;
+    background: #329AEC;
+    box-shadow: 0 0 0 2px #329AEC;
 }
 
 @media (max-width: 992px) {
@@ -1204,12 +1242,11 @@ a.btn:hover {
     }
 }
 
-
 /* Навигация */
 
 .navigation {
     text-align: left;
-    background: #1279CB;
+    background: #329AEC;
 }
 
 .nav {
@@ -1223,12 +1260,12 @@ a.btn:hover {
 }
 
 .nav > .active a {
-    color: #1279CB;
+    color: #329AEC;
 }
 
 .nav > .active a:hover {
-    color: #1279CB;
-    box-shadow: 0 4px #1279CB;
+    color: #329AEC;
+    box-shadow: 0 4px #329AEC;
 }
 
 .nav li {
@@ -1240,48 +1277,46 @@ a.btn:hover {
 
 .nav li a {
     text-decoration: none;
-    padding: 20px 30px;
+    padding: 15px 30px;
     display: block;
-    color: #ffffff;
+    color: #FFFFFF;
     position: relative;
     transition: 0.3s;
 }
 
 .nav > li > a:not(:only-child):after {
     font-family: "FontAwesome";
-    content: "\f0c9";
-    font-size: 80%;
+    content: "\f0d7";
     opacity: 0.5;
-    padding-left: 3px;
+    padding-left: 5px;
 }
 
 .nav li a:hover,
 .nav li:hover > a {
-    color: #ffffff;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255,255,255,0.1);
 }
 
 @media (min-width: 768px) {
     .nav ul {
+        transform: scale(0);
         transition: 0.2s;
-        margin-left: -2000px;
-        opacity: 0;
-        padding: 0;
+        margin: 0;
         width: 200px;
         position: absolute;
         top: auto;
         left: 0;
-        background: #ffffff;
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+        box-shadow: 5px 0 10px -5px #A0A0A0, -5px 0 10px -5px #A0A0A0;
     }
+}
+
+.nav ul {
+    padding: 0;
+    border: 1px solid #329AEC;
 }
 
 .nav ul li {
     display: block;
     float: none;
-    background: none;
-    margin: 0;
-    padding: 0;
 }
 
 .nav ul li a {
@@ -1289,53 +1324,35 @@ a.btn:hover {
     font-weight: normal;
     display: block;
     color: #797979;
-    border-left: 3px solid rgba(255, 255, 255, 0);
     background: #ffffff;
-    padding: 13px;
-}
-
-.nav ul li a:active {
-    transition: 0.1s;
-    transform: scale(1.04);
+    padding: 10px 15px;
 }
 
 .nav ul li a:hover,
 .nav ul li:hover > a {
-    background: #F1F1F1;
-    border-left: 3px solid #1279CB;
-    color: #444;
+    background: #329AEC;
+    color: #fff;
 }
 
 .nav li:hover > ul {
-    margin: 0;
-    opacity: 1;
+    transform: scale(1);
 }
 
 .nav ul ul {
-    left: 200px;
+    left: 199px;
     top: 0px;
 }
 
 @media (min-width: 768px) {
     .nav > li:not(:first-child):last-child ul {
-        right: 2000px;
+        right: 0;
         left: auto;
     }
-    .nav > li:not(:first-child):last-child:hover ul {
-        right: 0;
+    .nav ul ul {
+        box-shadow: 0 5px 10px -5px #D0D0D0, 0 -5px 10px -5px #D0D0D0;
     }
     .nav li:not(:first-child):last-child > ul ul {
-        right: 200px;
-    }
-    .nav > li:not(:first-child):last-child ul li a,
-    .nav > li:not(:first-child):last-child ul ul a {
-        border-right: 3px solid rgba(255, 255, 255, 0);
-        border-left: 0;
-    }
-    .nav > li:not(:first-child):last-child ul li a:hover,
-    .nav > li:not(:first-child):last-child > ul > li:hover > a {
-        border-right: 3px solid #1279CB;
-        border-left: 0;
+        right: 199px;
     }
 }
 
@@ -1343,7 +1360,7 @@ a.btn:hover {
     display: none;
     width: 100%;
     padding: 11px;
-    background: #1279CB;
+    background: #329AEC;
     color: #ffffff;
     text-transform: uppercase;
 }
@@ -1354,12 +1371,15 @@ a.btn:hover {
     text-decoration: none;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     .nav li a {
         padding: 10px;
     }
     .nav ul li a {
         padding: 10px;
+    }
+    .navigation {
+        background: #fff;
     }
 }
 
@@ -1371,7 +1391,10 @@ a.btn:hover {
 
 @media (max-width: 767px) {
     .nav ul li > a {
-        padding: 7px 7px 7px 15px;
+        padding: 7px 7px 7px 20px;
+    }
+    .nav > li > ul > li ul a  {
+        padding: 7px 7px 7px 40px;
     }
     .nav {
         display: none;
@@ -1387,12 +1410,10 @@ a.btn:hover {
         background: #ffffff;
         color: #797979;
         border-top: 1px solid #e0e0e0;
-        border-left: 3px solid #ffffff;
     }
     .nav li a:hover,
     .nav li:hover > a {
         background: #F1F1F1;
-        border-left: 3px solid #1279CB;
         color: #444;
     }
     .nav ul {
@@ -1401,13 +1422,9 @@ a.btn:hover {
         top: 0;
         left: 0;
         width: 100%;
-        padding-left: 20px;
     }
     .nav ul ul {
         left: 0;
-    }
-    .navigation {
-        background: #fff;
     }
 }
 
@@ -1432,7 +1449,7 @@ a.btn:hover {
     display: none;
     overflow: hidden;
     width: 100%;
-    border-top: 1px solid #1279CB;
+    border-top: 1px solid #329AEC;
     margin-top: -1px;
     text-align: left;
 }
@@ -1450,7 +1467,7 @@ a.btn:hover {
 }
 
 .accordion-tabs > li.tab-head-cont > a.is-active {
-    background: #1279CB;
+    background: #329AEC;
     color: #fff;
 }
 
@@ -1477,7 +1494,7 @@ a.btn:hover {
         border-bottom: 0;
     }
     .accordion-tabs > li.tab-head-cont > a.is-active {
-        border: 1px solid #1279CB;
+        border: 1px solid #329AEC;
         color: #fff;
     }
     .accordion-tabs > li.tab-head-cont > section {
