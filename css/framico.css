@@ -1311,7 +1311,10 @@ a.btn:hover {
 
 .nav ul {
     padding: 0;
-    border: 1px solid #329AEC;
+}
+
+@media (min-width: 769px) {
+	.nav ul { border: 1px solid #329AEC; }
 }
 
 .nav ul li {
