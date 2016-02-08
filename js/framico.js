@@ -1,36 +1,37 @@
-// Framico v1.6 (http://framico.thebrooons.ru) 
+/*
+    =============================================
+    Framico v1.7 (http://framico.thebrooons.ru)
+    =============================================
 
-// Плавная прокрутка при ID
+    Используется Glide.js | Ver: 1.0.5 | http://jedrzejchalubek.com
+    Модальные окна Remodal - v1.0.6 | http://vodkabears.github.io/remodal/
 
-$(function() {
-    $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: target.offset().top
-                }, 1000);
-                return false;
-            }
-        }
-    });
-});
+*/
+
 
 // Навигация
 
 $(document).ready(function() {
     var touch = $('#touch-nav');
     var menu = $('.nav');
-    $(touch).on('click', function(e) {
+
+    $(touch).on('click', function (e) {
         e.preventDefault();
         menu.slideToggle();
     });
-    $(window).resize(function() {
+
+    var resizeTimeout;
+
+    var resize = function() {
         var w = $(window).width();
-        if (w > 767 && menu.is(':hidden')) {
+        if (w > 768 && menu.is(':hidden')) {
             menu.removeAttr('style');
         }
+    };
+
+    $(window).resize(function() {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(resize,250);
     });
 });
 
@@ -58,7 +59,7 @@ $(document).ready(function() {
     });
 });
 
-// Glide.js | Ver: 1.0.5 | http://jedrzejchalubek.com
+// Glide.js
 
 (function($, window, document, undefined) {
 
@@ -464,9 +465,7 @@ $(document).ready(function() {
 
 })(jQuery, window, document);
 
-
-
-// Remodal - v1.0.6 | http://vodkabears.github.io/remodal/
+// Remodal
 
 !(function(root, factory) {
     if (typeof define === 'function' && define.amd) {
@@ -501,6 +500,7 @@ $(document).ready(function() {
         }
 
     ).join(' ');
+
 
     var DEFAULTS = $.extend({
         hashTracking: true,
@@ -632,6 +632,7 @@ $(document).ready(function() {
             $body = $(document.body);
 
             paddingRight = parseInt($body.css('padding-right'), 10) + getScrollbarWidth();
+
             $body.css('padding-right', paddingRight + 'px');
             $html.addClass(lockedClass);
         }
