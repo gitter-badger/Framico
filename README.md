@@ -52,6 +52,7 @@ framico/
 │   ├── framico.js
 │   └── framico.min.js
 └── fonts/
+    ├── .htaccess
     ├── FontAwesome.otf
     ├── fontawesome-webfont.eot
     ├── fontawesome-webfont.svg
