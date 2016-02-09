@@ -249,6 +249,10 @@ address { font-style: normal; }
 
 p { margin: 0 0 15px; }
 
+blockquote {
+    position: relative;
+    padding: 20px 50px;
+}
 blockquote:before,
 blockquote:after {
     font-size: 60px;
@@ -257,12 +261,12 @@ blockquote:after {
 
 blockquote:before {
     content: "„";
-    top: -10px;
+    top: -40px;
     left: 0;
 }
 blockquote:after {
     content: "“";
-    bottom: -10px;
+    bottom: -40px;
     right: 0;
 }
 
