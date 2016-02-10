@@ -642,6 +642,10 @@ div.center-block {
 .font-40 { font-size: 40px; }
 .font-50 { font-size: 50px; }
 
+.inline { display: inline; }
+.inline-block { display: inline-block; }
+.block { display: block; }
+
 /* =============
         Фоны
    ============= */
