@@ -1,6 +1,6 @@
 /*
     =============================================
-    Framico v1.7.1 (http://framico.thebrooons.ru)
+    Framico v1.7.2 (http://framico.thebrooons.ru)
     =============================================
 
     Используется Glide.js | Ver: 1.0.5 | http://jedrzejchalubek.com

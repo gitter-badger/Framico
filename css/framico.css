@@ -1,6 +1,6 @@
 /*
     =============================================
-    Framico v1.7.1 (http://framico.thebrooons.ru)
+    Framico v1.7.2 (http://framico.thebrooons.ru)
     =============================================
 
     Используется normalize.css v3.0.2 | necolas.github.io/normalize.css 
@@ -252,6 +252,7 @@ p { margin: 0 0 15px; }
 blockquote {
     position: relative;
     padding: 20px 50px;
+    display: inline-block;
 }
 blockquote:before,
 blockquote:after {
@@ -709,8 +710,9 @@ img.opacity { opacity: 0.5; }
     transition: all 0.2s;
     padding: 10px 25px;
     border: 2px solid;
-    border-radius: 1000px;
+    border-radius: 15px;
     margin: 3px 0;
+    outline: none;
 }
 
 .btn.default,
@@ -718,9 +720,14 @@ img.opacity { opacity: 0.5; }
 .btn.blue,
 .btn.green,
 .btn.purple,
-.btn.orange {
-    color: #444;
-}
+.btn.orange { color: #444; }
+
+.btn.default:focus,
+.btn.red:focus,
+.btn.blue:focus,
+.btn.green:focus,
+.btn.purple:focus,
+.btn.orange:focus {box-shadow: 0 0 0 2px white, 0 0 0 4px #329AEC;}
 
 .btn.default {
     background-color: rgba(255, 255, 255, 0);
@@ -925,6 +932,27 @@ a.btn:hover {
 .font-30.btn { border-width: 4px; }
 .font-40.btn { border-width: 5px; }
 .font-50.btn { border-width: 6px; }
+
+.font-10.btn.default:focus,
+.font-10.btn.red:focus,
+.font-10.btn.blue:focus,
+.font-10.btn.green:focus,
+.font-10.btn.purple:focus,
+.font-10.btn.orange:focus {box-shadow: 0 0 0 1px white, 0 0 0 2px #329AEC;}
+
+.font-40.btn.default:focus,
+.font-40.btn.red:focus,
+.font-40.btn.blue:focus,
+.font-40.btn.green:focus,
+.font-40.btn.purple:focus,
+.font-40.btn.orange:focus {box-shadow: 0 0 0 3px white, 0 0 0 6px #329AEC;}
+
+.font-50.btn.default:focus,
+.font-50.btn.red:focus,
+.font-50.btn.blue:focus,
+.font-50.btn.green:focus,
+.font-50.btn.purple:focus,
+.font-50.btn.orange:focus {box-shadow: 0 0 0 4px white, 0 0 0 8px #329AEC;}
 
 /* ================
         Формы
