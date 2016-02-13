@@ -1,6 +1,6 @@
 /*
     =============================================
-    Framico v1.7.2 (http://framico.thebrooons.ru)
+    Framico v1.7.3 (http://framico.thebrooons.ru)
     =============================================
 
     Используется normalize.css v3.0.2 | necolas.github.io/normalize.css 
@@ -1022,12 +1022,12 @@ a.btn:hover {
         Выпадающий блок
    ========================= */
 
-.block-dropdown input,
-.block-dropdown label,
-.block-dropdown input:checked + label + div { display: none; }
+.block-dropdown > input,
+.block-dropdown > label,
+.block-dropdown > input:checked + label + div { display: none; }
 
-.block-dropdown input:checked + label,
-.block-dropdown input:not(:checked) + label {
+.block-dropdown > input:checked + label,
+.block-dropdown > input:not(:checked) + label {
     display: block;
     padding: 10px 15px;
     color: white;
@@ -1036,10 +1036,10 @@ a.btn:hover {
     font-size: 16px;
 }
 
-.block-dropdown input:checked + label { background: #666; }
-.block-dropdown input:not(:checked) + label { background: #329AEC; }
+.block-dropdown > input:checked + label { background: #666; }
+.block-dropdown > input:not(:checked) + label { background: #329AEC; }
 
-.block-dropdown input:not(:checked) ~ div {
+.block-dropdown > input:not(:checked) ~ div {
     /* Сюда вписываем стили для выпадающего контента */
 }
 
