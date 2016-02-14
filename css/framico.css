@@ -1,6 +1,6 @@
 /*
     =============================================
-    Framico v1.7.3 (http://framico.thebrooons.ru)
+    Framico v1.7.4 (http://framico.thebrooons.ru)
     =============================================
 
     Используется normalize.css v3.0.2 | necolas.github.io/normalize.css 
@@ -351,18 +351,18 @@ blockquote:after {
 
 .content-full > .cont-line { margin: 0; }
 
-.content > .cont-line > .column-1,
-.content > .cont-line > .column-2,
-.content > .cont-line > .column-3,
-.content > .cont-line > .column-4,
-.content > .cont-line > .column-5,
-.content > .cont-line > .column-6,
-.content > .cont-line > .column-7,
-.content > .cont-line > .column-8,
-.content > .cont-line > .column-9,
-.content > .cont-line > .column-10,
-.content > .cont-line > .column-11,
-.content > .cont-line > .column-12 { padding: 0 10px; }
+.cont-line > .column-1,
+.cont-line > .column-2,
+.cont-line > .column-3,
+.cont-line > .column-4,
+.cont-line > .column-5,
+.cont-line > .column-6,
+.cont-line > .column-7,
+.cont-line > .column-8,
+.cont-line > .column-9,
+.cont-line > .column-10,
+.cont-line > .column-11,
+.cont-line > .column-12 { padding: 0 10px; }
 
 @media (min-width: 993px) {
     .column-1,
