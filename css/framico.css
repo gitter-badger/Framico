@@ -1,6 +1,6 @@
 /*
     =============================================
-    Framico v1.7.5 (http://framico.thebrooons.ru)
+    Framico v1.7.6 (http://framico.thebrooons.ru)
     =============================================
 
     Используется normalize.css v3.0.2 | necolas.github.io/normalize.css 
@@ -692,244 +692,237 @@ div.center-block {
     border: 1px solid rgba(240,240,240,0.5);
 }
 
-/* ==================
-        Картинки
-   ================== */
-
-img.rounded { border-radius: 5px; }
-img.circle  { border-radius: 100%; }
-img.border {
-    border: 1px solid #CCC;
-    padding: 3px;
-}
-img.opacity { opacity: 0.5; }
-
 /* ================
         Кнопки
    ================ */
 
+/* Общий стиль */
 .btn {
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     transition: all 0.2s;
     padding: 10px 25px;
     border: 2px solid;
-    border-radius: 15px;
+    border-radius: 5px;
     margin: 3px 0;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.2);
     outline: none;
 }
 
-.btn.default,
+.btn.white,
 .btn.red,
 .btn.blue,
 .btn.green,
 .btn.purple,
-.btn.orange { color: #444; }
-
-.btn.default:focus,
-.btn.red:focus,
-.btn.blue:focus,
-.btn.green:focus,
-.btn.purple:focus,
-.btn.orange:focus {box-shadow: 0 0 0 2px white, 0 0 0 4px #329AEC;}
-
-.btn.default {
-    background-color: rgba(255, 255, 255, 0);
-    border-color: #DDDDDD;
+.btn.orange {
+    color: #444 !important;
     -webkit-background-size: 200% 200%;
     background-size: 200%;
     background-position: 50%;
 }
 
-.btn.default.active {
-    background-color: #DDDDDD;
-    border-color: #DDDDDD;
+.btn.red:focus,
+.btn.blue:focus,
+.btn.green:focus,
+.btn.purple:focus,
+.btn.orange:focus {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15),
+                0 -2px rgba(0, 0, 0, 0.05),
+                2px 0px rgba(0, 0, 0, 0.05),
+                -2px 0px rgba(0, 0, 0, 0.05);
 }
 
-.btn.default:hover {
-    background-color: #eee;
-    border-color: #eee;
+.btn.white:focus,
+.btn.red.active:focus,
+.btn.blue.active:focus,
+.btn.green.active:focus,
+.btn.purple.active:focus,
+.btn.orange.active:focus {
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.15),
+                inset 0 -1px 0px rgba(0,0,0,0.05),
+                inset 1px 0px 0px rgba(0,0,0,0.05),
+                inset -1px 0px 0px rgba(0,0,0,0.05);
 }
 
-.btn.default:active {
-    background-color: #ddd;
-    border-color: #ddd;
-    background-image: -webkit-radial-gradient(circle, #ddd 10%, white 11%);
-    background-image: -o-radial-gradient(circle, #ddd 10%, white 11%);
-    background-image: radial-gradient(circle, #ddd 10%, white 11%);
+.btn.default,
+.btn.white,
+.btn.red.active,
+.btn.blue.active,
+.btn.green.active,
+.btn.purple.active,
+.btn.orange.active {
+    border: none;
+    padding: 12px 25px;
+}
+
+.btn.default.white,
+.btn.white:hover, .btn.white:focus,
+.btn.red.active, .btn.red:hover, .btn.red:focus,
+.btn.blue.active, .btn.blue:hover, .btn.blue:focus,
+.btn.green.active, .btn.green:hover, .btn.green:focus,
+.btn.purple.active, .btn.purple:hover, .btn.purple:focus,
+.btn.orange.active, .btn.orange:hover, .btn.orange:focus {
+    color: white !important;
+}
+
+.btn.white:focus, .btn.white:active,
+.btn.red:focus, .btn.red:active,
+.btn.blue:focus, .btn.blue:active,
+.btn.green:focus, .btn.green:active,
+.btn.purple:focus, .btn.purple:active,
+.btn.orange:focus, .btn.orange:active {
     background-repeat: no-repeat;
     -webkit-background-size: 1000% 1000%;
     background-size: 1000%;
 }
 
+/* Прозрачная кнопка */
+.btn.default {
+    color: #329AEC !important;
+    background: none !important;
+}
+
+.btn.default:hover {
+    text-decoration: underline;
+}
+
+.btn.default { box-shadow: none !important; }
+
+/* Белая кнопка */
+.btn.white {
+    color: #329AEC !important;
+    background-color: white;
+}
+
+.btn.white:hover { background-color: #85C9FF; }
+
+.btn.white:focus,
+.btn.white:active {
+    background-color: #2C8CD8;
+    background-image: -webkit-radial-gradient(circle, #2C8CD8 10%, white 11%);
+    background-image: -o-radial-gradient(circle, #2C8CD8 10%, white 11%);
+    background-image: radial-gradient(circle, #2C8CD8 10%, white 11%);
+}
+
+/* Красная кнопка */
 .btn.red {
     background-color: rgba(255, 255, 255, 0);
     border-color: #e51c23;
-    color: #e51c23;
-    -webkit-background-size: 200% 200%;
-    background-size: 200%;
-    background-position: 50%;
+    color: #e51c23 !important;
 }
 
-.btn.red.active {
-    color: white;
-    background-color: #e51c23;
-    border-color: #e51c23;
-}
+.btn.red.active { background-color: #e51c23; }
 
 .btn.red:hover {
-    color: white;
     background-color: #D41A21;
     border-color: #D41A21;
 }
 
+.btn.red:focus,
 .btn.red:active {
     background-color: #BD171D;
     border-color: #BD171D;
     background-image: -webkit-radial-gradient(circle, #BD171D 10%, #e51c23 11%);
     background-image: -o-radial-gradient(circle, #BD171D 10%, #e51c23 11%);
     background-image: radial-gradient(circle, #BD171D 10%, #e51c23 11%);
-    background-repeat: no-repeat;
-    -webkit-background-size: 1000% 1000%;
-    background-size: 1000%;
 }
 
+/* Синяя кнопка */
 .btn.blue {
     background-color: rgba(255, 255, 255, 0);
     border-color: #279AF5;
-    color: #279AF5;
-    -webkit-background-size: 200% 200%;
-    background-size: 200%;
-    background-position: 50%;
+    color: #279AF5 !important;
 }
 
-.btn.blue.active {
-    color: white;
-    background-color: #279AF5;
-    border-color: #279AF5;
-}
+.btn.blue.active { background-color: #279AF5; }
 
 .btn.blue:hover {
-    color: white;
     background-color: #2089E0;
     border-color: #2089E0;
 }
 
+.btn.blue:focus,
 .btn.blue:active {
     background-color: #1D7DCC;
     border-color: #1D7DCC;
     background-image: -webkit-radial-gradient(circle, #1D7DCC 10%, #279AF5 11%);
     background-image: -o-radial-gradient(circle, #1D7DCC 10%, #279AF5 11%);
     background-image: radial-gradient(circle, #1D7DCC 10%, #279AF5 11%);
-    background-repeat: no-repeat;
-    -webkit-background-size: 1000% 1000%;
-    background-size: 1000%;
 }
 
+/* Зеленая кнопка */
 .btn.green {
     background-color: rgba(255, 255, 255, 0);
     border-color: #4caf50;
-    color: #4caf50;
-    -webkit-background-size: 200% 200%;
-    background-size: 200%;
-    background-position: 50%;
+    color: #4caf50 !important;
 }
 
-.btn.green.active {
-    color: white;
-    background-color: #4caf50;
-    border-color: #4caf50;
-}
+.btn.green.active { background-color: #4caf50; }
 
 .btn.green:hover {
-    color: white;
     background-color: #459E48;
     border-color: #459E48;
 }
 
+.btn.green:focus,
 .btn.green:active {
     background-color: #3C8B3F;
     border-color: #3C8B3F;
     background-image: -webkit-radial-gradient(circle, #3C8B3F 10%, #4caf50 11%);
     background-image: -o-radial-gradient(circle, #3C8B3F 10%, #4caf50 11%);
     background-image: radial-gradient(circle, #3C8B3F 10%, #4caf50 11%);
-    background-repeat: no-repeat;
-    -webkit-background-size: 1000% 1000%;
-    background-size: 1000%;
 }
 
+/* Фиолетовая кнопка */
 .btn.purple {
     background-color: rgba(255, 255, 255, 0);
     border-color: #9c27b0;
-    color: #9c27b0;
-    -webkit-background-size: 200% 200%;
-    background-size: 200%;
-    background-position: 50%;
+    color: #9c27b0 !important;
 }
 
-.btn.purple.active {
-    color: white;
-    background-color: #9c27b0;
-    border-color: #9c27b0;
-}
+.btn.purple.active { background-color: #9c27b0; }
 
 .btn.purple:hover {
-    color: white;
     background-color: #8D249F;
     border-color: #8D249F;
 }
 
+.btn.purple:focus,
 .btn.purple:active {
     background-color: #802090;
     border-color: #802090;
     background-image: -webkit-radial-gradient(circle, #802090 10%, #9c27b0 11%);
     background-image: -o-radial-gradient(circle, #802090 10%, #9c27b0 11%);
     background-image: radial-gradient(circle, #802090 10%, #9c27b0 11%);
-    background-repeat: no-repeat;
-    -webkit-background-size: 1000% 1000%;
-    background-size: 1000%;
 }
 
+/* Оранжевая кнопка */
 .btn.orange {
     background-color: rgba(255, 255, 255, 0);
     border-color: #ff9800;
-    color: #ff9800;
-    -webkit-background-size: 200% 200%;
-    background-size: 200%;
-    background-position: 50%;
+    color: #ff9800 !important;
 }
 
-.btn.orange.active {
-    color: white;
-    background-color: #ff9800;
-    border-color: #ff9800;
-}
+.btn.orange.active { background-color: #ff9800; }
 
 .btn.orange:hover {
-    color: white;
     background-color: #EB8D00;
     border-color: #EB8D00;
 }
 
+.btn.orange:focus,
 .btn.orange:active {
     background-color: #D88100;
     border-color: #D88100;
     background-image: -webkit-radial-gradient(circle, #D88100 10%, #ff9800 11%);
     background-image: -o-radial-gradient(circle, #D88100 10%, #ff9800 11%);
     background-image: radial-gradient(circle, #D88100 10%, #ff9800 11%);
-    background-repeat: no-repeat;
-    -webkit-background-size: 1000% 1000%;
-    background-size: 1000%;
 }
 
 div.btn,
-a.btn {
-    display: inline-block;
-}
+a.btn { display: inline-block; }
 
-a.btn:hover {
-    text-decoration: none;
-}
+a.btn:hover { text-decoration: none; }
 
 .font-10.btn { border-width: 1px; }
 .font-20.btn { border-width: 3px; }
@@ -937,26 +930,26 @@ a.btn:hover {
 .font-40.btn { border-width: 5px; }
 .font-50.btn { border-width: 6px; }
 
-.font-10.btn.default:focus,
+.font-10.btn.white:focus,
 .font-10.btn.red:focus,
 .font-10.btn.blue:focus,
 .font-10.btn.green:focus,
 .font-10.btn.purple:focus,
-.font-10.btn.orange:focus {box-shadow: 0 0 0 1px white, 0 0 0 2px #329AEC;}
+.font-10.btn.orange:focus { box-shadow: 0 0 0 1px white, 0 0 0 2px #329AEC; }
 
-.font-40.btn.default:focus,
+.font-40.btn.white:focus,
 .font-40.btn.red:focus,
 .font-40.btn.blue:focus,
 .font-40.btn.green:focus,
 .font-40.btn.purple:focus,
-.font-40.btn.orange:focus {box-shadow: 0 0 0 3px white, 0 0 0 6px #329AEC;}
+.font-40.btn.orange:focus { box-shadow: 0 0 0 3px white, 0 0 0 6px #329AEC; }
 
-.font-50.btn.default:focus,
+.font-50.btn.white:focus,
 .font-50.btn.red:focus,
 .font-50.btn.blue:focus,
 .font-50.btn.green:focus,
 .font-50.btn.purple:focus,
-.font-50.btn.orange:focus {box-shadow: 0 0 0 4px white, 0 0 0 8px #329AEC;}
+.font-50.btn.orange:focus { box-shadow: 0 0 0 4px white, 0 0 0 8px #329AEC; }
 
 /* ================
         Формы
