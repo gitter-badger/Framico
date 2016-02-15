@@ -1,6 +1,6 @@
 /*
     =============================================
-    Framico v1.7.4 (http://framico.thebrooons.ru)
+    Framico v1.7.5 (http://framico.thebrooons.ru)
     =============================================
 
     Используется normalize.css v3.0.2 | necolas.github.io/normalize.css 
@@ -554,15 +554,15 @@ h6 small {
     color: #BBB;
 }
 
-.default { color: #444; }
-.light_gray { color: #F5F5F5; }
-.gray { color: #ddd; }
-.dark_gray { color: #ADADAD; }
-.red { color: #e51c23; }
-.blue { color: #279AF5; }
-.green { color: #4caf50; }
-.purple { color: #9c27b0; }
-.orange { color: #ff9800; }
+.default { color: #444 !important; }
+.light_gray { color: #F5F5F5 !important; }
+.gray { color: #ddd !important; }
+.dark_gray { color: #ADADAD !important; }
+.red { color: #e51c23 !important; }
+.blue { color: #279AF5 !important; }
+.green { color: #4caf50 !important; }
+.purple { color: #9c27b0 !important; }
+.orange { color: #ff9800 !important; }
 
 mark {
     padding: 2px 4px;
@@ -1069,6 +1069,7 @@ a.btn:hover {
     position: relative;
 }
 
+.slide p,
 .slide span {
     position: absolute;
     top: 20px;
@@ -1077,6 +1078,11 @@ a.btn:hover {
     font-size: 24px;
     color: white;
     text-shadow: 1px 1px #000;
+}
+
+.slide > .bottom {
+    bottom: 60px;
+    top: auto;
 }
 
 .slide img {
@@ -1162,6 +1168,7 @@ a.btn:hover {
     .slider-nav {
         bottom: 10px;
     }
+    .slide p,
     .slide span {
         top: 12px;
         left: 12px;
