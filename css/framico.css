@@ -6,6 +6,7 @@
     Используется набор иконок Font Awesome 4.5 от @davegandy - http://fontawesome.io - @fontawesome
     Встроен Hint.css - v1.3.5 | http://kushagragour.in/lab/hint/
     Модальные окна Remodal - v1.0.6 | http://vodkabears.github.io/remodal/
+    Используется normalize.css v3.0.3 | necolas.github.io/normalize.css 
 
 */
 
@@ -14,96 +15,28 @@
         Стандартные стили и сброс
    =================================== */
 
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,cyrillic);
+
+/* normalize.css */
+
 * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html {
+    font-family: sans-serif; 
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font: 14px "Roboto", Calibri, Candara, Arial, sans-serif;
+    background: white;
     margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+    color: #444;
+    line-height: 1.3;
 }
 
 article,
@@ -114,39 +47,12 @@ figure,
 footer,
 header,
 hgroup,
+main,
 menu,
 nav,
-section {
+section,
+summary {
     display: block;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-body {
-    font: 14px sans-serif;
-    background: white;
-    margin: 0;
-    color: #444;
-    line-height: 1.3;
-}
-
-a {
-    text-decoration: none;
-    color: #329BEE;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-a:hover {
-    color: #2A84CC;
-    text-decoration: underline;
-}
-
-a:focus {
-    color: #226BA5;
 }
 
 audio,
@@ -155,6 +61,39 @@ progress,
 video {
     display: inline-block;
     vertical-align: baseline;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+[hidden],
+template {
+    display: none;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+dfn {
+    font-style: italic;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+mark {
+    background: #ff0;
+    color: #000;
 }
 
 small {
@@ -168,16 +107,29 @@ sup {
     position: relative;
     vertical-align: baseline;
 }
-sup { top: -0.5em; }
-sub { bottom: -0.25em; }
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
 
 img {
     border: 0;
     max-width: 100%;
 }
 
+svg:not(:root) {
+    overflow: hidden;
+}
+
+figure {
+    margin: 1em 40px;
+}
+
 hr {
-    -moz-box-sizing: content-box;
     box-sizing: content-box;
     height: 0;
     margin-top: 20px;
@@ -186,65 +138,81 @@ hr {
     border-top: 1px solid #eee;
 }
 
-optgroup,
-textarea,
-select,
-input[type=text],
-input[type=email],
-input[type=password],
-input[type=number] {
-    margin: 3px 0;
-    padding: 10px;
-    border: 0;
-    border-bottom: 1px solid #CCC;
-    background-image: none;
-    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+pre {
+    overflow: auto;
 }
 
-optgroup:hover,
-textarea:hover,
-select:hover,
-input[type=text]:hover,
-input[type=email]:hover,
-input[type=password]:hover,
-input[type=number]:hover {
-    border-color: #329AEC;
-}
-
-optgroup:focus,
-textarea:focus,
-select:focus,
-input[type=text]:focus,
-input[type=email]:focus,
-input[type=password]:focus,
-input[type=number]:focus {
-    border-color: #329AEC;
-    outline: none;
-    box-shadow: inset 0 -1px #329AEC, inset 0 -7px 10px -10px #8E8E8E;
-}
-
-textarea input {
-    height: auto;
-}
-
+code,
 kbd,
+pre,
 samp {
     font-family: monospace, monospace;
-    font-size: 14px;
+    font-size: 1em;
+}
+
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit; 
+    font: inherit; 
+    margin: 0;
+}
+
+
+button {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
 }
 
 button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    -webkit-appearance: button;
-    cursor: pointer;
+    -webkit-appearance: button; 
+    cursor: pointer; 
 }
 
 button[disabled],
-input[disabled] {
-    cursor: not-allowed;
-    opacity: 0.7;
+html input[disabled] {
+    cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+input {
+    line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield; 
+    box-sizing: content-box; 
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    webkit-appearance: none;
 }
 
 fieldset {
@@ -253,8 +221,22 @@ fieldset {
     padding: 0.35em 0.625em 0.75em;
 }
 
+legend {
+    border: 0;
+    padding: 0;
+}
+
 textarea {
     overflow: auto;
+}
+
+optgroup {
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 td,
@@ -262,8 +244,27 @@ th {
     padding: 0;
 }
 
-address {
-    font-style: normal;
+/* Стандартные стили */
+
+a {
+    text-decoration: none;
+    color: #2780e3;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+a:hover {
+    color: #165ba8;
+}
+
+a:focus {
+    color: #226BA5;
+    text-decoration: underline;
 }
 
 p {
@@ -292,6 +293,44 @@ blockquote:after {
     content: "“";
     bottom: -40px;
     right: 0;
+}
+
+optgroup,
+textarea,
+select,
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number] {
+    margin: 3px 0;
+    padding: 10px;
+    border: 0;
+    border: 1px solid #eee;
+    border-bottom-width: 2px;
+    background-image: none;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+optgroup:hover,
+textarea:hover,
+select:hover,
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=password]:hover,
+input[type=number]:hover {
+    border-bottom-color: #329AEC;
+}
+
+optgroup:focus,
+textarea:focus,
+select:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=number]:focus {
+    border-color: #329AEC;
+    outline: none;
+    box-shadow: inset 0 -1px #329AEC, inset 0 -7px 10px -10px #8E8E8E;
 }
 
 /* Clearfix создан Nicolas Gallagher | http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -631,7 +670,7 @@ h6 small {
 .default { color: #444; }
 .light_gray { color: #F5F5F5; }
 .gray { color: #ddd; }
-.dark_gray { color: #ADADADt; }
+.dark_gray { color: #ADADAD; }
 .red { color: #e51c23; }
 .blue { color: #279AF5; }
 .green { color: #4caf50; }
@@ -1010,6 +1049,8 @@ a.btn {
     display: inline-block;
 }
 
+a.btn:active,
+a.btn:focus,
 a.btn:hover {
     text-decoration: none;
 }
@@ -1323,7 +1364,7 @@ a.btn:hover {
     display: block;
     color: white;
     position: relative;
-    transition: 0.3s;
+    transition: all 0.3s;
 }
 
 .nav > li a:not(:only-child):after {
@@ -1387,7 +1428,7 @@ a.btn:hover {
 @media (min-width: 769px) {
     .nav ul {
         transform: scale(0);
-        transition: 0.2s;
+        transition: all 0.2s;
         margin: 0;
         width: 200px;
         position: absolute;
@@ -1407,12 +1448,13 @@ a.btn:hover {
         left: auto;
     }
 
-    .nav li:not(:first-child):last-child > ul ul { right: 199px; }
-
     .nav ul ul {
         box-shadow: 0 5px 10px -5px rgba(0,0,0,0.5),
                     0 -5px 10px -5px rgba(0,0,0,0.5);
     }
+
+    /* Что написано ниже, я иногда сам не понимаю */
+    .nav li:not(:first-child):last-child > ul ul { right: 199px; }
 
     .nav > li:last-child li a:not(:only-child):after {
         display: none;
@@ -1577,25 +1619,28 @@ a.btn:hover {
 
 .table td {
     padding: 8px;
+}
+
+.table tr:not(:last-child) td {
     border-bottom: 1px solid #ddd;
 }
 
 .table thead td { border-bottom: 2px solid #ddd !important; }
 .table-var tr:nth-child(even) { background: #F7F7F7; }
 
-table > tbody > .table-line.default    { background: #dddddd; }
-table > tbody > .table-line.red        { background: #FFC8C8; }
-table > tbody > .table-line.blue       { background: #DCE3FF; }
-table > tbody > .table-line.green      { background: #D1F2CC; }
-table > tbody > .table-line.purple     { background: #EDC8FF; }
-table > tbody > .table-line.orange     { background: #FFEEC8; }
+table > tbody > .table-line.default { background: #dddddd; }
+table > tbody > .table-line.red { background: #FFC8C8; }
+table > tbody > .table-line.blue { background: #DCE3FF; }
+table > tbody > .table-line.green { background: #D1F2CC; }
+table > tbody > .table-line.purple { background: #EDC8FF; }
+table > tbody > .table-line.orange { background: #FFEEC8; }
 
-.table-hov > tbody > .table-line.default:hover   { background: #D5D5D5; }
-.table-hov > tbody > .table-line.red:hover       { background: #EFBCBC; }
-.table-hov > tbody > .table-line.blue:hover      { background: #CCD6FF; }
-.table-hov > tbody > .table-line.green:hover     { background: #C0DFBB; }
-.table-hov > tbody > .table-line.purple:hover    { background: #D8B5E9; }
-.table-hov > tbody > .table-line.orange:hover    { background: #EDDDB9; }
+.table-hov > tbody > .table-line.default:hover { background: #D5D5D5; }
+.table-hov > tbody > .table-line.red:hover { background: #EFBCBC; }
+.table-hov > tbody > .table-line.blue:hover { background: #CCD6FF; }
+.table-hov > tbody > .table-line.green:hover { background: #C0DFBB; }
+.table-hov > tbody > .table-line.purple:hover { background: #D8B5E9; }
+.table-hov > tbody > .table-line.orange:hover { background: #EDDDB9; }
 
 .table-divi { border: 1px solid #ddd; }
 .table-divi td:not(:last-child) { border-right: 1px solid #ddd; }
