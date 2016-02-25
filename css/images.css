@@ -1,0 +1,19 @@
+/* ====================
+          Images
+   ==================== */
+img.rounded {
+  border-radius: 5px;
+}
+
+img.circle {
+  border-radius: 100%;
+}
+
+img.border {
+  border: 1px solid #CCC;
+  padding: 3px;
+}
+
+img.opacity {
+  opacity: 0.5;
+}

@@ -1,0 +1,77 @@
+/* ====================
+          Tables
+   ==================== */
+.table {
+  width: 100%;
+  border-collapse: separate;
+}
+.table td {
+  padding: 8px;
+}
+.table tr:not(:last-child) td {
+  border-bottom: 1px solid #ddd;
+}
+.table thead td {
+  border-bottom: 2px solid #ddd !important;
+}
+
+.table-var tr:nth-child(even) {
+  background: #F7F7F7;
+}
+
+table > tbody > .table-line.default {
+  background: #dddddd;
+}
+table > tbody > .table-line.red {
+  background: #FFC8C8;
+}
+table > tbody > .table-line.blue {
+  background: #DCE3FF;
+}
+table > tbody > .table-line.green {
+  background: #D1F2CC;
+}
+table > tbody > .table-line.purple {
+  background: #EDC8FF;
+}
+table > tbody > .table-line.orange {
+  background: #FFEEC8;
+}
+
+.table-hov > tbody > .table-line.default:hover {
+  background: #D5D5D5;
+}
+.table-hov > tbody > .table-line.red:hover {
+  background: #EFBCBC;
+}
+.table-hov > tbody > .table-line.blue:hover {
+  background: #CCD6FF;
+}
+.table-hov > tbody > .table-line.green:hover {
+  background: #C0DFBB;
+}
+.table-hov > tbody > .table-line.purple:hover {
+  background: #D8B5E9;
+}
+.table-hov > tbody > .table-line.orange:hover {
+  background: #EDDDB9;
+}
+
+.table-divi {
+  border: 1px solid #ddd;
+}
+.table-divi td:not(:last-child) {
+  border-right: 1px solid #ddd;
+}
+
+table > tbody > .table-line {
+  color: #444;
+}
+table > tbody > .table-line > td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-right-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.table-hov > tbody > tr:hover {
+  background: #EEE;
+}

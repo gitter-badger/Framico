@@ -1,0 +1,193 @@
+/* ========================
+          Navigation
+   ======================== */
+.navigation {
+  text-align: left;
+  background: #329AEC;
+}
+
+.nav {
+  padding: 0;
+  font-size: 0;
+}
+.nav li {
+  font-size: 14px;
+  display: inline-block;
+  position: relative;
+  z-index: 11;
+}
+.nav li a {
+  text-decoration: none;
+  padding: 15px 30px;
+  display: block;
+  color: white;
+  position: relative;
+  transition: all 0.3s;
+}
+.nav > li a:not(:only-child):after {
+  font-family: "FontAwesome";
+  content: "\f0d7";
+  opacity: 0.5;
+  padding-left: 5px;
+}
+.nav ul {
+  padding: 0;
+}
+.nav ul li {
+  display: block;
+  float: none;
+}
+.nav ul li a {
+  font-size: 12px;
+  font-weight: normal;
+  display: block;
+  color: #797979;
+  background: white;
+  padding: 10px 15px;
+}
+.nav ul li a:hover {
+  background: #329AEC;
+  color: white;
+}
+.nav ul li:hover > a {
+  background: #329AEC;
+  color: white;
+}
+.nav li:hover > ul {
+  transform: scale(1);
+}
+.nav ul ul {
+  left: 100%;
+  top: 0px;
+}
+
+.mobile-nav {
+  display: none;
+  width: 100%;
+  padding: 11px;
+  font-size: 20px;
+  background: #444;
+  color: white;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+.mobile-nav:hover, .mobile-nav:focus {
+  text-decoration: none;
+}
+.mobile-nav:hover {
+  background: #329AEC;
+  color: white;
+}
+.mobile-nav:focus {
+  color: white;
+}
+
+@media (min-width: 769px) {
+  .nav ul {
+    transform: scale(0);
+    transition: all 0.2s;
+    margin: 0;
+    width: 200px;
+    position: absolute;
+    top: auto;
+    left: 0;
+    box-shadow: 5px 0 10px -5px rgba(0, 0, 0, 0.5), -5px 0 10px -5px rgba(0, 0, 0, 0.5);
+  }
+  .nav li a:hover, .nav li:hover > a {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .nav ul {
+    border: 1px solid #329AEC;
+  }
+  .nav ul ul {
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5), 0 -5px 10px -5px rgba(0, 0, 0, 0.5);
+  }
+  .nav > li:not(:first-child):last-child ul {
+    right: 0;
+    left: auto;
+  }
+  .nav li:not(:first-child):last-child > ul ul {
+    right: 100%;
+  }
+  .nav > li:last-child li a:not(:only-child):after {
+    display: none;
+  }
+  .nav > li:last-child li a:not(:only-child):before {
+    font-family: "FontAwesome";
+    content: "\f0d7";
+    opacity: 0.5;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .nav li a {
+    padding: 15px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  .nav li a {
+    padding: 10px;
+  }
+  .nav ul li a {
+    padding: 10px;
+  }
+  .nav ul li > a {
+    padding: 7px 7px 7px 0;
+    padding-left: 20px;
+  }
+  .nav > li > ul > li ul a {
+    padding: 7px 7px 7px 0;
+  }
+  .nav > li > ul > li ul a {
+    padding-left: 40px;
+  }
+  .nav li {
+    display: block;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .nav li a {
+    background: white;
+    color: #797979;
+    border-top: 1px solid #e0e0e0;
+  }
+  .nav li a:hover {
+    background: #F1F1F1;
+    color: #444;
+  }
+  .nav li:hover > a {
+    background: #F1F1F1;
+    color: #444;
+  }
+  .nav ul {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .nav ul li a:hover, .nav ul li:hover > a {
+    background: #F1F1F1;
+    color: #444;
+  }
+  .nav ul ul {
+    left: 0;
+  }
+  .nav > .active a {
+    background: #F1F1F1;
+  }
+  .nav > .active a:hover {
+    color: #444;
+  }
+}

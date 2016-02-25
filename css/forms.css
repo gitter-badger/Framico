@@ -1,0 +1,43 @@
+/* ===================
+          Forms
+   =================== */
+.form-icon, .form-hide, .form-top {
+  position: relative;
+}
+
+.form-hide label, .form-top label {
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  color: #A9A9A9;
+  transition: all 0.2s;
+  pointer-events: none;
+}
+
+.form-icon i {
+  position: absolute;
+  left: 10px;
+  top: 14px;
+  font-size: 20px;
+}
+
+.form-hide textarea:valid ~ label, .form-hide textarea:focus ~ label, .form-hide input:valid ~ label, .form-hide input:focus ~ label {
+  top: 20px;
+  opacity: 0;
+}
+
+.form-top {
+  margin-top: 15px;
+}
+.form-top textarea:valid ~ label, .form-top textarea:focus ~ label, .form-top input:valid ~ label, .form-top input:focus ~ label {
+  top: -15px;
+  color: #329AEC;
+  font-size: 12px;
+}
+
+.form-icon input, .form-icon textarea {
+  padding-left: 35px;
+}
+.form-icon.form-hide label, .form-icon.form-top label {
+  padding-left: 25px;
+}

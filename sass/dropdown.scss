@@ -1,0 +1,41 @@
+/* =====================
+          Dropdown                                  on css!
+   ===================== */
+
+.block-dropdown > {
+  input, label {
+    display: none;
+  }
+  input {
+    &:checked + label {
+      + div {
+        display: none;
+      }
+      display: block;
+      padding: 10px 15px;
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-size: 16px;
+    }
+    &:not(:checked) + label {
+      display: block;
+      padding: 10px 15px;
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-size: 16px;
+    }
+    &:checked + label {
+      background: #666;
+    }
+    &:not(:checked) {
+      + label {
+        background: #329AEC;
+      }
+      ~ div {
+        /* Insert styles here */
+      }
+    }
+  }
+}

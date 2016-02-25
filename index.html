@@ -6,7 +6,7 @@
 		<meta name="description" content="Описание сайта">
 		<meta name="keywords" content="Теги, через, запятую">
 		<meta name="author" content="Имя автора">
-		<link rel="stylesheet" href="/css/framico.min.css">
+		<link rel="stylesheet" href="css/framico.css">
 		<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -16,48 +16,47 @@
 	</head>
 	<body>
 		<div class="remodal-bg">
-			<div class="content-full">
+			<div class="container-full">
 				<header>
-
-						<a id="touch-nav" class="mobile-nav" href="#"><i class="fa fa-bars"></i> Меню</a>
-						<div class="navigation">
-							<ul class="nav content">
-								<li class="active"><a href="/">Главная</a></li>
-								<li><a href="#">Ссылка</a></li>
-								<li><a href="#">Выпадение</a>
-									<ul>
-										<li><a href="#">Ещё ссылка</a></li>
-										<li><a href="#">Ещё выпадение?</a>
-											<ul>
-												<li><a href="#">Ссылка в уровне 3</a></li>
-												<li><a href="#">Ссылка в уровне 3</a></li>
-												<li><a href="#">Ссылка в уровне 3</a></li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li><a href="#">Ссылка</a></li>
-								<li><a href="#">Ссылка</a></li>
-								<li><a href="#">Выпадение</a>
-									<ul>
-										<li><a href="#">Ещё ссылка</a></li>
-										<li><a href="#">Ещё выпадение?</a>
-											<ul>
-												<li><a href="#">Ссылка в уровне 3</a></li>
-												<li><a href="#">Ссылка в уровне 3</a></li>
-												<li><a href="#">Ссылка в уровне 3</a></li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-		          
+					<a id="touch-nav" class="mobile-nav" href="#"><i class="fa fa-bars"></i> Меню</a>
+					<div class="navigation">
+						<ul class="nav container">
+							<li class="active"><a href="/">Главная</a></li>
+							<li><a href="#">Ссылка</a></li>
+							<li><a href="#">Выпадение</a>
+								<ul>
+									<li><a href="#">Ещё ссылка</a></li>
+									<li><a href="#">Ещё выпадение?</a>
+										<ul>
+											<li><a href="#">Ссылка в уровне 3</a></li>
+											<li><a href="#">Ссылка в уровне 3</a></li>
+											<li><a href="#">Ссылка в уровне 3</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">Ссылка</a></li>
+							<li><a href="#">Ссылка</a></li>
+							<li><a href="#">Выпадение</a>
+								<ul>
+									<li><a href="#">Ещё ссылка</a></li>
+									<li><a href="#">Ещё выпадение?</a>
+										<ul>
+											<li><a href="#">Ссылка в уровне 3</a></li>
+											<li><a href="#">Ссылка в уровне 3</a></li>
+											<li><a href="#">Ссылка в уровне 3</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+	          
 				</header>
 			</div>
-			<div class="content">
-				<div class="cont-line">
-					<div class="column-12">
+			<div class="container">
+				<div class="row">
+					<div class="block-12">
 
 						<div class="center full-w" style="margin: 100px 0">
 							<h1>Framico</h1>
@@ -66,86 +65,137 @@
 
 						<h2 class="title">Колонки</h2>
 
-						<div style="white-space: nowrap;">
-							<div class="cont-line">
-								<div class="column-12 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-12</div></div>
+						<div class="flex" style="white-space: nowrap;">
+
+							<div class="block-12 center">
+									<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-12</div>
 							</div>
-							
-							<div class="cont-line">
-								<div class="column-1 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-1</div></div>
-								<div class="column-11 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-11</div></div>
+						
+							<div class="block-1 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-1</div>
+							</div>
+							<div class="block-11 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-11</div>
 							</div>
 
-							<div class="cont-line">
-								<div class="column-2 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-2</div></div>
-								<div class="column-10 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-10</div></div>
+							<div class="block-2 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-2</div>
+							</div>
+							<div class="block-10 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-10</div>
 							</div>
 
-							<div class="cont-line">
-								<div class="column-3 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-3</div></div>
-								<div class="column-9 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-9</div></div>
+							<div class="block-3 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-3</div>
 							</div>
-							
-							<div class="cont-line">
-								<div class="column-4 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-4</div></div>
-								<div class="column-8 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-8</div></div>
+							<div class="block-9 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-9</div>
 							</div>
-							
-							<div class="cont-line">
-								<div class="column-5 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-5</div></div>
-								<div class="column-7 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-7</div></div>
+						
+							<div class="block-4 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-4</div>
 							</div>
-
-							<div class="cont-line">
-								<div class="column-6 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-6</div></div>
-								<div class="column-6 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-6</div></div>
+							<div class="block-8 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-8</div>
 							</div>
-
-							<div class="cont-line">
-								<div class="column-7 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-7</div></div>
-								<div class="column-5 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-5</div></div>
+						
+							<div class="block-5 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-5</div>
+							</div>
+							<div class="block-7 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-7</div>
 							</div>
 
-							<div class="cont-line">
-								<div class="column-8 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-8</div></div>
-								<div class="column-4 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-4</div></div>
+							<div class="block-6 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-6</div>
+							</div>
+							<div class="block-6 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-6</div>
 							</div>
 
-							<div class="cont-line">
-								<div class="column-9 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-9</div></div>
-								<div class="column-3 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-3</div></div>
+							<div class="block-7 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-7</div>
+							</div>
+							<div class="block-5 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-5</div>
 							</div>
 
-							<div class="cont-line">
-								<div class="column-10 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-10</div></div>
-								<div class="column-2 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-2</div></div>
+							<div class="block-8 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-8</div>
+							</div>
+							<div class="block-4 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-4</div>
 							</div>
 
-							<div class="cont-line">
-								<div class="column-11 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-11</div></div>
-								<div class="column-1 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-1</div></div>
+							<div class="block-9 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-9</div>
+							</div>
+							<div class="block-3 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-3</div>
 							</div>
 
-							<div class="cont-line">
-								<div class="column-1 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-1</div></div>
-								<div class="column-1 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-1</div></div>
-								<div class="column-1 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-1</div></div>
-								<div class="column-1 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-1</div></div>
-								<div class="column-1 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-1</div></div>
-								<div class="column-1 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-1</div></div>
-								<div class="column-1 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-1</div></div>
-								<div class="column-1 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-1</div></div>
-								<div class="column-1 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-1</div></div>
-								<div class="column-1 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-1</div></div>
-								<div class="column-1 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-1</div></div>
-								<div class="column-1 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-1</div></div>
+							<div class="block-10 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-10</div>
+							</div>
+							<div class="block-2 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-2</div>
 							</div>
 
-							<div class="cont-line">
-								<div class="column-3 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-3</div></div>
-								<div class="column-3 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-3</div></div>
-								<div class="column-3 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-3</div></div>
-								<div class="column-3 stop center"><div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.column-3</div></div>
+							<div class="block-11 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-11</div>
+							</div>
+							<div class="block-1 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-1</div>
+							</div>
+
+							<div class="block-1 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-1</div>
+							</div>
+							<div class="block-1 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-1</div>
+							</div>
+							<div class="block-1 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-1</div>
+							</div>
+							<div class="block-1 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-1</div>
+							</div>
+							<div class="block-1 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-1</div>
+							</div>
+							<div class="block-1 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-1</div>
+							</div>
+							<div class="block-1 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-1</div>
+							</div>
+							<div class="block-1 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-1</div>
+							</div>
+							<div class="block-1 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-1</div>
+							</div>
+							<div class="block-1 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-1</div>
+							</div>
+							<div class="block-1 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-1</div>
+							</div>
+							<div class="block-1 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-1</div>
+							</div>
+
+							<div class="block-3 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-3</div>
+							</div>
+							<div class="block-3 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-3</div>
+							</div>
+							<div class="block-3 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-3</div>
+							</div>
+							<div class="block-3 center">
+								<div class="marg-2 pad-5 bg blue" style="overflow: hidden;">.block-3</div>
 							</div>
 						</div>
 
@@ -153,25 +203,25 @@
 						<p>Ниже приведены примеры стандартных расположений контента и сайдбара для верстки сайта.</p>
 
 <pre><code>&lt;div class="content"&gt; &lt;!-- Фиксированный контейнер --&gt;
-	&lt;div class="cont-line"&gt; &lt;!-- Строка для колонок --&gt;
-		&lt;div class="column-8"&gt;Контент&lt;/div&gt;
-		&lt;aside class="column-4"&gt;Сайдбар&lt;/aside&gt;
+	&lt;div class="row"&gt; &lt;!-- Строка для колонок --&gt;
+		&lt;div class="block-8"&gt;Контент&lt;/div&gt;
+		&lt;aside class="block-4"&gt;Сайдбар&lt;/aside&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
 <pre><code>&lt;div class="content-full"&gt; &lt;!-- Растянутый контейнер --&gt;
-	&lt;div class="cont-line"&gt; &lt;!-- Строка для колонок --&gt;
-		&lt;aside class="column-4"&gt;Сайдбар&lt;/aside&gt;
-		&lt;div class="column-8"&gt;Контент&lt;/div&gt;
+	&lt;div class="row"&gt; &lt;!-- Строка для колонок --&gt;
+		&lt;aside class="block-4"&gt;Сайдбар&lt;/aside&gt;
+		&lt;div class="block-8"&gt;Контент&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
 <pre><code>&lt;div class="content"&gt; &lt;!-- Фиксированный контейнер --&gt;
-	&lt;div class="cont-line"&gt; &lt;!-- Строка для колонок --&gt;
-		&lt;div class="column-6"&gt;Контент&lt;/div&gt;
+	&lt;div class="row"&gt; &lt;!-- Строка для колонок --&gt;
+		&lt;div class="block-6"&gt;Контент&lt;/div&gt;
 		&lt;aside&gt;
-			&lt;div class="column-3"&gt;Сайдбар 1&lt;/div&gt;
-			&lt;div class="column-3"&gt;Сайдбар 2&lt;/div&gt;
+			&lt;div class="block-3"&gt;Сайдбар 1&lt;/div&gt;
+			&lt;div class="block-3"&gt;Сайдбар 2&lt;/div&gt;
 		&lt;/aside&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -233,14 +283,16 @@
 
 						<h2 class="title">Картинки</h2>
 
-						<div class="column-3 stop mob center"><img src="http://framico.thebrooons.ru/img/img.png" class="rounded pad-5"></div>
-						<div class="column-3 stop mob center"><img src="http://framico.thebrooons.ru/img/img.png" class="border pad-5"></div>
-						<div class="column-3 stop mob center"><img src="http://framico.thebrooons.ru/img/img.png" class="opacity pad-5"></div>
-						<div class="column-3 stop mob center"><img src="http://framico.thebrooons.ru/img/img.png" class="circle pad-5"></div>
+						<div class="flex">
+							<div class="block-3 center pad-10"><img src="http://framico.thebrooons.ru/img/img.png" class="rounded"></div>
+							<div class="block-3 center pad-10"><img src="http://framico.thebrooons.ru/img/img.png" class="border"></div>
+							<div class="block-3 center pad-10"><img src="http://framico.thebrooons.ru/img/img.png" class="opacity"></div>
+							<div class="block-3 center pad-10"><img src="http://framico.thebrooons.ru/img/img.png" class="circle"></div>
+						</div>
 
 						<h2 class="title">Кнопки</h2>
 
-						<button type="button" class="btn default font-50">Обычная</button>
+						<button type="button" class="btn white font-50">Обычная</button>
 						<button type="button" class="btn red font-40">Красная</button>
 						<button type="button" class="btn blue font-30">Синяя</button>
 						<button type="button" class="btn green font-20">Зеленая</button>
@@ -249,7 +301,7 @@
 
 						<hr>
 
-						<button type="button" class="btn default active font-50">Обычная</button>
+						<button type="button" class="btn white active font-50">Обычная</button>
 						<button type="button" class="btn red active font-40">Красная</button>
 						<button type="button" class="btn blue active font-30">Синяя</button>
 						<button type="button" class="btn green active font-20">Зеленая</button>
@@ -258,14 +310,15 @@
 
 						<h2 class="title">Слайдер</h2>
 
-						<div class="slider">
-							<ul class="slides">
-								<li class="slide"><span>Текст</span><img src="http://framico.thebrooons.ru/img/slide.png" alt="Слайд"></li>
-								<li class="slide"><span>Текст</span><img src="http://framico.thebrooons.ru/img/slide.png" alt="Слайд"></li>
-								<li class="slide"><span>Текст</span><img src="http://framico.thebrooons.ru/img/slide.png" alt="Слайд"></li>
-								<li class="slide"><span>Текст</span><img src="http://framico.thebrooons.ru/img/slide.png" alt="Слайд"></li>
-								<li class="slide"><span>Текст</span><img src="http://framico.thebrooons.ru/img/slide.png" alt="Слайд"></li>
-							</ul>
+						<div id="owl-example" class="owl-carousel">
+							<div><img src="http://theorigo.ru/img/slide.png" alt="Слайд"></div>
+							<div><img src="http://theorigo.ru/img/slide.png" alt="Слайд"></div>
+							<div><img src="http://theorigo.ru/img/slide.png" alt="Слайд"></div>
+							<div><img src="http://theorigo.ru/img/slide.png" alt="Слайд"></div>
+							<div><img src="http://theorigo.ru/img/slide.png" alt="Слайд"></div>
+							<div><img src="http://theorigo.ru/img/slide.png" alt="Слайд"></div>
+							<div><img src="http://theorigo.ru/img/slide.png" alt="Слайд"></div>
+							<div><img src="http://theorigo.ru/img/slide.png" alt="Слайд"></div>
 						</div>
 
 						<h2 class="title">Выпадающий блок</h2>
@@ -391,7 +444,11 @@
 			</div>
 		</div>
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-		<script src="/js/framico.min.js"></script>
-		<script>$('.slider').glide();</script>
+		<script src="js/framico.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#owl-example").owlCarousel();
+			});
+		</script>
 	</body>
 </html>

@@ -2,7 +2,10 @@
   "name": "framico",
   "homepage": "https://github.com/TheBrooonS/Framico",
   "description": "Данный фреймворк включает в себя стартовый набор для любого верстальщика. С помощью него Вы сможете полностью создать сайт с минимум усилий.",
-  "main": "framico.css, framico.min.css, framico.js, framico.min.js",
+  "main": [
+    "css/framico.css",
+    "js/framico.js"
+  ],
   "moduleType": [
     "globals"
   ],
@@ -14,11 +17,15 @@
     "js",
     "thebrooons",
     "brooons",
-    "скачать",
+    "navigation",
+    "tabs",
+    "carousel",
+    "framework",
     "навигация",
     "слайдер",
     "вкладки",
-    "стили"
+    "стили",
+    "front-end"
   ],
   "authors": [
     "TheBrooonS"

@@ -1,0 +1,52 @@
+/* ===================
+          Forms
+   =================== */
+
+.form-icon, .form-hide, .form-top {
+  position: relative;
+}
+
+.form-hide label, .form-top label {
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  color: #A9A9A9;
+  transition: all 0.2s;
+  pointer-events: none;
+}
+
+.form-icon i {
+  position: absolute;
+  left: 10px;
+  top: 14px;
+  font-size: 20px;
+}
+
+.form-hide {
+  textarea, input {
+    &:valid ~ label, &:focus ~ label {
+      top: 20px;
+      opacity: 0;
+    }
+  }
+}
+
+.form-top {
+  margin-top: 15px;
+  textarea, input {
+    &:valid ~ label, &:focus ~ label {
+      top: -15px;
+      color: #329AEC;
+      font-size: 12px;
+    }
+  }
+}
+
+.form-icon {
+  input, textarea {
+    padding-left: 35px;
+  }
+  &.form-hide label, &.form-top label {
+    padding-left: 25px;
+  }
+}

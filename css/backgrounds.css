@@ -1,0 +1,47 @@
+/* ========================
+          Backgrounds
+   ======================== */
+.bg.dark_gray, .bg.red, .bg.blue, .bg.green, .bg.purple, .bg.orange {
+  color: white;
+}
+.bg.default, .bg.light_gray, .bg.gray {
+  color: #444;
+}
+.bg.default {
+  background: white;
+}
+.bg.light_gray {
+  background: #F5F5F5;
+}
+.bg.gray {
+  background: #ddd;
+}
+.bg.dark_gray {
+  background: #ADADAD;
+}
+.bg.red {
+  background: #e51c23;
+}
+.bg.blue {
+  background: #279AF5;
+}
+.bg.green {
+  background: #4caf50;
+}
+.bg.purple {
+  background: #9c27b0;
+}
+.bg.orange {
+  background: #ff9800;
+}
+.bg > a {
+  color: white;
+  font-style: italic;
+}
+.bg.gray > a, .bg.light_gray > a, .bg.default > a {
+  color: #444;
+}
+.bg code {
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(240, 240, 240, 0.5);
+}

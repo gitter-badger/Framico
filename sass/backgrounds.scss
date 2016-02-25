@@ -1,0 +1,50 @@
+/* ========================
+          Backgrounds
+   ======================== */
+
+.bg {
+  &.dark_gray, &.red, &.blue, &.green, &.purple, &.orange {
+    color: white;
+  }
+  &.default, &.light_gray, &.gray {
+    color: #444;
+  }
+  &.default {
+    background: white;
+  }
+  &.light_gray {
+    background: #F5F5F5;
+  }
+  &.gray {
+    background: #ddd;
+  }
+  &.dark_gray {
+    background: #ADADAD;
+  }
+  &.red {
+    background: #e51c23;
+  }
+  &.blue {
+    background: #279AF5;
+  }
+  &.green {
+    background: #4caf50;
+  }
+  &.purple {
+    background: #9c27b0;
+  }
+  &.orange {
+    background: #ff9800;
+  }
+  > a {
+    color: white;
+    font-style: italic;
+  }
+  &.gray > a, &.light_gray > a, &.default > a {
+    color: #444;
+  }
+  code {
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(240, 240, 240, 0.5);
+  }
+}

@@ -1,0 +1,172 @@
+/* =====================
+          Buttons
+   ===================== */
+.btn {
+  transition: all 0.3s;
+  padding: 10px 25px;
+  border: 2px solid;
+  border-radius: 5px;
+  margin: 3px 0;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+.btn.white, .btn.red, .btn.blue, .btn.green, .btn.purple, .btn.orange {
+  color: #444;
+  background-size: 200%;
+  background-position: 50%;
+}
+.btn.red:focus, .btn.blue:focus, .btn.green:focus, .btn.purple:focus, .btn.orange:focus {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15), 0 -2px rgba(0, 0, 0, 0.05), 2px 0px rgba(0, 0, 0, 0.05), -2px 0px rgba(0, 0, 0, 0.05);
+}
+.btn.white:focus, .btn.red.active:focus, .btn.blue.active:focus, .btn.green.active:focus, .btn.purple.active:focus, .btn.orange.active:focus {
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 -1px 0px rgba(0, 0, 0, 0.05), inset 1px 0px 0px rgba(0, 0, 0, 0.05), inset -1px 0px 0px rgba(0, 0, 0, 0.05);
+}
+.btn.default, .btn.white, .btn.red.active, .btn.blue.active, .btn.green.active, .btn.purple.active, .btn.orange.active {
+  border: none;
+  padding: 12px 25px;
+}
+.btn.white:hover, .btn.white:focus {
+  color: white;
+}
+.btn.default.white.active, .btn.default.white:hover, .btn.default.white:focus, .btn.red.active, .btn.red:hover, .btn.red:focus, .btn.blue.active, .btn.blue:hover, .btn.blue:focus, .btn.green.active, .btn.green:hover, .btn.green:focus, .btn.purple.active, .btn.purple:hover, .btn.purple:focus, .btn.orange.active, .btn.orange:hover, .btn.orange:focus {
+  color: white;
+}
+.btn.white:focus, .btn.white:active, .btn.red:focus, .btn.red:active, .btn.blue:focus, .btn.blue:active, .btn.green:focus, .btn.green:active, .btn.purple:focus, .btn.purple:active, .btn.orange:focus, .btn.orange:active {
+  background-repeat: no-repeat;
+  background-size: 1000%;
+}
+.btn.default {
+  color: #329AEC;
+  background: none !important;
+  box-shadow: none !important;
+}
+.btn.default:hover {
+  text-decoration: underline;
+}
+.btn.white {
+  color: #329AEC;
+  background-color: white;
+}
+.btn.white:hover {
+  background-color: #85C9FF;
+}
+.btn.white:focus, .btn.white:active {
+  background-color: #2C8CD8;
+  background-image: radial-gradient(circle, #2c8cd8 10%, #ffffff 11%);
+}
+.btn.red {
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #e51c23;
+  color: #e51c23;
+}
+.btn.red.active {
+  background-color: #e51c23;
+}
+.btn.red:hover {
+  background-color: #D41A21;
+  border-color: #D41A21;
+}
+.btn.red:focus, .btn.red:active {
+  background-color: #BD171D;
+  border-color: #BD171D;
+  background-image: radial-gradient(circle, #bd171d 10%, #e51c23 11%);
+}
+.btn.blue {
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #279AF5;
+  color: #279AF5;
+}
+.btn.blue.active {
+  background-color: #279AF5;
+}
+.btn.blue:hover {
+  background-color: #2089E0;
+  border-color: #2089E0;
+}
+.btn.blue:focus, .btn.blue:active {
+  background-color: #1D7DCC;
+  border-color: #1D7DCC;
+  background-image: radial-gradient(circle, #1d7dcc 10%, #279af5 11%);
+}
+.btn.green {
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #4caf50;
+  color: #4caf50;
+}
+.btn.green.active {
+  background-color: #4caf50;
+}
+.btn.green:hover {
+  background-color: #459E48;
+  border-color: #459E48;
+}
+.btn.green:focus, .btn.green:active {
+  background-color: #3C8B3F;
+  border-color: #3C8B3F;
+  background-image: radial-gradient(circle, #3c8b3f 10%, #4caf50 11%);
+}
+.btn.purple {
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #9c27b0;
+  color: #9c27b0;
+}
+.btn.purple.active {
+  background-color: #9c27b0;
+}
+.btn.purple:hover {
+  background-color: #8D249F;
+  border-color: #8D249F;
+}
+.btn.purple:focus, .btn.purple:active {
+  background-color: #802090;
+  border-color: #802090;
+  background-image: radial-gradient(circle, #802090 10%, #9c27b0 11%);
+}
+.btn.orange {
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #ff9800;
+  color: #ff9800;
+}
+.btn.orange.active {
+  background-color: #ff9800;
+}
+.btn.orange:hover {
+  background-color: #EB8D00;
+  border-color: #EB8D00;
+}
+.btn.orange:focus, .btn.orange:active {
+  background-color: #D88100;
+  border-color: #D88100;
+  background-image: radial-gradient(circle, #d88100 10%, #ff9800 11%);
+}
+
+div.btn {
+  display: inline-block;
+}
+
+a.btn {
+  display: inline-block;
+}
+a.btn:active, a.btn:focus, a.btn:hover {
+  text-decoration: none;
+}
+
+.font-10.btn {
+  border-width: 1px;
+}
+
+.font-20.btn {
+  border-width: 3px;
+}
+
+.font-30.btn {
+  border-width: 4px;
+}
+
+.font-40.btn {
+  border-width: 5px;
+}
+
+.font-50.btn {
+  border-width: 6px;
+}
