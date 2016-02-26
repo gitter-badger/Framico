@@ -30,5 +30,8 @@
   "authors": [
     "TheBrooonS"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "1.9.1 - 2"
+  }
 }

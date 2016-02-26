@@ -1,3 +1,4 @@
+@import "config";
 /* ========================
           Backgrounds
    ======================== */
@@ -7,44 +8,44 @@
     color: white;
   }
   &.default, &.light_gray, &.gray {
-    color: #444;
+    color: $default_text_color;
   }
   &.default {
     background: white;
   }
   &.light_gray {
-    background: #F5F5F5;
+    background: $light_gray;
   }
   &.gray {
-    background: #ddd;
+    background: $gray;
   }
   &.dark_gray {
-    background: #ADADAD;
+    background: $dark_gray;
   }
   &.red {
-    background: #e51c23;
+    background: $red;
   }
   &.blue {
-    background: #279AF5;
+    background: $blue;
   }
   &.green {
-    background: #4caf50;
+    background: $green;
   }
   &.purple {
-    background: #9c27b0;
+    background: $purple;
   }
   &.orange {
-    background: #ff9800;
+    background: $orange;
   }
   > a {
     color: white;
     font-style: italic;
   }
   &.gray > a, &.light_gray > a, &.default > a {
-    color: #444;
+    color: $default_text_color;
   }
   code {
-    background: rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(240, 240, 240, 0.5);
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
   }
 }

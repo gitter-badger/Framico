@@ -1,3 +1,4 @@
+@import "config";
 /* ====================
           Tables
    ==================== */
@@ -20,33 +21,33 @@
   background: #F7F7F7;
 }
 
-table > tbody > .table-line {
+table > tbody > .table-row {
   &.default {
     background: #dddddd;
   }
   &.red {
-    background: #FFC8C8;
+    background: lighten($red, 40);
   }
   &.blue {
-    background: #DCE3FF;
+    background: lighten($blue, 40);
   }
   &.green {
-    background: #D1F2CC;
+    background: lighten($green, 40);
   }
   &.purple {
-    background: #EDC8FF;
+    background: lighten($purple, 40);
   }
   &.orange {
-    background: #FFEEC8;
+    background: lighten($orange, 40);
   }
 }
 
-.table-hov > tbody > .table-line {
+.table-hov > tbody > .table-row {
   &.default:hover {
     background: #D5D5D5;
   }
   &.red:hover {
-    background: #EFBCBC;
+    background: $red + #888;
   }
   &.blue:hover {
     background: #CCD6FF;
@@ -69,7 +70,7 @@ table > tbody > .table-line {
   }
 }
 
-table > tbody > .table-line {
+table > tbody > .table-row {
   color: #444;
   > td {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;

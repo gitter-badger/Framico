@@ -6,24 +6,22 @@
   padding: 10px 0;
   font-size: 22px;
   margin-bottom: 10px;
-  border-bottom: 2px solid #329AEC;
+  border-bottom: 2px solid #49a2ff;
 }
 
 .title-article {
   font-size: 30px;
-  background: linear-gradient(to left, transparent 50%, #EEEEEE 50%);
+  background: linear-gradient(to left, transparent 50%, #2780e3 50%);
   background-size: 200% 100%;
   background-position: right bottom;
-  transition: all 1s ease;
+  transition: color 1.2s, background-position 0.8s;
   display: inline;
   padding: 0 3px;
 }
-.title-article:hover {
+.title-article:hover, .title-article a:hover {
+  text-decoration: none;
   background-position: left bottom;
-  text-decoration: none;
-}
-.title-article a:hover {
-  text-decoration: none;
+  color: white;
 }
 
 h1.title, h2.title, h3.title, h4.title, h5.title, h6.title {
@@ -35,67 +33,37 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-h1 {
-  font-size: 40px;
-  line-height: 40px;
-  padding: 10px 0;
-}
-h1.title {
+h1, h1.title {
   font-size: 40px;
   line-height: 40px;
   padding: 10px 0;
 }
 
-h2 {
-  font-size: 30px;
-  line-height: 30px;
-  padding: 7px 0;
-}
-h2.title {
+h2, h2.title {
   font-size: 30px;
   line-height: 30px;
   padding: 7px 0;
 }
 
-h3 {
-  font-size: 26px;
-  line-height: 26px;
-  padding: 6px 0;
-}
-h3.title {
+h3, h3.title {
   font-size: 26px;
   line-height: 26px;
   padding: 6px 0;
 }
 
-h4 {
-  font-size: 22px;
-  line-height: 22px;
-  padding: 5px 0;
-}
-h4.title {
+h4, h4.title {
   font-size: 22px;
   line-height: 22px;
   padding: 5px 0;
 }
 
-h5 {
-  font-size: 18px;
-  line-height: 20px;
-  padding: 4px 0;
-}
-h5.title {
+h5, h5.title {
   font-size: 18px;
   line-height: 20px;
   padding: 4px 0;
 }
 
-h6 {
-  font-size: 16px;
-  line-height: 20px;
-  padding: 3px 0;
-}
-h6.title {
+h6, h6.title {
   font-size: 16px;
   line-height: 20px;
   padding: 3px 0;
@@ -127,11 +95,11 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 }
 
 .blue {
-  color: #279AF5;
+  color: #2494EC;
 }
 
 .green {
-  color: #4caf50;
+  color: #31C736;
 }
 
 .purple {
@@ -160,7 +128,7 @@ pre > code {
 code {
   padding: 2px 3px;
   margin: 0;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: #F9F9F9;
   border-radius: 3px;
 }
 

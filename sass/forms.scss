@@ -1,3 +1,4 @@
+@import "config";
 /* ===================
           Forms
    =================== */
@@ -11,7 +12,7 @@
   top: 14px;
   left: 10px;
   color: #A9A9A9;
-  transition: all 0.2s;
+  transition: $global_transition;
   pointer-events: none;
 }
 
@@ -36,7 +37,7 @@
   textarea, input {
     &:valid ~ label, &:focus ~ label {
       top: -15px;
-      color: #329AEC;
+      color: $default_site_color + #222;
       font-size: 12px;
     }
   }

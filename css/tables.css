@@ -19,41 +19,41 @@
   background: #F7F7F7;
 }
 
-table > tbody > .table-line.default {
+table > tbody > .table-row.default {
   background: #dddddd;
 }
-table > tbody > .table-line.red {
-  background: #FFC8C8;
+table > tbody > .table-row.red {
+  background: #fad3d4;
 }
-table > tbody > .table-line.blue {
-  background: #DCE3FF;
+table > tbody > .table-row.blue {
+  background: #e0f0fc;
 }
-table > tbody > .table-line.green {
-  background: #D1F2CC;
+table > tbody > .table-row.green {
+  background: #d0f4d2;
 }
-table > tbody > .table-line.purple {
-  background: #EDC8FF;
+table > tbody > .table-row.purple {
+  background: #e6b5ee;
 }
-table > tbody > .table-line.orange {
-  background: #FFEEC8;
+table > tbody > .table-row.orange {
+  background: #ffeacc;
 }
 
-.table-hov > tbody > .table-line.default:hover {
+.table-hov > tbody > .table-row.default:hover {
   background: #D5D5D5;
 }
-.table-hov > tbody > .table-line.red:hover {
-  background: #EFBCBC;
+.table-hov > tbody > .table-row.red:hover {
+  background: #ffa4ab;
 }
-.table-hov > tbody > .table-line.blue:hover {
+.table-hov > tbody > .table-row.blue:hover {
   background: #CCD6FF;
 }
-.table-hov > tbody > .table-line.green:hover {
+.table-hov > tbody > .table-row.green:hover {
   background: #C0DFBB;
 }
-.table-hov > tbody > .table-line.purple:hover {
+.table-hov > tbody > .table-row.purple:hover {
   background: #D8B5E9;
 }
-.table-hov > tbody > .table-line.orange:hover {
+.table-hov > tbody > .table-row.orange:hover {
   background: #EDDDB9;
 }
 
@@ -64,10 +64,10 @@ table > tbody > .table-line.orange {
   border-right: 1px solid #ddd;
 }
 
-table > tbody > .table-line {
+table > tbody > .table-row {
   color: #444;
 }
-table > tbody > .table-line > td {
+table > tbody > .table-row > td {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
   border-right-color: rgba(255, 255, 255, 0.3) !important;
 }

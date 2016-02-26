@@ -250,20 +250,21 @@ body {
 
 a {
   text-decoration: none;
-  color: #2780e3;
+  color: #3891f4;
   background-color: transparent;
   cursor: pointer;
+  transition: 0.3s;
 }
 a:active {
   outline: 0;
 }
 a:hover {
   outline: 0;
-  color: #165ba8;
+  color: #5ab3ff;
 }
 a:focus {
   color: white;
-  background: #165ba8;
+  background: #2780e3;
 }
 
 p {
@@ -310,17 +311,17 @@ input[type=text], input[type=email], input[type=password], input[type=number], o
   border: 1px solid #eee;
   border-bottom-width: 2px;
   background-image: none;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: 0.3s;
 }
 
 input[type=text]:hover, input[type=email]:hover, input[type=password]:hover, input[type=number]:hover, optgroup:hover, textarea:hover, select:hover {
-  border-bottom-color: #329AEC;
+  border-bottom-color: #49a2ff;
 }
 
 input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=number]:focus, optgroup:focus, textarea:focus, select:focus {
-  border-color: #329AEC;
+  border-color: #49a2ff;
   outline: none;
-  box-shadow: inset 0 -1px #329AEC, inset 0 -7px 10px -10px #8E8E8E;
+  box-shadow: inset 0 -1px #49a2ff, inset 0 -7px 10px -10px #8E8E8E;
 }
 
 /* Clearfix ╤Б╨╛╨╖╨┤╨░╨╜ Nicolas Gallagher | http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -540,24 +541,22 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, inp
   padding: 10px 0;
   font-size: 22px;
   margin-bottom: 10px;
-  border-bottom: 2px solid #329AEC;
+  border-bottom: 2px solid #49a2ff;
 }
 
 .title-article {
   font-size: 30px;
-  background: linear-gradient(to left, transparent 50%, #EEEEEE 50%);
+  background: linear-gradient(to left, transparent 50%, #2780e3 50%);
   background-size: 200% 100%;
   background-position: right bottom;
-  transition: all 1s ease;
+  transition: color 1.2s, background-position 0.8s;
   display: inline;
   padding: 0 3px;
 }
-.title-article:hover {
+.title-article:hover, .title-article a:hover {
+  text-decoration: none;
   background-position: left bottom;
-  text-decoration: none;
-}
-.title-article a:hover {
-  text-decoration: none;
+  color: white;
 }
 
 h1.title, h2.title, h3.title, h4.title, h5.title, h6.title {
@@ -569,67 +568,37 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-h1 {
-  font-size: 40px;
-  line-height: 40px;
-  padding: 10px 0;
-}
-h1.title {
+h1, h1.title {
   font-size: 40px;
   line-height: 40px;
   padding: 10px 0;
 }
 
-h2 {
-  font-size: 30px;
-  line-height: 30px;
-  padding: 7px 0;
-}
-h2.title {
+h2, h2.title {
   font-size: 30px;
   line-height: 30px;
   padding: 7px 0;
 }
 
-h3 {
-  font-size: 26px;
-  line-height: 26px;
-  padding: 6px 0;
-}
-h3.title {
+h3, h3.title {
   font-size: 26px;
   line-height: 26px;
   padding: 6px 0;
 }
 
-h4 {
-  font-size: 22px;
-  line-height: 22px;
-  padding: 5px 0;
-}
-h4.title {
+h4, h4.title {
   font-size: 22px;
   line-height: 22px;
   padding: 5px 0;
 }
 
-h5 {
-  font-size: 18px;
-  line-height: 20px;
-  padding: 4px 0;
-}
-h5.title {
+h5, h5.title {
   font-size: 18px;
   line-height: 20px;
   padding: 4px 0;
 }
 
-h6 {
-  font-size: 16px;
-  line-height: 20px;
-  padding: 3px 0;
-}
-h6.title {
+h6, h6.title {
   font-size: 16px;
   line-height: 20px;
   padding: 3px 0;
@@ -661,11 +630,11 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 }
 
 .blue {
-  color: #279AF5;
+  color: #2494EC;
 }
 
 .green {
-  color: #4caf50;
+  color: #31C736;
 }
 
 .purple {
@@ -694,7 +663,7 @@ pre > code {
 code {
   padding: 2px 3px;
   margin: 0;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: #F9F9F9;
   border-radius: 3px;
 }
 
@@ -850,10 +819,10 @@ header.center-block, article.center-block, aside.center-block, details.center-bl
   background: #e51c23;
 }
 .bg.blue {
-  background: #279AF5;
+  background: #2494EC;
 }
 .bg.green {
-  background: #4caf50;
+  background: #31C736;
 }
 .bg.purple {
   background: #9c27b0;
@@ -869,15 +838,15 @@ header.center-block, article.center-block, aside.center-block, details.center-bl
   color: #444;
 }
 .bg code {
-  background: rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(240, 240, 240, 0.5);
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 /* =====================
           Buttons
    ===================== */
 .btn {
-  transition: all 0.3s;
+  transition: 0.3s;
   padding: 10px 25px;
   border: 2px solid;
   border-radius: 5px;
@@ -911,7 +880,7 @@ header.center-block, article.center-block, aside.center-block, details.center-bl
   background-size: 1000%;
 }
 .btn.default {
-  color: #329AEC;
+  color: #2780e3;
   background: none !important;
   box-shadow: none !important;
 }
@@ -919,15 +888,15 @@ header.center-block, article.center-block, aside.center-block, details.center-bl
   text-decoration: underline;
 }
 .btn.white {
-  color: #329AEC;
+  color: #2780e3;
   background-color: white;
 }
 .btn.white:hover {
-  background-color: #85C9FF;
+  background-color: #6bc4ff;
 }
 .btn.white:focus, .btn.white:active {
-  background-color: #2C8CD8;
-  background-image: radial-gradient(circle, #2c8cd8 10%, #ffffff 11%);
+  background-color: #2780e3;
+  background-image: radial-gradient(circle, #2780e3 10%, #ffffff 11%);
 }
 .btn.red {
   background-color: rgba(255, 255, 255, 0);
@@ -938,47 +907,47 @@ header.center-block, article.center-block, aside.center-block, details.center-bl
   background-color: #e51c23;
 }
 .btn.red:hover {
-  background-color: #D41A21;
-  border-color: #D41A21;
+  background-color: #c30001;
+  border-color: #c30001;
 }
 .btn.red:focus, .btn.red:active {
-  background-color: #BD171D;
-  border-color: #BD171D;
-  background-image: radial-gradient(circle, #bd171d 10%, #e51c23 11%);
+  background-color: #a10000;
+  border-color: #a10000;
+  background-image: radial-gradient(circle, #a10000 10%, #c30001 11%);
 }
 .btn.blue {
   background-color: rgba(255, 255, 255, 0);
-  border-color: #279AF5;
-  color: #279AF5;
+  border-color: #2494EC;
+  color: #2494EC;
 }
 .btn.blue.active {
-  background-color: #279AF5;
+  background-color: #2494EC;
 }
 .btn.blue:hover {
-  background-color: #2089E0;
-  border-color: #2089E0;
+  background-color: #0272ca;
+  border-color: #0272ca;
 }
 .btn.blue:focus, .btn.blue:active {
-  background-color: #1D7DCC;
-  border-color: #1D7DCC;
-  background-image: radial-gradient(circle, #1d7dcc 10%, #279af5 11%);
+  background-color: #0050a8;
+  border-color: #0050a8;
+  background-image: radial-gradient(circle, #0050a8 10%, #0272ca 11%);
 }
 .btn.green {
   background-color: rgba(255, 255, 255, 0);
-  border-color: #4caf50;
-  color: #4caf50;
+  border-color: #31C736;
+  color: #31C736;
 }
 .btn.green.active {
-  background-color: #4caf50;
+  background-color: #31C736;
 }
 .btn.green:hover {
-  background-color: #459E48;
-  border-color: #459E48;
+  background-color: #0fa514;
+  border-color: #0fa514;
 }
 .btn.green:focus, .btn.green:active {
-  background-color: #3C8B3F;
-  border-color: #3C8B3F;
-  background-image: radial-gradient(circle, #3c8b3f 10%, #4caf50 11%);
+  background-color: #008300;
+  border-color: #008300;
+  background-image: radial-gradient(circle, #008300 10%, #0fa514 11%);
 }
 .btn.purple {
   background-color: rgba(255, 255, 255, 0);
@@ -989,13 +958,13 @@ header.center-block, article.center-block, aside.center-block, details.center-bl
   background-color: #9c27b0;
 }
 .btn.purple:hover {
-  background-color: #8D249F;
-  border-color: #8D249F;
+  background-color: #7a058e;
+  border-color: #7a058e;
 }
 .btn.purple:focus, .btn.purple:active {
-  background-color: #802090;
-  border-color: #802090;
-  background-image: radial-gradient(circle, #802090 10%, #9c27b0 11%);
+  background-color: #58006c;
+  border-color: #58006c;
+  background-image: radial-gradient(circle, #58006c 10%, #7a058e 11%);
 }
 .btn.orange {
   background-color: rgba(255, 255, 255, 0);
@@ -1006,13 +975,13 @@ header.center-block, article.center-block, aside.center-block, details.center-bl
   background-color: #ff9800;
 }
 .btn.orange:hover {
-  background-color: #EB8D00;
-  border-color: #EB8D00;
+  background-color: #dd7600;
+  border-color: #dd7600;
 }
 .btn.orange:focus, .btn.orange:active {
-  background-color: #D88100;
-  border-color: #D88100;
-  background-image: radial-gradient(circle, #d88100 10%, #ff9800 11%);
+  background-color: #bb5400;
+  border-color: #bb5400;
+  background-image: radial-gradient(circle, #bb5400 10%, #dd7600 11%);
 }
 
 div.btn {
@@ -1058,7 +1027,7 @@ a.btn:active, a.btn:focus, a.btn:hover {
   top: 14px;
   left: 10px;
   color: #A9A9A9;
-  transition: all 0.2s;
+  transition: 0.3s;
   pointer-events: none;
 }
 
@@ -1079,7 +1048,7 @@ a.btn:active, a.btn:focus, a.btn:hover {
 }
 .form-top textarea:valid ~ label, .form-top textarea:focus ~ label, .form-top input:valid ~ label, .form-top input:focus ~ label {
   top: -15px;
-  color: #329AEC;
+  color: #49a2ff;
   font-size: 12px;
 }
 
@@ -1199,41 +1168,41 @@ a.btn:active, a.btn:focus, a.btn:hover {
   background: #F7F7F7;
 }
 
-table > tbody > .table-line.default {
+table > tbody > .table-row.default {
   background: #dddddd;
 }
-table > tbody > .table-line.red {
-  background: #FFC8C8;
+table > tbody > .table-row.red {
+  background: #fad3d4;
 }
-table > tbody > .table-line.blue {
-  background: #DCE3FF;
+table > tbody > .table-row.blue {
+  background: #e0f0fc;
 }
-table > tbody > .table-line.green {
-  background: #D1F2CC;
+table > tbody > .table-row.green {
+  background: #d0f4d2;
 }
-table > tbody > .table-line.purple {
-  background: #EDC8FF;
+table > tbody > .table-row.purple {
+  background: #e6b5ee;
 }
-table > tbody > .table-line.orange {
-  background: #FFEEC8;
+table > tbody > .table-row.orange {
+  background: #ffeacc;
 }
 
-.table-hov > tbody > .table-line.default:hover {
+.table-hov > tbody > .table-row.default:hover {
   background: #D5D5D5;
 }
-.table-hov > tbody > .table-line.red:hover {
-  background: #EFBCBC;
+.table-hov > tbody > .table-row.red:hover {
+  background: #ffa4ab;
 }
-.table-hov > tbody > .table-line.blue:hover {
+.table-hov > tbody > .table-row.blue:hover {
   background: #CCD6FF;
 }
-.table-hov > tbody > .table-line.green:hover {
+.table-hov > tbody > .table-row.green:hover {
   background: #C0DFBB;
 }
-.table-hov > tbody > .table-line.purple:hover {
+.table-hov > tbody > .table-row.purple:hover {
   background: #D8B5E9;
 }
-.table-hov > tbody > .table-line.orange:hover {
+.table-hov > tbody > .table-row.orange:hover {
   background: #EDDDB9;
 }
 
@@ -1244,10 +1213,10 @@ table > tbody > .table-line.orange {
   border-right: 1px solid #ddd;
 }
 
-table > tbody > .table-line {
+table > tbody > .table-row {
   color: #444;
 }
-table > tbody > .table-line > td {
+table > tbody > .table-row > td {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
   border-right-color: rgba(255, 255, 255, 0.3) !important;
 }
@@ -1267,7 +1236,7 @@ table > tbody > .table-line > td {
   padding: 10px 15px;
   color: white;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: 0.3s;
   font-size: 16px;
 }
 .block-dropdown > input:checked + label + div {
@@ -1278,14 +1247,14 @@ table > tbody > .table-line > td {
   padding: 10px 15px;
   color: white;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: 0.3s;
   font-size: 16px;
 }
 .block-dropdown > input:checked + label {
   background: #666;
 }
 .block-dropdown > input:not(:checked) + label {
-  background: #329AEC;
+  background: #2780e3;
 }
 .block-dropdown > input:not(:checked) ~ div {
   /* Insert styles here */
@@ -1296,7 +1265,7 @@ table > tbody > .table-line > td {
    ======================== */
 .navigation {
   text-align: left;
-  background: #329AEC;
+  background: #49a2ff;
 }
 
 .nav {
@@ -1339,11 +1308,11 @@ table > tbody > .table-line > td {
   padding: 10px 15px;
 }
 .nav ul li a:hover {
-  background: #329AEC;
+  background: #49a2ff;
   color: white;
 }
 .nav ul li:hover > a {
-  background: #329AEC;
+  background: #49a2ff;
   color: white;
 }
 .nav li:hover > ul {
@@ -1368,7 +1337,7 @@ table > tbody > .table-line > td {
   text-decoration: none;
 }
 .mobile-nav:hover {
-  background: #329AEC;
+  background: #49a2ff;
   color: white;
 }
 .mobile-nav:focus {
@@ -1476,12 +1445,6 @@ table > tbody > .table-line > td {
   }
   .nav ul ul {
     left: 0;
-  }
-  .nav > .active a {
-    background: #F1F1F1;
-  }
-  .nav > .active a:hover {
-    color: #444;
   }
 }
 /* ==========================

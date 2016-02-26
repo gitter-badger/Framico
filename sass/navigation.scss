@@ -1,10 +1,11 @@
+@import "config";
 /* ========================
           Navigation
    ======================== */
 
 .navigation {
   text-align: left;
-  background: #329AEC;
+  background: $default_site_color + #222;
 }
 
 .nav {
@@ -43,12 +44,12 @@
         background: white;
         padding: 10px 15px;
         &:hover {
-          background: #329AEC;
+          background: $default_site_color + #222;
           color: white;
         }
       }
       &:hover > a {
-        background: #329AEC;
+        background: $default_site_color + #222;
         color: white;
       }
     }
@@ -67,7 +68,7 @@
   width: 100%;
   padding: 11px;
   font-size: 20px;
-  background: #444;
+  background: $default_text_color;
   color: white;
   text-transform: uppercase;
   transition: all 0.3s;
@@ -75,7 +76,7 @@
     text-decoration: none;
   }
   &:hover {
-    background: #329AEC;
+    background: $default_site_color + #222;
     color: white;
   }
   &:focus {
@@ -83,7 +84,7 @@
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: $media_min_mobile) {
   .nav {
     ul {
       transform: scale(0);
@@ -127,13 +128,13 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: $media_min_mobile) and (max-width: $media_max_tablet) {
   .nav li a {
     padding: 15px 20px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $media_max_mobile) {
   .nav {
     li a {
       padding: 10px;
@@ -174,19 +175,19 @@
         border-top: 1px solid #e0e0e0;
         &:hover {
           background: #F1F1F1;
-          color: #444;
+          color: $default_text_color;
         }
       }
       &:hover > a {
         background: #F1F1F1;
-        color: #444;
+        color: $default_text_color;
       }
     }
     ul {
       li {
         a:hover, &:hover > a {
           background: #F1F1F1;
-          color: #444;
+          color: $default_text_color;
         }
       }
       display: block;
@@ -196,12 +197,6 @@
       width: 100%;
       ul {
         left: 0;
-      }
-    }
-    > .active a {
-      background: #F1F1F1;
-      &:hover {
-        color: #444;
       }
     }
   }

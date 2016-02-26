@@ -9,7 +9,7 @@
   padding: 10px 15px;
   color: white;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: 0.3s;
   font-size: 16px;
 }
 .block-dropdown > input:checked + label + div {
@@ -20,14 +20,14 @@
   padding: 10px 15px;
   color: white;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: 0.3s;
   font-size: 16px;
 }
 .block-dropdown > input:checked + label {
   background: #666;
 }
 .block-dropdown > input:not(:checked) + label {
-  background: #329AEC;
+  background: #2780e3;
 }
 .block-dropdown > input:not(:checked) ~ div {
   /* Insert styles here */

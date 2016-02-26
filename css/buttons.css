@@ -2,7 +2,7 @@
           Buttons
    ===================== */
 .btn {
-  transition: all 0.3s;
+  transition: 0.3s;
   padding: 10px 25px;
   border: 2px solid;
   border-radius: 5px;
@@ -36,7 +36,7 @@
   background-size: 1000%;
 }
 .btn.default {
-  color: #329AEC;
+  color: #2780e3;
   background: none !important;
   box-shadow: none !important;
 }
@@ -44,15 +44,15 @@
   text-decoration: underline;
 }
 .btn.white {
-  color: #329AEC;
+  color: #2780e3;
   background-color: white;
 }
 .btn.white:hover {
-  background-color: #85C9FF;
+  background-color: #6bc4ff;
 }
 .btn.white:focus, .btn.white:active {
-  background-color: #2C8CD8;
-  background-image: radial-gradient(circle, #2c8cd8 10%, #ffffff 11%);
+  background-color: #2780e3;
+  background-image: radial-gradient(circle, #2780e3 10%, #ffffff 11%);
 }
 .btn.red {
   background-color: rgba(255, 255, 255, 0);
@@ -63,47 +63,47 @@
   background-color: #e51c23;
 }
 .btn.red:hover {
-  background-color: #D41A21;
-  border-color: #D41A21;
+  background-color: #c30001;
+  border-color: #c30001;
 }
 .btn.red:focus, .btn.red:active {
-  background-color: #BD171D;
-  border-color: #BD171D;
-  background-image: radial-gradient(circle, #bd171d 10%, #e51c23 11%);
+  background-color: #a10000;
+  border-color: #a10000;
+  background-image: radial-gradient(circle, #a10000 10%, #c30001 11%);
 }
 .btn.blue {
   background-color: rgba(255, 255, 255, 0);
-  border-color: #279AF5;
-  color: #279AF5;
+  border-color: #2494EC;
+  color: #2494EC;
 }
 .btn.blue.active {
-  background-color: #279AF5;
+  background-color: #2494EC;
 }
 .btn.blue:hover {
-  background-color: #2089E0;
-  border-color: #2089E0;
+  background-color: #0272ca;
+  border-color: #0272ca;
 }
 .btn.blue:focus, .btn.blue:active {
-  background-color: #1D7DCC;
-  border-color: #1D7DCC;
-  background-image: radial-gradient(circle, #1d7dcc 10%, #279af5 11%);
+  background-color: #0050a8;
+  border-color: #0050a8;
+  background-image: radial-gradient(circle, #0050a8 10%, #0272ca 11%);
 }
 .btn.green {
   background-color: rgba(255, 255, 255, 0);
-  border-color: #4caf50;
-  color: #4caf50;
+  border-color: #31C736;
+  color: #31C736;
 }
 .btn.green.active {
-  background-color: #4caf50;
+  background-color: #31C736;
 }
 .btn.green:hover {
-  background-color: #459E48;
-  border-color: #459E48;
+  background-color: #0fa514;
+  border-color: #0fa514;
 }
 .btn.green:focus, .btn.green:active {
-  background-color: #3C8B3F;
-  border-color: #3C8B3F;
-  background-image: radial-gradient(circle, #3c8b3f 10%, #4caf50 11%);
+  background-color: #008300;
+  border-color: #008300;
+  background-image: radial-gradient(circle, #008300 10%, #0fa514 11%);
 }
 .btn.purple {
   background-color: rgba(255, 255, 255, 0);
@@ -114,13 +114,13 @@
   background-color: #9c27b0;
 }
 .btn.purple:hover {
-  background-color: #8D249F;
-  border-color: #8D249F;
+  background-color: #7a058e;
+  border-color: #7a058e;
 }
 .btn.purple:focus, .btn.purple:active {
-  background-color: #802090;
-  border-color: #802090;
-  background-image: radial-gradient(circle, #802090 10%, #9c27b0 11%);
+  background-color: #58006c;
+  border-color: #58006c;
+  background-image: radial-gradient(circle, #58006c 10%, #7a058e 11%);
 }
 .btn.orange {
   background-color: rgba(255, 255, 255, 0);
@@ -131,13 +131,13 @@
   background-color: #ff9800;
 }
 .btn.orange:hover {
-  background-color: #EB8D00;
-  border-color: #EB8D00;
+  background-color: #dd7600;
+  border-color: #dd7600;
 }
 .btn.orange:focus, .btn.orange:active {
-  background-color: #D88100;
-  border-color: #D88100;
-  background-image: radial-gradient(circle, #d88100 10%, #ff9800 11%);
+  background-color: #bb5400;
+  border-color: #bb5400;
+  background-image: radial-gradient(circle, #bb5400 10%, #dd7600 11%);
 }
 
 div.btn {

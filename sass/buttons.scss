@@ -1,17 +1,18 @@
+@import "config";
 /* =====================
           Buttons
    ===================== */
 
 .btn {
-  transition: all 0.3s;
+  transition: $global_transition;
   padding: 10px 25px;
   border: 2px solid;
-  border-radius: 5px;
+  border-radius: $btn-border-radius;
   margin: 3px 0;
   text-shadow: 0 1px rgba(0, 0, 0, 0.2);
   outline: none;
   &.white, &.red, &.blue, &.green, &.purple, &.orange {
-    color: #444;
+    color: $default_text_color;
     background-size: 200%;
     background-position: 50%;
   }
@@ -42,7 +43,7 @@
     }
   }
   &.default {
-    color: #329AEC;
+    color: $default_site_color;
     background: none !important;
     box-shadow: none !important;
     &:hover {
@@ -50,99 +51,99 @@
     }
   }
   &.white {
-    color: #329AEC;
+    color: $default_site_color;
     background-color: white;
     &:hover {
-      background-color: #85C9FF;
+      background-color: $default_site_color + #444;
     }
     &:focus, &:active {
-      background-color: #2C8CD8;
-      background-image: radial-gradient(circle, #2C8CD8 10%, white 11%);
+      background-color: $default_site_color;
+      background-image: radial-gradient(circle, $default_site_color 10%, white 11%);
     }
   }
   &.red {
     background-color: rgba(255, 255, 255, 0);
-    border-color: #e51c23;
-    color: #e51c23;
+    border-color: $red;
+    color: $red;
     &.active {
-      background-color: #e51c23;
+      background-color: $red;
     }
     &:hover {
-      background-color: #D41A21;
-      border-color: #D41A21;
+      background-color: $red - #222;
+      border-color: $red - #222;
     }
     &:focus, &:active {
-      background-color: #BD171D;
-      border-color: #BD171D;
-      background-image: radial-gradient(circle, #BD171D 10%, #e51c23 11%);
+      background-color: $red - #444;
+      border-color: $red - #444;
+      background-image: radial-gradient(circle, $red - #444 10%, $red - #222 11%);
     }
   }
   &.blue {
     background-color: rgba(255, 255, 255, 0);
-    border-color: #279AF5;
-    color: #279AF5;
+    border-color: $blue;
+    color: $blue;
     &.active {
-      background-color: #279AF5;
+      background-color: $blue;
     }
     &:hover {
-      background-color: #2089E0;
-      border-color: #2089E0;
+      background-color: $blue - #222;
+      border-color: $blue - #222;
     }
     &:focus, &:active {
-      background-color: #1D7DCC;
-      border-color: #1D7DCC;
-      background-image: radial-gradient(circle, #1D7DCC 10%, #279AF5 11%);
+      background-color: $blue - #444;
+      border-color: $blue - #444;
+      background-image: radial-gradient(circle, $blue - #444 10%, $blue - #222 11%);
     }
   }
   &.green {
     background-color: rgba(255, 255, 255, 0);
-    border-color: #4caf50;
-    color: #4caf50;
+    border-color: $green;
+    color: $green;
     &.active {
-      background-color: #4caf50;
+      background-color: $green;
     }
     &:hover {
-      background-color: #459E48;
-      border-color: #459E48;
+      background-color: $green - #222;
+      border-color: $green - #222;
     }
     &:focus, &:active {
-      background-color: #3C8B3F;
-      border-color: #3C8B3F;
-      background-image: radial-gradient(circle, #3C8B3F 10%, #4caf50 11%);
+      background-color: $green - #444;
+      border-color: $green - #444;
+      background-image: radial-gradient(circle, $green - #444 10%, $green - #222 11%);
     }
   }
   &.purple {
     background-color: rgba(255, 255, 255, 0);
-    border-color: #9c27b0;
-    color: #9c27b0;
+    border-color: $purple;
+    color: $purple;
     &.active {
-      background-color: #9c27b0;
+      background-color: $purple;
     }
     &:hover {
-      background-color: #8D249F;
-      border-color: #8D249F;
+      background-color: $purple - #222;
+      border-color: $purple - #222;
     }
     &:focus, &:active {
-      background-color: #802090;
-      border-color: #802090;
-      background-image: radial-gradient(circle, #802090 10%, #9c27b0 11%);
+      background-color: $purple - #444;
+      border-color: $purple - #444;
+      background-image: radial-gradient(circle, $purple - #444 10%, $purple - #222 11%);
     }
   }
   &.orange {
     background-color: rgba(255, 255, 255, 0);
-    border-color: #ff9800;
-    color: #ff9800;
+    border-color: $orange;
+    color: $orange;
     &.active {
-      background-color: #ff9800;
+      background-color: $orange;
     }
     &:hover {
-      background-color: #EB8D00;
-      border-color: #EB8D00;
+      background-color: $orange - #222;
+      border-color: $orange - #222;
     }
     &:focus, &:active {
-      background-color: #D88100;
-      border-color: #D88100;
-      background-image: radial-gradient(circle, #D88100 10%, #ff9800 11%);
+      background-color: $orange - #444;
+      border-color: $orange - #444;
+      background-image: radial-gradient(circle, $orange - #444 10%, $orange - #222 11%);
     }
   }
 }

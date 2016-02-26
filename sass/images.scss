@@ -1,9 +1,10 @@
+@import "config";
 /* ====================
           Images
    ==================== */
 
 img.rounded {
-  border-radius: 5px;
+  border-radius: $img_border_radius;
 }
 img.circle {
   border-radius: 100%;

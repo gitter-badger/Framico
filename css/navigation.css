@@ -3,7 +3,7 @@
    ======================== */
 .navigation {
   text-align: left;
-  background: #329AEC;
+  background: #49a2ff;
 }
 
 .nav {
@@ -46,11 +46,11 @@
   padding: 10px 15px;
 }
 .nav ul li a:hover {
-  background: #329AEC;
+  background: #49a2ff;
   color: white;
 }
 .nav ul li:hover > a {
-  background: #329AEC;
+  background: #49a2ff;
   color: white;
 }
 .nav li:hover > ul {
@@ -75,7 +75,7 @@
   text-decoration: none;
 }
 .mobile-nav:hover {
-  background: #329AEC;
+  background: #49a2ff;
   color: white;
 }
 .mobile-nav:focus {
@@ -183,11 +183,5 @@
   }
   .nav ul ul {
     left: 0;
-  }
-  .nav > .active a {
-    background: #F1F1F1;
-  }
-  .nav > .active a:hover {
-    color: #444;
   }
 }

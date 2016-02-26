@@ -38,29 +38,6 @@ Framico
 └──Подсказки
 ```
 
-### Структура файлов
-
-При открытии архива Вы увидите следующую структуру файлов:
-
-```
-framico/
-├── index.html
-├── css/
-│   ├── framico.css
-│   ├── framico.min.css
-├── js/
-│   ├── framico.js
-│   └── framico.min.js
-└── fonts/
-    ├── .htaccess
-    ├── FontAwesome.otf
-    ├── fontawesome-webfont.eot
-    ├── fontawesome-webfont.svg
-    ├── fontawesome-webfont.ttf
-    ├── fontawesome-webfont.woff
-    └── fontawesome-webfont.woff2
-```
-
 ## Сообщество
 
 Прокомментировать Framico Вы можете на следующих ресурсах:

@@ -10,7 +10,7 @@
   top: 14px;
   left: 10px;
   color: #A9A9A9;
-  transition: all 0.2s;
+  transition: 0.3s;
   pointer-events: none;
 }
 
@@ -31,7 +31,7 @@
 }
 .form-top textarea:valid ~ label, .form-top textarea:focus ~ label, .form-top input:valid ~ label, .form-top input:focus ~ label {
   top: -15px;
-  color: #329AEC;
+  color: #49a2ff;
   font-size: 12px;
 }
 

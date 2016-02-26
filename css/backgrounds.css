@@ -23,10 +23,10 @@
   background: #e51c23;
 }
 .bg.blue {
-  background: #279AF5;
+  background: #2494EC;
 }
 .bg.green {
-  background: #4caf50;
+  background: #31C736;
 }
 .bg.purple {
   background: #9c27b0;
@@ -42,6 +42,6 @@
   color: #444;
 }
 .bg code {
-  background: rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(240, 240, 240, 0.5);
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
