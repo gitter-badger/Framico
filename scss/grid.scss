@@ -1,6 +1,8 @@
+@import "config";
 /* =================
           Grid
    ================= */
+
 .container,
 .container-full {
   padding: 0 1rem;
@@ -132,7 +134,7 @@
   max-width: 100%;
 }
 
-@media only screen and (min-width: 54.93rem) {
+@media only screen and (min-width: $media_min_tablet) {
   .container {
     width: 97%;
   }
@@ -249,7 +251,8 @@
     max-width: 100%;
   }
 }
-@media only screen and (min-width: 70.93rem) {
+
+@media only screen and (min-width: $media_min_netbook) {
   .container {
     width: 93%;
   }
@@ -366,7 +369,8 @@
     max-width: 100%;
   }
 }
-@media only screen and (min-width: 85.71rem) {
+
+@media only screen and (min-width: $media_min_pc) {
   .container {
     width: 90%;
   }

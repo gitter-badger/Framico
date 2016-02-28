@@ -4,24 +4,16 @@
 .block-dropdown > input, .block-dropdown > label {
   display: none;
 }
-.block-dropdown > input:checked + label {
+.block-dropdown > input:checked + label, .block-dropdown > input:not(:checked) + label {
   display: block;
-  padding: 10px 15px;
+  padding: .7143rem 1.071rem;
   color: white;
   cursor: pointer;
   transition: 0.3s;
-  font-size: 16px;
+  font-size: 1.143rem;
 }
 .block-dropdown > input:checked + label + div {
   display: none;
-}
-.block-dropdown > input:not(:checked) + label {
-  display: block;
-  padding: 10px 15px;
-  color: white;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 16px;
 }
 .block-dropdown > input:checked + label {
   background: #666;

@@ -5,11 +5,11 @@
 
 .btn {
   transition: $global_transition;
-  padding: 10px 25px;
-  border: 2px solid;
+  padding: .7143rem 1.786rem;
+  border: .1429rem solid;
   border-radius: $btn-border-radius;
-  margin: 3px 0;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  margin: .2143rem 0;
+  text-shadow: 0 .07143rem rgba(0, 0, 0, 0.2);
   outline: none;
   &.white, &.red, &.blue, &.green, &.purple, &.orange {
     color: $default_text_color;
@@ -17,14 +17,14 @@
     background-position: 50%;
   }
   &.red:focus, &.blue:focus, &.green:focus, &.purple:focus, &.orange:focus {
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15), 0 -2px rgba(0, 0, 0, 0.05), 2px 0px rgba(0, 0, 0, 0.05), -2px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 .1429rem .1429rem rgba(0, 0, 0, 0.15), 0 -.1429rem rgba(0, 0, 0, 0.05), .1429rem 0px rgba(0, 0, 0, 0.05), -.1429rem 0px rgba(0, 0, 0, 0.05);
   }
   &.white:focus, &.red.active:focus, &.blue.active:focus, &.green.active:focus, &.purple.active:focus, &.orange.active:focus {
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 -1px 0px rgba(0, 0, 0, 0.05), inset 1px 0px 0px rgba(0, 0, 0, 0.05), inset -1px 0px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 .07143rem .07143rem rgba(0, 0, 0, 0.15), inset 0 -.07143rem 0px rgba(0, 0, 0, 0.05), inset .07143rem 0px 0px rgba(0, 0, 0, 0.05), inset -.07143rem 0px 0px rgba(0, 0, 0, 0.05);
   }
   &.default, &.white, &.red.active, &.blue.active, &.green.active, &.purple.active, &.orange.active {
     border: none;
-    padding: 12px 25px;
+    padding: .8571rem 1.786rem;
   }
   &.white {
     &:hover, &:focus {
@@ -52,7 +52,7 @@
   }
   &.white {
     color: $default_site_color;
-    background-color: white;
+    background-color: $default_background;
     &:hover {
       background-color: $default_site_color + #444;
     }
@@ -160,21 +160,21 @@ a.btn {
 }
 
 .font-10.btn {
-  border-width: 1px;
+  border-width: .07143rem;
 }
 
 .font-20.btn {
-  border-width: 3px;
+  border-width: .2143rem;
 }
 
 .font-30.btn {
-  border-width: 4px;
+  border-width: .2857rem;
 }
 
 .font-40.btn {
-  border-width: 5px;
+  border-width: .3571rem;
 }
 
 .font-50.btn {
-  border-width: 6px;
+  border-width: .4286rem;
 }

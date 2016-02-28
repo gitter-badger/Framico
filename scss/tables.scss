@@ -7,13 +7,13 @@
   width: 100%;
   border-collapse: separate;
   td {
-    padding: 8px;
+    padding: .5714rem;
   }
   tr:not(:last-child) td {
-    border-bottom: 1px solid #ddd;
+    border-bottom: .07143rem solid #eee;
   }
   thead td {
-    border-bottom: 2px solid #ddd !important;
+    border-bottom: .1429rem solid #eee !important;
   }
 }
 
@@ -23,7 +23,7 @@
 
 table > tbody > .table-row {
   &.default {
-    background: #dddddd;
+    background: lighten($default_text_color, 60);
   }
   &.red {
     background: lighten($red, 40);
@@ -42,42 +42,42 @@ table > tbody > .table-row {
   }
 }
 
+.table-hov > tbody > tr:hover {
+  background: lighten($default_text_color, 70);
+}
+
 .table-hov > tbody > .table-row {
   &.default:hover {
-    background: #D5D5D5;
+    background: lighten($default_text_color, 55);
   }
   &.red:hover {
-    background: $red + #888;
+    background: lighten($red, 35);
   }
   &.blue:hover {
-    background: #CCD6FF;
+    background: lighten($blue, 35);
   }
   &.green:hover {
-    background: #C0DFBB;
+    background: lighten($green, 35);
   }
   &.purple:hover {
-    background: #D8B5E9;
+    background: lighten($purple, 35);
   }
   &.orange:hover {
-    background: #EDDDB9;
+    background: lighten($orange, 35);
   }
 }
 
 .table-divi {
-  border: 1px solid #ddd;
+  border: .07143rem solid #ddd;
   td:not(:last-child) {
-    border-right: 1px solid #ddd;
+    border-right: .07143rem solid #ddd;
   }
 }
 
 table > tbody > .table-row {
   color: #444;
   > td {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-bottom: .07143rem solid rgba(255, 255, 255, 0.3) !important;
     border-right-color: rgba(255, 255, 255, 0.3) !important;
   }
-}
-
-.table-hov > tbody > tr:hover {
-  background: #EEE;
 }

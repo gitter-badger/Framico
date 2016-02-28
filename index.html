@@ -15,45 +15,18 @@
 		<title>Название будущего сайта · Тестовая страница</title>
 	</head>
 	<body>
+	
+	<div class="container">
+		<div class="row">
+			<div class="block-lg-6 block-md-4 block-sm-3">тест</div>
+			<div class="block-lg-6 block-md-4 block-sm-3">тест</div>
+			<div class="block-lg-6 block-md-4 block-sm-3">тест</div>
+			<div class="block-lg-6 block-md-4 block-sm-3">тест</div>
+		</div>
+	</div>
+
 		<div class="remodal-bg">
-			<div class="container-full">
-				<header>
-					<a id="touch-nav" class="mobile-nav" href="#"><i class="fa fa-bars"></i> Меню</a>
-					<div class="navigation">
-						<ul class="nav container">
-							<li class="active"><a href="/">Главная</a></li>
-							<li><a href="#">Ссылка</a></li>
-							<li><a href="#">Выпадение</a>
-								<ul>
-									<li><a href="#">Ещё ссылка</a></li>
-									<li><a href="#">Ещё выпадение?</a>
-										<ul>
-											<li><a href="#">Ссылка в уровне 3</a></li>
-											<li><a href="#">Ссылка в уровне 3</a></li>
-											<li><a href="#">Ссылка в уровне 3</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li><a href="#">Ссылка</a></li>
-							<li><a href="#">Ссылка</a></li>
-							<li><a href="#">Выпадение</a>
-								<ul>
-									<li><a href="#">Ещё ссылка</a></li>
-									<li><a href="#">Ещё выпадение?</a>
-										<ul>
-											<li><a href="#">Ссылка в уровне 3</a></li>
-											<li><a href="#">Ссылка в уровне 3</a></li>
-											<li><a href="#">Ссылка в уровне 3</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-	          
-				</header>
-			</div>
+			
 			<div class="container">
 				<div class="row">
 					<div class="block-12">
@@ -62,8 +35,7 @@
 							<h1>Framico</h1>
 							<h2>Данная страница полностью написана на Framico.</h2>
 						</div>
-						<a href="#">текст</a>
-
+						
 						<h2 class="title">Колонки</h2>
 
 						<div class="flex" style="white-space: nowrap;">
@@ -242,7 +214,7 @@
 								<td><span class="dark_gray">Тёмно-серый текст <code class="default">.dark_gray</code></span></td>
 								<td><div class="bg dark_gray pad-5">Тёмно-серый фон <code>.bg .dark_gray</code></div></td>
 							</tr>
-							<tr>
+							<tr class="table-row default">
 								<td><span class="default">Обычный текст <code>.default</code></span></td>
 								<td><div class="bg default pad-5">Обычный фон <code>.bg .default</code></div></td>
 							</tr>
@@ -310,89 +282,12 @@
 						<button type="button" class="btn purple active">Фиолетовая</button>
 						<button type="button" class="btn orange active font-10">Оранжевая</button>
 
-						<h2 class="title">Слайдер</h2>
-
-						<div id="owl-example" class="owl-carousel">
-							<div><img src="http://theorigo.ru/img/slide.png" alt="Слайд"></div>
-							<div><img src="http://theorigo.ru/img/slide.png" alt="Слайд"></div>
-							<div><img src="http://theorigo.ru/img/slide.png" alt="Слайд"></div>
-							<div><img src="http://theorigo.ru/img/slide.png" alt="Слайд"></div>
-							<div><img src="http://theorigo.ru/img/slide.png" alt="Слайд"></div>
-							<div><img src="http://theorigo.ru/img/slide.png" alt="Слайд"></div>
-							<div><img src="http://theorigo.ru/img/slide.png" alt="Слайд"></div>
-							<div><img src="http://theorigo.ru/img/slide.png" alt="Слайд"></div>
-						</div>
-
 						<h2 class="title">Выпадающий блок</h2>
-							<div class="block-dropdown">
-								<input type="checkbox" id="dropdown1" checked="checked" />
-								<label for="dropdown1">нажать</label>
-								<div>Выпадающий контент</div>
-							</div>
-
-						<h2 class="title">Модальное окно</h2>
-						<div class="remodal" data-remodal-id="modaltest">
-							<button data-remodal-action="close" class="remodal-close"></button> <!-- Кнопка закрытия модального окна -->
-							<div class="remodal-content">
-								<!-- Начало контента -->
-								<p class="title">Модальные окна</p>
-								<p>
-							 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-							 		Nihil alias deserunt libero adipisci soluta pariatur ipsum earum a nesciunt esse animi voluptates, 
-							 		officiis dolores voluptate veniam blanditiis tempora assumenda voluptas.
-								</p>
-								<button data-remodal-action="cancel" class="btn red">Отмена</button>
-								<button data-remodal-action="confirm" class="btn green active">ОК</button>
-								<!-- Конец контента -->
-							</div>
+						<div class="block-dropdown">
+							<input type="checkbox" id="dropdown1" checked="checked">
+							<label for="dropdown1">нажать</label>
+							<div>Выпадающий контент</div>
 						</div>
-						<div class="center-block">
-							<a href="#modaltest" class="btn blue">Модальное окно</a>
-						</div>
-
-						<h2 class="title">Вкладки</h2>
-						<ul class="accordion-tabs">
-						    <li class="tab-head-cont">
-						        <a href="#" class="is-active">Первая вкладка</a> <!-- Активная вкладка .is-active -->
-						        <section>
-						            <p>
-						            	Отличные вкладки использующие несколько строк кода.
-										Вкладки преобразуются в вертикальный аккордион при изменении размера окна браузера.
-									</p>
-						        </section>
-						    </li>
-						    <li class="tab-head-cont">
-						        <a href="#">Вторая вкладка</a>
-						        <section>
-						            <p>
-						            	Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-						            	Molestiae, ipsa, voluptas, iure fugiat, 
-						            	provident praesentium repudiandae aut dolore ullam asperiores minima. 
-						            	Facere aliquam, non numquam assumenda voluptatem consectetur rem labore.
-						            </p>
-						        </section>
-						    </li>
-						    <li class="tab-head-cont">
-						        <a href="#">Третья</a>
-						        <section>
-						            <p>
-						            	Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-						           		Vero consequatur eos non hic sapiente sequi, pariatur corporis, 
-						           		rem aut cumque nemo alias commodi consequuntur id aliquam ex laborum assumenda aperiam.
-						            </p>   
-						        </section>
-						    </li>
-						    <li class="tab-head-cont">
-						        <a href="#">Четвертая</a>
-						        <section>
-						            <p>
-						           		Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-						           		Similique iusto, veniam nisi aliquid amet molestiae repellat natus cum vitae obcaecati, 
-						           		sequi rem. Asperiores, eligendi! Ex mollitia ullam debitis aliquam iste.
-						            </p>
-						        </section>
-						    </li>
-						</ul>
 
 						<h2 class="title">Формы</h2>
 						<p>
@@ -445,12 +340,5 @@
 				</div>
 			</div>
 		</div>
-		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-		<script src="js/framico.js"></script>
-		<script>
-			$(document).ready(function() {
-				$("#owl-example").owlCarousel();
-			});
-		</script>
 	</body>
 </html>

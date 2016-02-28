@@ -6,13 +6,13 @@
   border-collapse: separate;
 }
 .table td {
-  padding: 8px;
+  padding: .5714rem;
 }
 .table tr:not(:last-child) td {
-  border-bottom: 1px solid #ddd;
+  border-bottom: .07143rem solid #eee;
 }
 .table thead td {
-  border-bottom: 2px solid #ddd !important;
+  border-bottom: .1429rem solid #eee !important;
 }
 
 .table-var tr:nth-child(even) {
@@ -38,40 +38,40 @@ table > tbody > .table-row.orange {
   background: #ffeacc;
 }
 
+.table-hov > tbody > tr:hover {
+  background: #f7f7f7;
+}
+
 .table-hov > tbody > .table-row.default:hover {
-  background: #D5D5D5;
+  background: #d0d0d0;
 }
 .table-hov > tbody > .table-row.red:hover {
-  background: #ffa4ab;
+  background: #f7bcbe;
 }
 .table-hov > tbody > .table-row.blue:hover {
-  background: #CCD6FF;
+  background: #c8e4fa;
 }
 .table-hov > tbody > .table-row.green:hover {
-  background: #C0DFBB;
+  background: #bcefbe;
 }
 .table-hov > tbody > .table-row.purple:hover {
-  background: #D8B5E9;
+  background: #dfa0ea;
 }
 .table-hov > tbody > .table-row.orange:hover {
-  background: #EDDDB9;
+  background: #ffe0b3;
 }
 
 .table-divi {
-  border: 1px solid #ddd;
+  border: .07143rem solid #ddd;
 }
 .table-divi td:not(:last-child) {
-  border-right: 1px solid #ddd;
+  border-right: .07143rem solid #ddd;
 }
 
 table > tbody > .table-row {
   color: #444;
 }
 table > tbody > .table-row > td {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-bottom: 0.07143rem solid rgba(255, 255, 255, 0.3) !important;
   border-right-color: rgba(255, 255, 255, 0.3) !important;
-}
-
-.table-hov > tbody > tr:hover {
-  background: #EEE;
 }

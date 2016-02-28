@@ -8,24 +8,18 @@
     display: none;
   }
   input {
+    &:checked + label, &:not(:checked) + label {
+      display: block;
+      padding: .7143rem 1.071rem;
+      color: white;
+      cursor: pointer;
+      transition: $global_transition;
+      font-size: 1.143rem;
+    }
     &:checked + label {
       + div {
         display: none;
       }
-      display: block;
-      padding: 10px 15px;
-      color: white;
-      cursor: pointer;
-      transition: $global_transition;
-      font-size: 16px;
-    }
-    &:not(:checked) + label {
-      display: block;
-      padding: 10px 15px;
-      color: white;
-      cursor: pointer;
-      transition: $global_transition;
-      font-size: 16px;
     }
     &:checked + label {
       background: #666;
