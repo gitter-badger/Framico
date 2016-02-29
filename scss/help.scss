@@ -11,7 +11,21 @@
   text-align: center;
 }
 
-header.center-block, article.center-block, aside.center-block, details.center-block, figcaption.center-block, figure.center-block, footer.center-block, header.center-block, hgroup.center-block, main.center-block, menu.center-block, nav.center-block, section.center-block, summary.center-block, div.center-block {
+header.center-block,
+article.center-block,
+aside.center-block,
+details.center-block,
+figcaption.center-block,
+figure.center-block,
+footer.center-block,
+header.center-block,
+hgroup.center-block,
+main.center-block,
+menu.center-block,
+nav.center-block,
+section.center-block,
+summary.center-block,
+div.center-block {
   display: table;
   margin: 0 auto;
 }
@@ -34,4 +48,28 @@ header.center-block, article.center-block, aside.center-block, details.center-bl
 
 .block {
   display: block;
+}
+
+.marg-small {
+  margin: 0.5rem;
+}
+
+.marg-medium {
+  margin: 1rem;
+}
+
+.marg-big {
+  margin: 2rem;
+}
+
+.pad-small {
+  padding: 0.5rem;
+}
+
+.pad-medium {
+  padding: 1rem;
+}
+
+.pad-big {
+  padding: 2rem;
 }

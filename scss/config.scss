@@ -6,19 +6,21 @@ $default_text_color: #444;
 $default_background: white;
 $default_site_color: #2780e3;
 
-$media_max_mobile: 54.86rem; // (max-width: 54.86rem) Maximum mobile resolution
-$media_min_tablet: 54.93rem; // (min-width: 54.93rem) Minimum tablet resolution
-$media_max_tablet: 70.86rem; // (max-width: 70.86rem) Maximum tablet resolution
-$media_min_netbook: 70.93rem; // (min-width: 70.93rem) Minimum netbook resolution
-$media_max_netbook: 85.64rem; // (max-width: 85.64rem) Maximum netbook resolution
-$media_min_pc: 85.71rem; // (min-width: 1200px) Maximum PC resolution
+$blocks: 12;
+
+$media_max_mobile: 767px; // (max-width: 767px) Maximum mobile resolution
+$media_min_tablet: 768px; // (min-width: 768px) Minimum tablet resolution
+$media_max_tablet: 991px; // (max-width: 991px) Maximum tablet resolution
+$media_min_netbook: 992px; // (min-width: 992px) Minimum netbook resolution
+$media_max_netbook: 1200px; // (max-width: 1200px) Maximum netbook resolution
+$media_min_pc: 1201px; // (min-width: 1201px) Minimum PC resolution
 
 $light_gray: #F5F5F5;
 $gray: #ddd;
 $dark_gray: #ADADAD;
 $red: #e51c23;
-$blue: #2494EC;
-$green: #31C736;
+$blue: #2474EC;
+$green: #1BB820;
 $purple: #9c27b0;
 $orange: #ff9800;
 

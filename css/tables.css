@@ -26,10 +26,10 @@ table > tbody > .table-row.red {
   background: #fad3d4;
 }
 table > tbody > .table-row.blue {
-  background: #e0f0fc;
+  background: #e0ebfc;
 }
 table > tbody > .table-row.green {
-  background: #d0f4d2;
+  background: #acf3ae;
 }
 table > tbody > .table-row.purple {
   background: #e6b5ee;
@@ -49,10 +49,10 @@ table > tbody > .table-row.orange {
   background: #f7bcbe;
 }
 .table-hov > tbody > .table-row.blue:hover {
-  background: #c8e4fa;
+  background: #c8dcfa;
 }
 .table-hov > tbody > .table-row.green:hover {
-  background: #bcefbe;
+  background: #96f099;
 }
 .table-hov > tbody > .table-row.purple:hover {
   background: #dfa0ea;

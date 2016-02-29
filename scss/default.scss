@@ -47,7 +47,7 @@ a {
 }
 
 p {
-  margin: .2143rem 0 1.071rem;
+  margin: .2rem 0 1rem;
 }
 
 img {
@@ -55,40 +55,40 @@ img {
 }
 
 hr {
-    margin-top: 1.429rem;
-    margin-bottom: 1.429rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     border: 0;
     border-top: .07143rem solid #eee;
 }
 
 blockquote {
   position: relative;
-  padding: 1.429rem 3.571rem;
+  padding: 1.5rem 3.5rem;
   display: inline-block;
   &:before, &:after {
-    font-size: 1.429rem;
+    font-size: 1.5rem;
     position: absolute;
   }
   &:before {
     font-family: "FontAwesome";
     content: "\f10d";
-    top: -1.429rem;
+    top: -1.5rem;
     left: 0;
   }
   &:after {
     font-family: "FontAwesome";
     content: "\f10e";
-    bottom: -1.429rem;
+    bottom: -1.5rem;
     right: 0;
   }
 }
 
 input[type=text], input[type=email], input[type=password], input[type=number], optgroup, textarea, select {
   margin: .2143rem 0;
-  padding: .7143rem;
+  padding: .7rem;
   border: 0;
   border: .07143rem solid $default_background - #111;
-  border-bottom-width: .1429rem;
+  border-bottom-width: .15rem;
   background: inherit;
   transition: $global_transition;
 }
@@ -103,7 +103,7 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, inp
   box-shadow: inset 0 -.07143rem $default_site_color + #222, inset 0 -.5rem .7143rem -.7143rem #8E8E8E;
 }
 
-/* Clearfix создан Nicolas Gallagher | http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* Clearfix from Nicolas Gallagher | http://nicolasgallagher.com/micro-clearfix-hack/ */
 
 .clearfix {
   &:before {

@@ -2,21 +2,19 @@
           Text
    ================== */
 .title {
-  margin: .7143rem 0;
-  padding: .7143rem 0;
   font-size: 1.571rem;
   margin-bottom: .7143rem;
   border-bottom: 0.1429rem solid #49a2ff;
 }
 
 .title-article {
-  font-size: 2.143rem;
+  font-size: 2.2rem;
   background: linear-gradient(to left, transparent 50%, #2780e3 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: color 1.2s, background-position 0.8s;
   display: inline;
-  padding: 0 .2143rem;
+  padding: 0 .2rem;
 }
 .title-article:hover, .title-article a:hover {
   text-decoration: none;
@@ -33,45 +31,34 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-h1, h1.title {
-  font-size: 2.857rem;
-  line-height: 2.857rem;
-  padding: .7143rem 0;
+h1, .h1, h1.title {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
 }
 
-h2, h2.title {
-  font-size: 2.143rem;
-  line-height: 2.143rem;
-  padding: .5rem 0;
+h2, .h2, h2.title {
+  font-size: 2rem;
+  line-height: 3rem;
 }
 
-h3, h3.title {
-  font-size: 1.857rem;
-  line-height: 1.857rem;
-  padding: .4286rem 0;
+h3, .h3, h3.title {
+  font-size: 1.75rem;
+  line-height: 2.5rem;
 }
 
-h4, h4.title {
-  font-size: 1.571rem;
-  line-height: 1.571rem;
-  padding: .3571rem 0;
+h4, .h4, h4.title {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
-h5, h5.title {
-  font-size: 1.286rem;
-  line-height: 1.429rem;
-  padding: .2857rem 0;
+h5, .h5, h5.title {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
 }
 
-h6, h6.title {
-  font-size: 1.143rem;
-  line-height: 1.429rem;
-  padding: .2143rem 0;
-}
-
-h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-  font-size: 65%;
-  color: #BBB;
+h6, .h6, h6.title {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .default {
@@ -95,11 +82,11 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 }
 
 .blue {
-  color: #2494EC;
+  color: #2474EC;
 }
 
 .green {
-  color: #31C736;
+  color: #1BB820;
 }
 
 .purple {
@@ -128,7 +115,7 @@ pre > code {
 code {
   padding: .1429rem .2143rem;
   margin: 0;
-  background-color: #f9f9f9;
+  background-color: whitesmoke;
   border-radius: 0.2143rem;
 }
 

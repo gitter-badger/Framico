@@ -4,7 +4,12 @@
    ======================== */
 
 .bg {
-  &.dark_gray, &.red, &.blue, &.green, &.purple, &.orange {
+  &.dark_gray,
+  &.red,
+  &.blue,
+  &.green,
+  &.purple,
+  &.orange {
     color: white;
   }
   &.default, &.light_gray, &.gray {
