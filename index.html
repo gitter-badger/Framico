@@ -206,95 +206,57 @@
 
 					<div class="flex">
 						<div class="block-xs">
-							<p>
-					            <label class="checkbox-label">
-					                <input type="checkbox" checked="true" name="check" class="custom-checkbox checkbox">
-					                <span data-ripple="false" class="custom-checkbox checkbox-background"></span>
-					                <span class="custom-checkbox checkbox"></span>
-					                <span class="checkbox-text">Элемент 1</span>
-					            </label>
-				            </p>
-
-							<p>
-					            <label class="checkbox-label">
-					                <input type="checkbox" name="check" class="custom-checkbox checkbox">
-					                <span data-ripple="false" class="custom-checkbox checkbox-background"></span>
-					                <span class="custom-checkbox checkbox"></span>
-					                <span class="checkbox-text">Элемент 2</span>
-					            </label>
-				            </p>
-
-							<p>
-					            <label class="checkbox-label">
-					                <input type="checkbox" name="check" class="custom-checkbox checkbox">
-					                <span data-ripple="false" class="custom-checkbox checkbox-background"></span>
-					                <span class="custom-checkbox checkbox"></span>
-					                <span class="checkbox-text">Элемент 3</span>
-					            </label>
-				            </p>
+							<form class="checkbox">
+								<p>
+									<input type="checkbox" id="checkbox1" checked>
+									<label for="checkbox1">Пункт 1</label>
+								</p>
+								<p>
+						 			<input type="checkbox" id="checkbox2">
+									<label for="checkbox2">Пункт 2</label>
+								</p>
+								<p>
+									<input type="checkbox" class="filled-in" id="checkbox3">
+									<label for="checkbox3">Пункт 3</label>
+								</p>
+					        </form>
 						</div>
 
 						<div class="block-xs">
 
-							<p>
-								<label class="checkbox-label">
-									<input type="radio" checked="true" name="radio" class="custom-checkbox radio">
-									<span data-ripple="true" class="custom-checkbox radio-background"></span>
-									<span class="custom-checkbox radio-checkbox"></span>
-									<span class="checkbox-text">Элемент 1</span>
-								</label>
-							</p>
-							
-							<p>
-								<label class="checkbox-label">
-									<input type="radio" name="radio" class="custom-checkbox radio">
-									<span data-ripple="true" class="custom-checkbox radio-background"></span>
-									<span class="custom-checkbox radio-checkbox"></span>
-									<span class="checkbox-text">Элемент 2</span>
-								</label>
-							</p>
-
-							<p>
-								<label class="checkbox-label">
-									<input type="radio" name="radio" class="custom-checkbox radio">
-									<span data-ripple="true" class="custom-checkbox radio-background"></span>
-									<span class="custom-checkbox radio-checkbox"></span>
-									<span class="checkbox-text">Элемент 3</span>
-								</label>
-							</p>
+							<form>
+								<p>
+									<input name="group1" type="radio" id="radio1" checked>
+									<label for="radio1">Пункт 1</label>
+								</p>
+								<p>
+									<input name="group1" type="radio" id="radio2">
+									<label for="radio2">Пункт 2</label>
+								</p>
+								<p>
+									<input name="group1" type="radio" id="radio3">
+									<label for="radio3">Пункт 3</label>
+					 			</p>
+					        </form>
 
 						</div>
 
 						<div class="block-xs">
-							<p>
-								<label class="checkbox-label">
-									<span class="checkbox-text switch-text">Опция 1</span>
-									<input type="checkbox" name="switch-C" class="custom-checkbox switch">
-									<span class="custom-checkbox switch-background">
-										<span data-ripple="true" class="custom-checkbox switch-checkbox"></span>
-									</span>
-								</label>
-							</p>
 
-							<p>
-								<label class="checkbox-label">
-									<span class="checkbox-text switch-text">Опция 2</span>
-									<input type="checkbox" name="switch-C" class="custom-checkbox switch">
-									<span class="custom-checkbox switch-background">
-										<span data-ripple="true" class="custom-checkbox switch-checkbox"></span>
-									</span>
-								</label>
-							</p>
+							<form class="switch">
+								<p>
+									<label>Выкл <input checked type="checkbox"> <span class="lever"></span> Вкл </label>
+								</p>
 
-							<p>
-								<label class="checkbox-label">
-									<span class="checkbox-text switch-text">Опция 3</span>
-									<input type="checkbox" name="switch-C" class="custom-checkbox switch">
-									<span class="custom-checkbox switch-background">
-										<span data-ripple="true" class="custom-checkbox switch-checkbox"></span>
-									</span>
-								</label>
-							</p>
+								<p>
+									<label>Текст слева <input type="checkbox"> <span class="lever"></span></label>
+								</p>
+
+								<p>
+									<label><input type="checkbox"> <span class="lever"></span> Текст справа</label>
+								</p>
+							</form>
+
 						</div>
 					</div>
 
@@ -311,6 +273,10 @@
 					<blockquote>Пример текста в &lt;blockquote&gt;</blockquote>
 
 					<p><a href="#" class="title-article">Заголовок статьи</a></p>
+
+					<p class="text-size-1">Размер текста 1</p>
+					<p class="text-size-2">Размер текста 2</p>
+					<p class="text-size-3">Размер текста 3</p>
 
 					<h2 class="title">Картинки</h2>
 
@@ -377,47 +343,60 @@
 
 					<h2 class="title">Формы</h2>
 					<p>
-						<code>Поле с иконкой</code>
-						<div class="form-icon">
-							<input type="text" placeholder="Отличный текст" class="full-w">
-							<i class="fa fa-user"></i>
+						<h3>Поле</h3>
+						<input type="text" placeholder="Отличный текст">
+					</p>
+
+					<p>
+						<h3>Поле с надписью <code>.form</code></h3>
+						<div class="form">
+							<input type="text" required>
+							<label>Поле ввода</label>
 						</div>
 					</p>
 
 					<p>
-						<code>Анимация скрытия текста вниз</code>
-						<div class="form-hide">
-							<input type="text" class="full-w" required>
-							<label>Замечательный текст</label>
+						<h3>Поле с надписью <code>.form .active</code></h3>
+						<div class="form active">
+							<input type="text" required>
+							<label>Поле ввода</label>
 						</div>
 					</p>
 
 					<p>
-						<code>Анимация поднятия текста</code>
-						<div class="form-top">
-							<input type="text" class="full-w" required>
-							<label>Лучший текст</label>
+						<h3>Поле с иконкой <code>.form .icon</code></h3>
+						<div class="form icon">
+							<input type="text" required>
+							<label>Поле ввода</label>
+							<i class="fa fa-google"></i>
 						</div>
 					</p>
 
 					<p>
-						<code>Анимация скрытия текста вниз + иконка</code>
-						<div class="form-icon form-hide">
-							<input type="text" class="full-w" required>
-							<label>Отличный и замечательный текст</label>
-							<i class="fa fa-user"></i>
+						<h3>Поле с кнопкой <code>.form .btn</code></h3>
+						<div class="form button">
+							<input type="text" required>
+							<label>Поле ввода</label>
+							<button type="button" class="btn blue active">Синяя</button>
 						</div>
 					</p>
 
 					<p>
-						<code>Анимация поднятия текста + иконка</code>
-						<div class="form-icon form-top">
-							<input type="text" class="full-w" required>
-							<label>Отличный и лучший текст</label>
-							<i class="fa fa-user"></i>
+						<h3>Disabled <code>.form</code></h3>
+						<div class="form">
+							<input type="text" disabled required>
+							<label>Поле ввода</label>
 						</div>
 					</p>
-				
+
+					<p>
+						<h3>Выпадающий список</h3>
+						<select>
+						     <option>Выбор из выпадающего списка</option>
+						     <option>Второй выбор из выпадающего списка</option>
+						</select>
+					</p>
+
 					<div class="bg blue pad-small center full-w">В теге <code>textarea</code> всё работает так-же.</div>
 
 					<div class="marg-big"></div> <!-- Это чисто для отступа -->

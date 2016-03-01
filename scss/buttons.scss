@@ -10,11 +10,10 @@
   border: .2rem solid transparent;
   border-radius: $btn-border-radius;
   margin: .2rem 0;
-  text-shadow: 0 .07rem rgba(0, 0, 0, 0.2);
   outline: none;
   color: $default_site_color;
   background-color: $default_background;
-  background-size: 200%;
+  background-size: 100%;
   background-position: 50%;
   &:active:not([disabled]) {
     background-color: $default_site_color;
@@ -27,11 +26,11 @@
     color: white;
   }
   &:hover, &:focus {
-    box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 2px rgba(0,0,0,.2);
+    box-shadow: 0 0 .4rem rgba(0, 0, 0, .12),0 .2rem .2rem rgba(0,0,0,.2);
   }
   &:active {
-    box-shadow: 0 10px 20px rgba(0,0,0,.19),
-                0 6px 6px rgba(0,0,0,.23);
+    box-shadow: 0 .8rem 1.2rem rgba(0, 0, 0, .19),
+                0 .5rem .5rem rgba(0, 0, 0, .23);
     background-repeat: no-repeat;
     background-size: 1000%;
   }
@@ -53,7 +52,6 @@
   &.flat {
     border-radius: 0;
     box-shadow: none;
-    text-shadow: none;
   }
   &.red,
   &.blue,
@@ -66,21 +64,20 @@
   }
 
   // All buttons
-  @mixin btn($btn) {
-    background-color: none;
-    border-color: $btn;
-    color: $btn;
+  @mixin btn($color) {
+    border-color: $color;
+    color: $color;
     &.active {
-      background-color: $btn;
+      background-color: $color;
     }
     &:hover:not([disabled]) {
-      background-color: $btn + #111;
-      border-color: $btn + #111;
+      background-color: $color + #111;
+      border-color: $color + #111;
     }
     &:active:not([disabled]) {
-      background-color: $btn + #333;
-      border-color: $btn + #333;
-      background-image: radial-gradient(circle, $btn + #333 10%, $btn + #222 11%);
+      background-color: $color + #333;
+      border-color: $color + #333;
+      background-image: radial-gradient(circle, $color + #333 12%, $color + #222 13%);
     }
   }
 
@@ -133,14 +130,11 @@ a.btn {
   }
 }
 
-.btn.small {
-  font-size: 0.8rem;
-  line-height: 2rem;
-  padding: 0 1rem;
+@mixin btn-size($size, $height, $pad) {
+  font-size: $size;
+  line-height: $height;
+  padding: $pad;
 }
 
-.btn.big {
-  font-size: 1.5rem;
-  line-height: 4rem;
-  padding: 0 1.8rem;
-}
+.btn.small { @include btn-size(0.8rem, 2rem, 0 1rem) }
+.btn.big { @include btn-size(1.5rem, 4rem, 0 1.8rem) }

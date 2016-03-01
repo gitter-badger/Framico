@@ -2,9 +2,9 @@
           Text
    ================== */
 .title {
-  font-size: 1.571rem;
-  margin-bottom: .7143rem;
-  border-bottom: 0.1429rem solid #49a2ff;
+  font-size: 1.5rem;
+  margin-bottom: .7rem;
+  border-bottom: 0.1rem solid #49a2ff;
 }
 
 .title-article {
@@ -78,7 +78,7 @@ h6, .h6, h6.title {
 }
 
 .red {
-  color: #e51c23;
+  color: #D40007;
 }
 
 .blue {
@@ -98,7 +98,7 @@ h6, .h6, h6.title {
 }
 
 mark {
-  padding: .1429rem .2857rem;
+  padding: .1rem .2rem;
   font-size: 85%;
 }
 
@@ -107,20 +107,20 @@ pre {
 }
 pre > code {
   display: block;
-  border-bottom: 0.2143rem solid #eeeeee;
-  padding: .7143rem;
+  border-bottom: 0.25rem solid #eeeeee;
+  padding: .8rem;
   font-size: 90%;
 }
 
 code {
-  padding: .1429rem .2143rem;
+  padding: .1rem .2rem;
   margin: 0;
   background-color: whitesmoke;
-  border-radius: 0.2143rem;
+  border-radius: 0.2rem;
 }
 
 pre, code {
-  font-size: 85%;
+  font-size: 90%;
   tab-size: 4;
   -moz-tab-size: 4;
   overflow: auto;

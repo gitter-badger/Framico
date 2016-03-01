@@ -6,7 +6,7 @@ $default_text_color: #444;
 $default_background: white;
 $default_site_color: #2780e3;
 
-$blocks: 12;
+$blocks: 12; // Number blocks in grid
 
 $media_max_mobile: 767px; // (max-width: 767px) Maximum mobile resolution
 $media_min_tablet: 768px; // (min-width: 768px) Minimum tablet resolution
@@ -18,14 +18,14 @@ $media_min_pc: 1201px; // (min-width: 1201px) Minimum PC resolution
 $light_gray: #F5F5F5;
 $gray: #ddd;
 $dark_gray: #ADADAD;
-$red: #e51c23;
+$red: #D40007;
 $blue: #2474EC;
 $green: #1BB820;
 $purple: #9c27b0;
 $orange: #ff9800;
 
-$default-border-radius: .2143rem;
-$btn-border-radius: .3571rem;
-$img-border-radius: .3571rem;
+$default-border-radius: .2rem;
+$btn-border-radius: .25rem;
+$img-border-radius: .35rem;
 
 $global_transition: 0.3s;
