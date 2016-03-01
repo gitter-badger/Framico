@@ -4,9 +4,9 @@
    ================== */
 
 .title {
-  font-size: 1.571rem;
-  margin-bottom: .7143rem;
-  border-bottom: .1429rem solid $default_site_color + #222;
+  font-size: 1.5rem;
+  margin-bottom: .7rem;
+  border-bottom: .1rem solid $default_site_color + #222;
 }
 
 .title-article {
@@ -100,7 +100,7 @@ h6, .h6, h6.title {
 }
 
 mark {
-  padding: .1429rem .2857rem;
+  padding: .1rem .2rem;
   font-size: 85%;
 }
 
@@ -108,21 +108,21 @@ pre {
   padding: .5rem 0;
   & > code {
     display: block;
-    border-bottom: .2143rem solid $default_background - #111;
-    padding: .7143rem;
+    border-bottom: .25rem solid $default_background - #111;
+    padding: .8rem;
     font-size: 90%;
   }
 }
 
 code {
-  padding: .1429rem .2143rem;
+  padding: .1rem .2rem;
   margin: 0;
   background-color: $default_background - #0A0A0A;
   border-radius: $default_border_radius;
 }
 
 pre, code {
-  font-size: 85%;
+  font-size: 90%;
   tab-size: 4;
   -moz-tab-size: 4;
   overflow: auto;

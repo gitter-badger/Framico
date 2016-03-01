@@ -10,11 +10,11 @@
   input {
     &:checked + label, &:not(:checked) + label {
       display: block;
-      padding: .7143rem 1.071rem;
+      padding: .8rem 1rem;
       color: white;
       cursor: pointer;
       transition: $global_transition;
-      font-size: 1.143rem;
+      font-size: 1.2rem;
     }
     &:checked + label {
       + div {

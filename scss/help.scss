@@ -11,23 +11,25 @@
   text-align: center;
 }
 
-header.center-block,
-article.center-block,
-aside.center-block,
-details.center-block,
-figcaption.center-block,
-figure.center-block,
-footer.center-block,
-header.center-block,
-hgroup.center-block,
-main.center-block,
-menu.center-block,
-nav.center-block,
-section.center-block,
-summary.center-block,
-div.center-block {
-  display: table;
-  margin: 0 auto;
+header,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary,
+div {
+  &.center-block {
+    display: table;
+    margin: 0 auto;
+  }
 }
 
 .right {
@@ -51,7 +53,7 @@ div.center-block {
 }
 
 .marg-small {
-  margin: 0.5rem;
+  margin: .5rem;
 }
 
 .marg-medium {
@@ -63,7 +65,7 @@ div.center-block {
 }
 
 .pad-small {
-  padding: 0.5rem;
+  padding: .5rem;
 }
 
 .pad-medium {
@@ -72,4 +74,24 @@ div.center-block {
 
 .pad-big {
   padding: 2rem;
+}
+
+.text-small {
+  font-size: .8rem;
+  line-height: 1rem;
+}
+
+.text-size-1 {
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+.text-size-2 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.text-size-3 {
+  font-size: 2rem;
+  line-height: 2.1rem;
 }

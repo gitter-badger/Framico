@@ -49,7 +49,7 @@ div.center-block {
 }
 
 .marg-small {
-  margin: 0.5rem;
+  margin: .5rem;
 }
 
 .marg-medium {
@@ -61,7 +61,7 @@ div.center-block {
 }
 
 .pad-small {
-  padding: 0.5rem;
+  padding: .5rem;
 }
 
 .pad-medium {
@@ -70,4 +70,24 @@ div.center-block {
 
 .pad-big {
   padding: 2rem;
+}
+
+.text-small {
+  font-size: .8rem;
+  line-height: 1rem;
+}
+
+.text-size-1 {
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+.text-size-2 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.text-size-3 {
+  font-size: 2rem;
+  line-height: 2.1rem;
 }

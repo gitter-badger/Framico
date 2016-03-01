@@ -4,10 +4,10 @@
 .bg.dark_gray, .bg.red, .bg.blue, .bg.green, .bg.purple, .bg.orange {
   color: white;
 }
-.bg.default, .bg.light_gray, .bg.gray {
+.bg.white, .bg.light_gray, .bg.gray {
   color: #444;
 }
-.bg.default {
+.bg.white {
   background: white;
 }
 .bg.light_gray {
@@ -20,7 +20,7 @@
   background: #ADADAD;
 }
 .bg.red {
-  background: #e51c23;
+  background: #D40007;
 }
 .bg.blue {
   background: #2474EC;
@@ -38,7 +38,7 @@
   color: white;
   font-style: italic;
 }
-.bg.gray > a, .bg.light_gray > a, .bg.default > a {
+.bg.gray > a, .bg.light_gray > a, .bg.white > a {
   color: #444;
 }
 .bg code {

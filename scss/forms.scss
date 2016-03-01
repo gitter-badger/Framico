@@ -3,51 +3,278 @@
           Forms
    =================== */
 
-.form-icon, .form-hide, .form-top {
-  position: relative;
-}
-
-.form-hide label, .form-top label {
-  position: absolute;
-  top: 13px;
-  left: 10px;
-  color: #A9A9A9;
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+optgroup,
+textarea,
+select {
+  border: 0;
+  border-bottom: .1rem solid $default_background - #222;
+  outline: 0;
+  background: transparent;
+  line-height: 2.5rem;
   transition: $global_transition;
-  pointer-events: none;
+  &:hover, &:focus {
+    border-bottom-color: $default_site_color;
+  }
+  &:focus {
+    box-shadow: 0 .05rem $default_site_color;
+  }
 }
 
-.form-icon i {
-  position: absolute;
-  left: 10px;
-  top: 14px;
-  font-size: 20px;
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+optgroup,
+textarea,
+select {
+  &[disabled] {
+    opacity: 0.8;
+    cursor: not-allowed;
+    & {
+      border-bottom: .1rem dotted $default_background - #222;
+    }
+  }
 }
 
-.form-hide {
-  textarea, input {
-    &:valid ~ label, &:focus ~ label {
-      top: 20px;
+select {
+  padding: 1rem;
+}
+
+.form {
+  position: relative;
+  margin-top: 1rem;
+  & label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $default_text_color + #666;
+    pointer-events: none;
+    transform: translateY(.7rem);
+    transition: $global_transition;
+  }
+  textarea:valid ~ label,
+  input:valid ~ label,
+  textarea:focus ~ label,
+  input:focus ~ label {
+    transform: translateY(-.8rem);
+    color: $default_site_color;
+    font-size: .8rem;
+  }
+  &.active label {
+    transform: translateY(-.8rem);
+    font-size: .8rem;
+  }
+  &.icon {
+    margin-left: 3rem;
+    & i {
+      position: absolute;
+      left: -3rem;
+      top: -.2rem;
+      font-size: 2.5rem;
+      transition: $global_transition;
+    }
+    textarea:valid ~ i,
+    input:valid ~ i,
+    textarea:focus ~ i,
+    input:focus ~ i {
+      color: $default_site_color;
+    }
+  }
+  &.button {
+    & input, & button {
+      display: inline-block;
+      line-height: 2.5rem;
+    }
+  }
+}
+
+[type="radio"] {
+  &:not(:checked), &:checked {
+    position: absolute;
+    opacity: 0;
+  }
+  &:not(:checked) + label, &:checked + label {
+    position: relative;
+    padding-left: 2.5rem;
+    cursor: pointer;
+    display: inline-block;
+    height: 2rem;
+    line-height: 2rem;
+    transition: .28s ease;
+  }
+  + label {
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin: .3rem;
+      width: 1rem;
+      height: 1rem;
+      z-index: 0;
+      transition: 0.28s ease;
+    }
+  }
+  &:not(:checked) + label {
+    &:before {
+      border-radius: 50%;
+      border: .2rem solid $default_text_color;
+    }
+    &:after {
+      border-radius: 50%;
+      border: .2rem solid $default_text_color;
+      z-index: -1;
+      transform: scale(0);
+    }
+  }
+  &:checked + label {
+    &:before {
+      border-radius: 50%;
+      border: .2rem solid transparent;
+    }
+    &:after {
+      border-radius: 50%;
+      border: .2rem solid $default_site_color + #222;
+      background-color: $default_site_color + #222;
+      z-index: 0;
+      transform: scale(1.02);
+    }
+  }
+}
+
+.checkbox [type="checkbox"] {
+  &:not(:checked), &:checked {
+    position: absolute;
+    opacity: 0;
+  }
+  + label {
+    position: relative;
+    padding-left: 2.5rem;
+    cursor: pointer;
+    display: inline-block;
+    height: 2rem;
+    line-height: 2rem;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1.2rem;
+      height: 1.2rem;
+      z-index: 0;
+      border: 2px solid $default_text_color + #222;
+      border-radius: 1px;
+      margin-top: 2px;
+      transition: 0.2s;
+    }
+  }
+  &:not(:checked)[disabled] + label:before {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.26);
+  }
+  &:checked {
+    + label:before {
+      top: -4px;
+      left: -6px;
+      width: 12px;
+      height: 22px;
+      border-top: 2px solid transparent;
+      border-left: 2px solid transparent;
+      border-right: 2px solid #49a2ff;
+      border-bottom: 2px solid #49a2ff;
+      transform: rotate(40deg) scale(0.8);
+      backface-visibility: hidden;
+      transform-origin: 100% 100%;
+    }
+    &[disabled] + label:before {
+      border-right: 2px solid rgba(0, 0, 0, .26);
+      border-bottom: 2px solid rgba(0, 0, 0, .26);
+    }
+  }
+  &:indeterminate + label:before {
+    left: -10px;
+    top: -11px;
+    width: 10px;
+    height: 22px;
+    border-top: none;
+    border-left: none;
+    border-right: 2px solid $default_site_color + #222;
+    border-bottom: none;
+    transform: rotate(90deg);
+    transform-origin: 100% 100%;
+  }
+  &:disabled + label:before {
+    border-right: 2px solid rgba(0, 0, 0, 0.26);
+    background-color: transparent;
+  }
+}
+
+.switch {
+  label {
+    cursor: pointer;
+    input[type=checkbox] {
       opacity: 0;
+      width: 0;
+      height: 0;
+      &:checked + .lever {
+        background-color: $default_site_color + #444;
+        &:after {
+          background-color: $default_site_color + #222;
+        }
+      }
+    }
+    .lever {
+      content: "";
+      display: inline-block;
+      position: relative;
+      width: 40px;
+      height: 15px;
+      background-color: $default_text_color + #666;
+      border-radius: 15px;
+      margin-right: 10px;
+      transition: $global_transition;
+      vertical-align: middle;
+      margin: 0 16px;
+      &:after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 21px;
+        height: 21px;
+        background-color: $default_background - #111;
+        border-radius: 21px;
+        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4);
+        left: -5px;
+        top: -3px;
+        transition: left 0.3s ease, background 0.3s ease, box-shadow 0.1s ease;
+      }
     }
   }
 }
 
-.form-top {
-  margin-top: 15px;
-  textarea, input {
-    &:valid ~ label, &:focus ~ label {
-      top: -15px;
-      color: $default_site_color + #222;
-      font-size: 12px;
-    }
+input[type=checkbox] {
+  &:checked:not(:disabled) ~ .lever:active:after {
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1);
+  }
+  &:not(:disabled) ~ .lever:active:after {
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08);
   }
 }
 
-.form-icon {
-  input, textarea {
-    padding-left: 35px;
+.switch {
+  label input[type=checkbox]:checked + .lever:after {
+    left: 24px;
   }
-  &.form-hide label, &.form-top label {
-    padding-left: 25px;
+  input[type=checkbox][disabled] + .lever {
+    cursor: default;
+  }
+  label input[type=checkbox][disabled] {
+    + .lever:after, &:checked + .lever:after {
+      background-color: #BDBDBD;
+    }
   }
 }

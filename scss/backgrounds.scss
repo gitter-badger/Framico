@@ -12,10 +12,10 @@
   &.orange {
     color: white;
   }
-  &.default, &.light_gray, &.gray {
+  &.white, &.light_gray, &.gray {
     color: $default_text_color;
   }
-  &.default {
+  &.white {
     background: white;
   }
   &.light_gray {
@@ -46,7 +46,7 @@
     color: white;
     font-style: italic;
   }
-  &.gray > a, &.light_gray > a, &.default > a {
+  &.gray > a, &.light_gray > a, &.white > a {
     color: $default_text_color;
   }
   code {
