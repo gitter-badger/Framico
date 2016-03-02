@@ -110,11 +110,11 @@ select {
   line-height: 2.5rem;
 }
 
-[type="radio"]:not(:checked), [type="radio"]:checked {
+.radio [type="radio"]:not(:checked), .radio [type="radio"]:checked {
   position: absolute;
   opacity: 0;
 }
-[type="radio"]:not(:checked) + label, [type="radio"]:checked + label {
+.radio [type="radio"]:not(:checked) + label, .radio [type="radio"]:checked + label {
   position: relative;
   padding-left: 2.5rem;
   cursor: pointer;
@@ -123,7 +123,7 @@ select {
   line-height: 2rem;
   transition: .28s ease;
 }
-[type="radio"] + label:before, [type="radio"] + label:after {
+.radio [type="radio"] + label:before, .radio [type="radio"] + label:after {
   content: '';
   position: absolute;
   left: 0;
@@ -134,21 +134,21 @@ select {
   z-index: 0;
   transition: 0.28s ease;
 }
-[type="radio"]:not(:checked) + label:before {
+.radio [type="radio"]:not(:checked) + label:before {
   border-radius: 50%;
   border: 0.2rem solid #444;
 }
-[type="radio"]:not(:checked) + label:after {
+.radio [type="radio"]:not(:checked) + label:after {
   border-radius: 50%;
   border: 0.2rem solid #444;
   z-index: -1;
   transform: scale(0);
 }
-[type="radio"]:checked + label:before {
+.radio [type="radio"]:checked + label:before {
   border-radius: 50%;
   border: .2rem solid transparent;
 }
-[type="radio"]:checked + label:after {
+.radio [type="radio"]:checked + label:after {
   border-radius: 50%;
   border: 0.2rem solid #49a2ff;
   background-color: #49a2ff;
@@ -192,8 +192,8 @@ select {
   height: 22px;
   border-top: 2px solid transparent;
   border-left: 2px solid transparent;
-  border-right: 2px solid #49a2ff;
-  border-bottom: 2px solid #49a2ff;
+  border-right: 2px solid #2780e3;
+  border-bottom: 2px solid #2780e3;
   transform: rotate(40deg) scale(0.8);
   backface-visibility: hidden;
   transform-origin: 100% 100%;

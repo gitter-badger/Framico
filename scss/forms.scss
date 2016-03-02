@@ -92,7 +92,7 @@ select {
   }
 }
 
-[type="radio"] {
+.radio [type="radio"] {
   &:not(:checked), &:checked {
     position: absolute;
     opacity: 0;
@@ -184,8 +184,8 @@ select {
       height: 22px;
       border-top: 2px solid transparent;
       border-left: 2px solid transparent;
-      border-right: 2px solid #49a2ff;
-      border-bottom: 2px solid #49a2ff;
+      border-right: 2px solid $default_site_color;
+      border-bottom: 2px solid $default_site_color;
       transform: rotate(40deg) scale(0.8);
       backface-visibility: hidden;
       transform-origin: 100% 100%;
@@ -213,45 +213,43 @@ select {
   }
 }
 
-.switch {
-  label {
-    cursor: pointer;
-    input[type=checkbox] {
-      opacity: 0;
-      width: 0;
-      height: 0;
-      &:checked + .lever {
-        background-color: $default_site_color + #444;
-        &:after {
-          background-color: $default_site_color + #222;
-        }
+.switch label {
+  cursor: pointer;
+  input[type=checkbox] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    &:checked + .lever {
+      background-color: $default_site_color + #444;
+      &:after {
+        background-color: $default_site_color + #222;
       }
     }
-    .lever {
+  }
+  .lever {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 15px;
+    background-color: $default_text_color + #666;
+    border-radius: 15px;
+    margin-right: 10px;
+    transition: $global_transition;
+    vertical-align: middle;
+    margin: 0 16px;
+    &:after {
       content: "";
+      position: absolute;
       display: inline-block;
-      position: relative;
-      width: 40px;
-      height: 15px;
-      background-color: $default_text_color + #666;
-      border-radius: 15px;
-      margin-right: 10px;
-      transition: $global_transition;
-      vertical-align: middle;
-      margin: 0 16px;
-      &:after {
-        content: "";
-        position: absolute;
-        display: inline-block;
-        width: 21px;
-        height: 21px;
-        background-color: $default_background - #111;
-        border-radius: 21px;
-        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4);
-        left: -5px;
-        top: -3px;
-        transition: left 0.3s ease, background 0.3s ease, box-shadow 0.1s ease;
-      }
+      width: 21px;
+      height: 21px;
+      background-color: $default_background - #111;
+      border-radius: 21px;
+      box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4);
+      left: -5px;
+      top: -3px;
+      transition: left 0.3s ease, background 0.3s ease, box-shadow 0.1s ease;
     }
   }
 }

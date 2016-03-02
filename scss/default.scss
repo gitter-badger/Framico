@@ -17,7 +17,7 @@
 }
 
 html {
-  font-size: 14px;
+  font-size: $default_font_size;
 }
 
 body {
@@ -59,29 +59,13 @@ hr {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     border: 0;
-    border-top: .1rem solid #eee;
+    border-top: .1rem solid $default_background - #111;
 }
 
 blockquote {
-  position: relative;
-  padding: 1.5rem 3.5rem;
-  display: inline-block;
-  &:before, &:after {
-    font-size: 1.5rem;
-    position: absolute;
-  }
-  &:before {
-    font-family: "FontAwesome";
-    content: "\f10d";
-    top: -1.5rem;
-    left: 0;
-  }
-  &:after {
-    font-family: "FontAwesome";
-    content: "\f10e";
-    bottom: -1.5rem;
-    right: 0;
-  }
+  padding: 1rem 3.5rem;
+  font-size: 1.3rem;
+  border-left: .4rem solid $default_background - #111;
 }
 
 /* Clearfix from Nicolas Gallagher | http://nicolasgallagher.com/micro-clearfix-hack/ */

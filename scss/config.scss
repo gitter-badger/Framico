@@ -5,15 +5,17 @@
 $default_text_color: #444;
 $default_background: white;
 $default_site_color: #2780e3;
+$default_font_size: 14px;
 
 $blocks: 12; // Number blocks in grid
+$gutter: 1rem; // Padding in grid blocks
 
-$media_max_mobile: 767px; // (max-width: 767px) Maximum mobile resolution
-$media_min_tablet: 768px; // (min-width: 768px) Minimum tablet resolution
-$media_max_tablet: 991px; // (max-width: 991px) Maximum tablet resolution
-$media_min_netbook: 992px; // (min-width: 992px) Minimum netbook resolution
-$media_max_netbook: 1200px; // (max-width: 1200px) Maximum netbook resolution
-$media_min_pc: 1201px; // (min-width: 1201px) Minimum PC resolution
+$media_xs_max: 767px; // (max-width: 767px)
+$media_sm_min: 768px; // (min-width: 768px)
+$media_sm_max: 991px; // (max-width: 991px)
+$media_md_min: 992px; // (min-width: 992px)
+$media_md_max: 1200px; // (max-width: 1200px)
+$media_lg_min: 1201px; // (min-width: 1201px)
 
 $light_gray: #F5F5F5;
 $gray: #ddd;
