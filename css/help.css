@@ -24,8 +24,8 @@ nav.center-block,
 section.center-block,
 summary.center-block,
 div.center-block {
-  display: table;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .right {
@@ -92,18 +92,58 @@ div.center-block {
   line-height: 2.1rem;
 }
 
-.text-left {
+.text-justify {
+  text-align: justify;
+}
+
+.text-xs-left {
   text-align: left;
 }
 
-.text-center {
+.text-xs-center {
   text-align: center;
 }
 
-.text-right {
+.text-xs-right {
   text-align: right;
 }
 
-.text-justify {
-  text-align: justify;
+@media only screen and (min-width: 768px) {
+  .text-sm-left {
+    text-align: left;
+  }
+
+  .text-sm-center {
+    text-align: center;
+  }
+
+  .text-sm-right {
+    text-align: right;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .text-md-left {
+    text-align: left;
+  }
+
+  .text-md-center {
+    text-align: center;
+  }
+
+  .text-md-right {
+    text-align: right;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .text-lg-left {
+    text-align: left;
+  }
+
+  .text-lg-center {
+    text-align: center;
+  }
+
+  .text-lg-right {
+    text-align: right;
+  }
 }
