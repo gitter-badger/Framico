@@ -3,9 +3,10 @@
           Default styles
    =========================== */
 
-* {
+*,
+*:after,
+*:before {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -31,14 +32,9 @@ body {
 a {
   text-decoration: none;
   color: $default_site_color + #111;
-  background-color: transparent;
   cursor: pointer;
   transition: $global_transition;
-  &:active {
-    outline: 0;
-  }
   &:hover {
-    outline: 0;
     color: $default_site_color + #333;
   }
   &:focus {

@@ -230,9 +230,10 @@ th {
 /* ===========================
           Default styles
    =========================== */
-* {
+*,
+*:after,
+*:before {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -257,15 +258,10 @@ body {
 a {
   text-decoration: none;
   color: #3891f4;
-  background-color: transparent;
   cursor: pointer;
   transition: 0.3s;
 }
-a:active {
-  outline: 0;
-}
 a:hover {
-  outline: 0;
   color: #5ab3ff;
 }
 a:focus {
@@ -319,11 +315,6 @@ blockquote {
 .container-full {
   padding: 0 1rem;
 }
-.container > [class*="block-"],
-.container-full > [class*="block-"] {
-  padding: 0 1rem;
-  position: relative;
-}
 
 .flex,
 .row {
@@ -333,6 +324,15 @@ blockquote {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+}
+
+.row {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+.row > [class*="block-"] {
+  padding: 0 1rem;
+  position: relative;
 }
 
 .row-xs-left {
@@ -412,7 +412,7 @@ blockquote {
 }
 
 .back-retreat-xs {
-  margin: -1rem;
+  margin: 0 -1rem;
 }
 
 .block-xs {
@@ -588,7 +588,7 @@ blockquote {
   }
 
   .back-retreat-sm {
-    margin: -1rem;
+    margin: 0 -1rem;
   }
 
   .block-sm {
@@ -764,7 +764,7 @@ blockquote {
   }
 
   .back-retreat-md {
-    margin: -1rem;
+    margin: 0 -1rem;
   }
 
   .block-md {
@@ -940,7 +940,7 @@ blockquote {
   }
 
   .back-retreat-lg {
-    margin: -1rem;
+    margin: 0 -1rem;
   }
 
   .block-lg {

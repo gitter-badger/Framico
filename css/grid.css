@@ -9,11 +9,6 @@
 .container-full {
   padding: 0 1rem;
 }
-.container > [class*="block-"],
-.container-full > [class*="block-"] {
-  padding: 0 1rem;
-  position: relative;
-}
 
 .flex,
 .row {
@@ -23,6 +18,15 @@
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+}
+
+.row {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+.row > [class*="block-"] {
+  padding: 0 1rem;
+  position: relative;
 }
 
 .row-xs-left {
@@ -102,7 +106,7 @@
 }
 
 .back-retreat-xs {
-  margin: -1rem;
+  margin: 0 -1rem;
 }
 
 .block-xs {
@@ -278,7 +282,7 @@
   }
 
   .back-retreat-sm {
-    margin: -1rem;
+    margin: 0 -1rem;
   }
 
   .block-sm {
@@ -454,7 +458,7 @@
   }
 
   .back-retreat-md {
-    margin: -1rem;
+    margin: 0 -1rem;
   }
 
   .block-md {
@@ -630,7 +634,7 @@
   }
 
   .back-retreat-lg {
-    margin: -1rem;
+    margin: 0 -1rem;
   }
 
   .block-lg {

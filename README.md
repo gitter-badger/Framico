@@ -4,13 +4,6 @@ Framico - это свободный фреймворк для разработк
 
 Официальный сайт framico, там же Вы там сможете найти все инструкции по использованию <http://framico.thebrooons.ru>!
 
-
-## Навигация
-
-* [Быстрый старт](#Быстрый-старт)
-* [Сообщество](#Сообщество)
-* [Создатель](#Создатель)
-
 ## Быстрый старт
 
 Как установить Framico на ваш сайт?
@@ -40,9 +33,7 @@ Framico
 
 ## Сообщество
 
-Прокомментировать Framico Вы можете на следующих ресурсах:
 * [Сайт Framico](http://framico.thebrooons.ru)
-* [Тема на форуме RuBukkit](http://rubukkit.org/threads/framico-v1-5-6-legkoe-sozdanie-dizajna-vashego-sajta.115888/)
 
 Туда-же можете писать о найденных багах или лично мне, мои контакты ниже.
 
@@ -51,5 +42,4 @@ Framico
 **Валерий Стрелец (TheBrooonS)**
 
 * <http://vk.com/brooons>
-* Skype broooons
 * Email brooons@yandex.ru

@@ -1,9 +1,10 @@
 /* ===========================
           Default styles
    =========================== */
-* {
+*,
+*:after,
+*:before {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -28,15 +29,10 @@ body {
 a {
   text-decoration: none;
   color: #3891f4;
-  background-color: transparent;
   cursor: pointer;
   transition: 0.3s;
 }
-a:active {
-  outline: 0;
-}
 a:hover {
-  outline: 0;
   color: #5ab3ff;
 }
 a:focus {
