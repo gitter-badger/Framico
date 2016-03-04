@@ -1,0 +1,52 @@
+{
+  "name": "framico",
+  "version": "2.0.0",
+  "description": "CSS framework designed for adaptive layout.",
+  "main": "/css/framico.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheBrooonS/Framico.git"
+  },
+  "keywords": [
+    "framico",
+    "фрамико",
+    "thebrooons",
+    "css",
+    "framework",
+    "фреймворк",
+    "backgrounds",
+    "фоны",
+    "buttons",
+    "кнопки",
+    "dropdown",
+    "выпадающий",
+    "блок",
+    "forms",
+    "формы",
+    "checkboxes",
+    "grid",
+    "сетка",
+    "block",
+    "блоки",
+    "columns",
+    "колонки",
+    "help",
+    "вспомогающие",
+    "images",
+    "картинки",
+    "tables",
+    "таблицы",
+    "text",
+    "classes",
+    "responsive",
+    "адаптивность",
+    "sass",
+    "scss"
+  ],
+  "author": "TheBrooonS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheBrooonS/Framico/issues"
+  },
+  "homepage": "http://framico.thebrooons.ru"
+}
