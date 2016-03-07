@@ -1,6 +1,4 @@
-/* ===================
-          Forms
-   =================== */
+/* Forms */
 input[type=text],
 input[type=email],
 input[type=password],
@@ -9,7 +7,7 @@ optgroup,
 textarea,
 select {
   border: 0;
-  border-bottom: 0.1rem solid #dddddd;
+  border-bottom: 0.2rem solid #dddddd;
   outline: 0;
   background: transparent;
   line-height: 2.5rem;
@@ -70,7 +68,7 @@ select {
 }
 .form label {
   position: absolute;
-  top: 0;
+  top: -.15rem;
   left: 0;
   color: #aaaaaa;
   pointer-events: none;
@@ -105,9 +103,9 @@ select {
 .form.icon input:focus ~ i {
   color: #2780e3;
 }
-.form.button input, .form.button button {
+.form.button input:not([type=text]), .form.button button {
   display: inline-block;
-  line-height: 2.5rem;
+  padding: .4rem 1.5rem;
 }
 
 .radio [type="radio"]:not(:checked), .radio [type="radio"]:checked {
@@ -127,7 +125,7 @@ select {
   content: '';
   position: absolute;
   left: 0;
-  top: 0;
+  top: .1rem;
   margin: .3rem;
   width: 1rem;
   height: 1rem;
@@ -171,7 +169,7 @@ select {
 .checkbox [type="checkbox"] + label:before {
   content: "";
   position: absolute;
-  top: 0;
+  top: .1rem;
   left: 0;
   width: 1.2rem;
   height: 1.2rem;

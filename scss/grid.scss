@@ -1,7 +1,5 @@
 @import "config";
-/* =================
-          Grid
-   ================= */
+/* Grid */
 
 .container {
   margin: 0 auto;
@@ -9,7 +7,8 @@
 
 .container,
 .container-full {
-  padding: 0 $gutter;
+  padding-left: $gutter;
+  padding-right: $gutter;
 }
 
 .flex,
@@ -26,10 +25,18 @@
 .row {
   margin-left: $gutter * -1;
   margin-right: $gutter * -1;
-  & > [class*="block-"] {
-    padding: 0 $gutter;
-    position: relative;
+}
+
+.row {
+  & > .flex {
+    padding: 0 !important;
   }
+}
+
+[class*="block-"] {
+  padding-left: $gutter;
+  padding-right: $gutter;
+  position: relative;
 }
 
 .row-xs-left {
@@ -110,6 +117,12 @@
     -webkit-flex-basis: 0 0 ((100% / $blocks) * $b);
     flex: 0 0 ((100% / $blocks) * $b);
     max-width: ((100% / $blocks) * $b);
+  }
+}
+
+@for $o from 1 through $blocks {
+  .offset-xs-#{$o} {
+    margin-left: ((100% / $blocks) * $o);
   }
 }
 
@@ -195,6 +208,11 @@
       -webkit-flex-basis: 0 0 ((100% / $blocks) * $b);
       flex: 0 0 ((100% / $blocks) * $b);
       max-width: ((100% / $blocks) * $b);
+    }
+  }
+  @for $o from 1 through $blocks {
+    .offset-sm-#{$o} {
+      margin-left: ((100% / $blocks) * $o);
     }
   }
 }
@@ -283,11 +301,16 @@
       max-width: ((100% / $blocks) * $b);
     }
   }
+  @for $o from 1 through $blocks {
+    .offset-md-#{$o} {
+      margin-left: ((100% / $blocks) * $o);
+    }
+  }
 }
 
 @media only screen and (min-width: $media_lg_min) {
   .container {
-    width: 1190px;
+    width: 85%;
   }
 
   .row-lg-left {
@@ -367,6 +390,11 @@
       -webkit-flex-basis: 0 0 ((100% / $blocks) * $b);
       flex: 0 0 ((100% / $blocks) * $b);
       max-width: ((100% / $blocks) * $b);
+    }
+  }
+  @for $o from 1 through $blocks {
+    .offset-lg-#{$o} {
+      margin-left: ((100% / $blocks) * $o);
     }
   }
 }

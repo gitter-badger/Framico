@@ -1,27 +1,100 @@
 @import "config";
-/* ====================
-          Tables
-   ==================== */
+/* Tables */
 
 .table {
   width: 100%;
   border-collapse: separate;
-  td {
+  td, th {
     padding: .4rem;
   }
-  thead td {
-    border-bottom: .15rem solid #eee !important;
+  thead {
+    td, th {
+      border-bottom: .15rem solid darken($default_background, 10);
+      padding-top: .6rem;
+      padding-bottom: .6rem;
+    }
+  }
+
+  &.bor {
+    tr:not(:last-child) {
+      td, th {
+        border-bottom: .1rem solid darken($default_background, 10);
+      }
+    }
+  }
+
+  &.var tr:nth-child(even) {
+    background: darken($default_background, 3);
+  }
+  &.hov > tbody > tr:hover {
+    background: darken($default_background, 5);
+  }
+
+  &.hov > tbody > .table-row {
+    &.default:hover {
+      background: lighten($default_text_color, 55);
+    }
+    &.red:hover {
+      background: lighten($red, 35);
+    }
+    &.blue:hover {
+      background: lighten($blue, 35);
+    }
+    &.green:hover {
+      background: lighten($green, 35);
+    }
+    &.purple:hover {
+      background: lighten($purple, 35);
+    }
+    &.orange:hover {
+      background: lighten($orange, 35);
+    }
+  }
+
+  &.divi {
+    border: .1rem solid darken($default_background, 10);
+    td, th {
+      &:not(:last-child) {
+        border-right: .1rem solid darken($default_background, 10);
+      }
+    }
   }
 }
 
-.table-bor {
-  tr:not(:last-child) td {
-    border-bottom: .1rem solid #eee;
+@media (max-width: $media_xs_max) {
+  .table.respon {
+    display: flex;
+    font-size: 0;
+    white-space: nowrap;
+    tr {
+      display: inline-block;
+      font-size: .8rem;
+    }
+    thead {
+      display: block;
+      float: left;
+      border-right: .1rem solid darken($default_background, 10);
+      td, th {
+        display: block;
+        padding: .8rem;
+        font-weight: bold;
+        text-align: right;
+      }
+    }
+    tbody {
+      display: block;
+      overflow-x: auto;
+      overflow-y: hidden;
+      td, th {
+        display: block;
+        padding: .8rem;
+      }
+    }
+    & .table-row > td,
+    td, th {
+      border: 0 !important;
+    }
   }
-}
-
-.table-var tr:nth-child(even) {
-  background: #F7F7F7;
 }
 
 table > tbody > .table-row {
@@ -45,42 +118,10 @@ table > tbody > .table-row {
   }
 }
 
-.table-hov > tbody > tr:hover {
-  background: lighten($default_text_color, 70);
-}
-
-.table-hov > tbody > .table-row {
-  &.default:hover {
-    background: lighten($default_text_color, 55);
-  }
-  &.red:hover {
-    background: lighten($red, 35);
-  }
-  &.blue:hover {
-    background: lighten($blue, 35);
-  }
-  &.green:hover {
-    background: lighten($green, 35);
-  }
-  &.purple:hover {
-    background: lighten($purple, 35);
-  }
-  &.orange:hover {
-    background: lighten($orange, 35);
-  }
-}
-
-.table-divi {
-  border: .07143rem solid #ddd;
-  td:not(:last-child) {
-    border-right: .1rem solid #ddd;
-  }
-}
-
 table > tbody > .table-row {
   color: #444;
   > td {
-    border-bottom: .08rem solid rgba(255, 255, 255, .3) !important;
-    border-right-color: rgba(255, 255, 255, .3) !important;
+    border-bottom: .1rem solid rgba(0, 0, 0, .1) !important;
+    border-right-color: rgba(0, 0, 0, .1) !important;
   }
 }

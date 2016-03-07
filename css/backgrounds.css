@@ -1,6 +1,9 @@
-/* ========================
-          Backgrounds
-   ======================== */
+/* Backgrounds */
+.bg.panel.white, .bg.panel.light_gray, .bg.panel.gray, .bg.panel.dark_gray, .bg.panel.red, .bg.panel.blue, .bg.panel.green, .bg.panel.purple, .bg.panel.orange {
+  padding: 1rem;
+  border-radius: .2rem;
+  box-shadow: 0 0.1rem 0.4rem 0 rgba(0, 0, 0, 0.16), 0 0.6rem 0.8rem 0 rgba(0, 0, 0, 0.12);
+}
 .bg.dark_gray, .bg.red, .bg.blue, .bg.green, .bg.purple, .bg.orange {
   color: white;
 }
@@ -20,16 +23,16 @@
   background: #ADADAD;
 }
 .bg.red {
-  background: #D40007;
+  background: #D42A30;
 }
 .bg.blue {
-  background: #2474EC;
+  background: #4486E8;
 }
 .bg.green {
-  background: #1BB820;
+  background: #3EBB42;
 }
 .bg.purple {
-  background: #9c27b0;
+  background: #9F3DB0;
 }
 .bg.orange {
   background: #ff9800;

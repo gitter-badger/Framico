@@ -1,0 +1,19 @@
+/* Footer */
+.footer {
+  background: #2780e3;
+  color: white;
+}
+.footer .footer-copy {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0 1rem;
+  line-height: 3rem;
+  font-weight: lighter;
+}
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer a {
+  color: white;
+}

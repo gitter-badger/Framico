@@ -1,7 +1,5 @@
 @import "config";
-/* ===========================
-          Help classes
-   =========================== */
+/* Help classes */
 
 .full-w {
   width: 100%;
@@ -53,101 +51,61 @@ div {
 }
 
 .marg-small {
-  margin: .5rem;
+  margin: .5rem !important;
 }
 
 .marg-medium {
-  margin: 1rem;
+  margin: 1rem !important;
 }
 
 .marg-big {
-  margin: 2rem;
+  margin: 2rem !important;
 }
 
 .pad-small {
-  padding: .5rem;
+  padding: .5rem !important;
 }
 
 .pad-medium {
-  padding: 1rem;
+  padding: 1rem !important;
 }
 
 .pad-big {
-  padding: 2rem;
+  padding: 2rem !important;
 }
 
 .text-small {
-  font-size: .8rem;
-  line-height: 1rem;
+  font-size: .8rem !important;
+  line-height: 1rem !important;
 }
 
 .text-size-1 {
-  font-size: 4rem;
-  line-height: 4rem;
+  font-size: 4rem !important;
+  line-height: 4rem !important;
 }
 
 .text-size-2 {
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 3rem !important;
+  line-height: 3rem !important;
 }
 
 .text-size-3 {
-  font-size: 2rem;
-  line-height: 2.1rem;
+  font-size: 2rem !important;
+  line-height: 2.1rem !important;
 }
 
 .text-justify {
-  text-align: justify;
+  text-align: justify !important;
 }
 
-.text-xs-left {
-  text-align: left;
+.text-left {
+  text-align: left !important;
 }
 
-.text-xs-center {
-  text-align: center;
+.text-center {
+  text-align: center !important;
 }
 
-.text-xs-right {
-  text-align: right;
-}
-
-@media only screen and (min-width: $media_sm_min) {
-  .text-sm-left {
-    text-align: left;
-  }
-
-  .text-sm-center {
-    text-align: center;
-  }
-
-  .text-sm-right {
-    text-align: right;
-  }
-}
-@media only screen and (min-width: $media_md_min) {
-  .text-md-left {
-    text-align: left;
-  }
-
-  .text-md-center {
-    text-align: center;
-  }
-
-  .text-md-right {
-    text-align: right;
-  }
-}
-@media only screen and (min-width: $media_lg_min) {
-  .text-lg-left {
-    text-align: left;
-  }
-
-  .text-lg-center {
-    text-align: center;
-  }
-
-  .text-lg-right {
-    text-align: right;
-  }
+.text-right {
+  text-align: right !important;
 }

@@ -1,7 +1,5 @@
 @import "config";
-/* ===========================
-          Default styles
-   =========================== */
+/* Default styles */
 
 *,
 *:after,
@@ -21,8 +19,10 @@ html {
   font-size: $default_font_size;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500&subset=latin,cyrillic);
+
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
     font-size: 1rem;
     background: $default_background;
     color: $default_text_color;

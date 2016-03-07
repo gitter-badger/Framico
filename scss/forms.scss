@@ -1,7 +1,5 @@
 @import "config";
-/* ===================
-          Forms
-   =================== */
+/* Forms */
 
 input[type=text],
 input[type=email],
@@ -11,7 +9,7 @@ optgroup,
 textarea,
 select {
   border: 0;
-  border-bottom: .1rem solid $default_background - #222;
+  border-bottom: .2rem solid $default_background - #222;
   outline: 0;
   background: transparent;
   line-height: 2.5rem;
@@ -49,7 +47,7 @@ select {
   margin-top: 1rem;
   & label {
     position: absolute;
-    top: 0;
+    top: -.15rem;
     left: 0;
     color: $default_text_color + #666;
     pointer-events: none;
@@ -85,9 +83,9 @@ select {
     }
   }
   &.button {
-    & input, & button {
+    & input:not([type=text]), & button {
       display: inline-block;
-      line-height: 2.5rem;
+      padding: .4rem 1.5rem;
     }
   }
 }
@@ -111,7 +109,7 @@ select {
       content: '';
       position: absolute;
       left: 0;
-      top: 0;
+      top: .1rem;
       margin: .3rem;
       width: 1rem;
       height: 1rem;
@@ -161,7 +159,7 @@ select {
     &:before {
       content: "";
       position: absolute;
-      top: 0;
+      top: .1rem;
       left: 0;
       width: 1.2rem;
       height: 1.2rem;

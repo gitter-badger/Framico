@@ -1,9 +1,24 @@
 @import "config";
-/* ========================
-          Backgrounds
-   ======================== */
+/* Backgrounds */
 
 .bg {
+  &.panel {
+    &.white,
+    &.light_gray,
+    &.gray,
+    &.dark_gray,
+    &.red,
+    &.blue,
+    &.green,
+    &.purple,
+    &.orange {
+      padding: 1rem;
+      border-radius: .2rem;
+      box-shadow: 0 .1rem .4rem 0 rgba(0, 0, 0, .16),
+                  0 .6rem .8rem 0 rgba(0, 0, 0, .12);
+    }
+  }
+
   &.dark_gray,
   &.red,
   &.blue,

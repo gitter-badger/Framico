@@ -1,6 +1,5 @@
-/* ===========================
-          Default styles
-   =========================== */
+/* Default styles */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500&subset=latin,cyrillic);
 *,
 *:after,
 *:before {
@@ -19,7 +18,7 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   background: white;
   color: #444;

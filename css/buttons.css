@@ -1,122 +1,115 @@
-/* =====================
-          Buttons
-   ===================== */
+/* Buttons */
 .btn {
   transition: 0.3s;
-  padding: 0 1.8rem;
-  line-height: 2.8rem;
+  padding: .5rem 1.8rem;
   border: .2rem solid transparent;
   border-radius: 0.25rem;
   margin: .2rem 0;
   outline: none;
   color: #2780e3;
-  background-color: white;
+  background: none;
+}
+.btn:hover, .btn:active {
+  text-decoration: underline;
+}
+.btn.white, .btn.red, .btn.blue, .btn.green, .btn.purple, .btn.orange {
   background-size: 100%;
   background-position: 50%;
 }
-.btn:active:not([disabled]) {
-  background-color: #2780e3;
-  background-image: radial-gradient(circle, #2780e3 10%, #6bc4ff 11%);
-}
-.btn:hover:not([disabled]) {
-  background-color: #6bc4ff;
-}
-.btn:active, .btn:hover {
-  color: white;
-}
-.btn:hover, .btn:focus {
+.btn.white:hover, .btn.white:focus, .btn.red:hover, .btn.red:focus, .btn.blue:hover, .btn.blue:focus, .btn.green:hover, .btn.green:focus, .btn.purple:hover, .btn.purple:focus, .btn.orange:hover, .btn.orange:focus {
   box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.12), 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
 }
-.btn:active {
+.btn.white:active:not([disabled]), .btn.red:active:not([disabled]), .btn.blue:active:not([disabled]), .btn.green:active:not([disabled]), .btn.purple:active:not([disabled]), .btn.orange:active:not([disabled]) {
   box-shadow: 0 0.8rem 1.2rem rgba(0, 0, 0, 0.19), 0 0.5rem 0.5rem rgba(0, 0, 0, 0.23);
   background-repeat: no-repeat;
   background-size: 1000%;
 }
-.btn.default {
+.btn.red.active, .btn.red:hover:not([disabled]), .btn.red:active:not([disabled]), .btn.blue.active, .btn.blue:hover:not([disabled]), .btn.blue:active:not([disabled]), .btn.green.active, .btn.green:hover:not([disabled]), .btn.green:active:not([disabled]), .btn.purple.active, .btn.purple:hover:not([disabled]), .btn.purple:active:not([disabled]), .btn.orange.active, .btn.orange:hover:not([disabled]), .btn.orange:active:not([disabled]) {
+  color: white;
+  text-decoration: none;
+}
+.btn.white {
+  border-color: white;
   color: #2780e3;
-  background: none;
-  box-shadow: none;
+  text-decoration: none;
 }
-.btn.default:hover {
-  background: none;
-  text-decoration: underline;
+.btn.white.active {
+  background-color: white;
 }
-.btn.default.white {
+.btn.white:hover:not([disabled]) {
+  background-color: #49a2ff;
+  border-color: #49a2ff;
   color: white;
 }
-.btn.default.white:hover {
-  color: white;
-}
-.btn.flat {
-  border-radius: 0;
-  box-shadow: none;
-}
-.btn.red.active, .btn.red:hover, .btn.red:active, .btn.blue.active, .btn.blue:hover, .btn.blue:active, .btn.green.active, .btn.green:hover, .btn.green:active, .btn.purple.active, .btn.purple:hover, .btn.purple:active, .btn.orange.active, .btn.orange:hover, .btn.orange:active {
+.btn.white:active:not([disabled]) {
+  background-color: #055ec1;
+  border-color: #055ec1;
+  background-image: radial-gradient(circle, #055ec1 12%, #49a2ff 13%);
   color: white;
 }
 .btn.red {
-  border-color: #D40007;
-  color: #D40007;
+  border-color: #D42A30;
+  color: #D42A30;
 }
 .btn.red.active {
-  background-color: #D40007;
+  background-color: #D42A30;
 }
 .btn.red:hover:not([disabled]) {
-  background-color: #e51118;
-  border-color: #e51118;
+  background-color: #e53b41;
+  border-color: #e53b41;
 }
 .btn.red:active:not([disabled]) {
-  background-color: #ff333a;
-  border-color: #ff333a;
-  background-image: radial-gradient(circle, #ff333a 12%, #f62229 13%);
+  background-color: #ff5d63;
+  border-color: #ff5d63;
+  background-image: radial-gradient(circle, #ff5d63 12%, #f64c52 13%);
 }
 .btn.blue {
-  border-color: #2474EC;
-  color: #2474EC;
+  border-color: #4486E8;
+  color: #4486E8;
 }
 .btn.blue.active {
-  background-color: #2474EC;
+  background-color: #4486E8;
 }
 .btn.blue:hover:not([disabled]) {
-  background-color: #3585fd;
-  border-color: #3585fd;
+  background-color: #5597f9;
+  border-color: #5597f9;
 }
 .btn.blue:active:not([disabled]) {
-  background-color: #57a7ff;
-  border-color: #57a7ff;
-  background-image: radial-gradient(circle, #57a7ff 12%, #4696ff 13%);
+  background-color: #77b9ff;
+  border-color: #77b9ff;
+  background-image: radial-gradient(circle, #77b9ff 12%, #66a8ff 13%);
 }
 .btn.green {
-  border-color: #1BB820;
-  color: #1BB820;
+  border-color: #3EBB42;
+  color: #3EBB42;
 }
 .btn.green.active {
-  background-color: #1BB820;
+  background-color: #3EBB42;
 }
 .btn.green:hover:not([disabled]) {
-  background-color: #2cc931;
-  border-color: #2cc931;
+  background-color: #4fcc53;
+  border-color: #4fcc53;
 }
 .btn.green:active:not([disabled]) {
-  background-color: #4eeb53;
-  border-color: #4eeb53;
-  background-image: radial-gradient(circle, #4eeb53 12%, #3dda42 13%);
+  background-color: #71ee75;
+  border-color: #71ee75;
+  background-image: radial-gradient(circle, #71ee75 12%, #60dd64 13%);
 }
 .btn.purple {
-  border-color: #9c27b0;
-  color: #9c27b0;
+  border-color: #9F3DB0;
+  color: #9F3DB0;
 }
 .btn.purple.active {
-  background-color: #9c27b0;
+  background-color: #9F3DB0;
 }
 .btn.purple:hover:not([disabled]) {
-  background-color: #ad38c1;
-  border-color: #ad38c1;
+  background-color: #b04ec1;
+  border-color: #b04ec1;
 }
 .btn.purple:active:not([disabled]) {
-  background-color: #cf5ae3;
-  border-color: #cf5ae3;
-  background-image: radial-gradient(circle, #cf5ae3 12%, #be49d2 13%);
+  background-color: #d270e3;
+  border-color: #d270e3;
+  background-image: radial-gradient(circle, #d270e3 12%, #c15fd2 13%);
 }
 .btn.orange {
   border-color: #ff9800;
@@ -134,6 +127,10 @@
   border-color: #ffcb33;
   background-image: radial-gradient(circle, #ffcb33 12%, #ffba22 13%);
 }
+.btn.flat {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
 
 .btn[disabled] {
   opacity: 0.5;
@@ -148,16 +145,16 @@
   box-shadow: none;
 }
 .btn[disabled].red {
-  color: #D40007;
+  color: #D42A30;
 }
 .btn[disabled].blue {
-  color: #2474EC;
+  color: #4486E8;
 }
 .btn[disabled].green {
-  color: #1BB820;
+  color: #3EBB42;
 }
 .btn[disabled].purple {
-  color: #9c27b0;
+  color: #9F3DB0;
 }
 .btn[disabled].orange {
   color: #ff9800;
@@ -166,25 +163,18 @@
   color: white;
 }
 
+a.btn,
 div.btn {
   display: inline-block;
-}
-
-a.btn {
-  display: inline-block;
-}
-a.btn:active, a.btn:hover {
-  text-decoration: none;
+  background-color: transparent;
 }
 
 .btn.small {
   font-size: 0.8rem;
-  line-height: 2rem;
-  padding: 0 1rem;
+  padding: 0.2rem 1rem;
 }
 
 .btn.big {
   font-size: 1.5rem;
-  line-height: 4rem;
-  padding: 0 1.8rem;
+  padding: 1rem 2.2rem;
 }
