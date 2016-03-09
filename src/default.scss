@@ -34,7 +34,7 @@ a {
   color: $default_site_color + #111;
   cursor: pointer;
   &:hover, &:focus {
-    color: $default_site_color + #333;
+    color: $default_site_color + #222;
   }
 }
 
@@ -44,10 +44,6 @@ p {
 
 img {
   max-width: 100%;
-}
-
-ul {
-  list-style: circle;
 }
 
 hr {
@@ -61,19 +57,4 @@ blockquote {
   padding: 1rem 3.5rem;
   font-size: 1.3rem;
   border-left: .4rem solid $default_background - #111;
-}
-
-/* Clearfix from Nicolas Gallagher | http://nicolasgallagher.com/micro-clearfix-hack/ */
-
-.clearfix {
-  &:before {
-    content: "";
-    display: table;
-  }
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  zoom: 1;
 }

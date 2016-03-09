@@ -258,7 +258,7 @@ a {
   cursor: pointer;
 }
 a:hover, a:focus {
-  color: #5ab3ff;
+  color: #49a2ff;
 }
 
 p {
@@ -267,10 +267,6 @@ p {
 
 img {
   max-width: 100%;
-}
-
-ul {
-  list-style: circle;
 }
 
 hr {
@@ -284,20 +280,6 @@ blockquote {
   padding: 1rem 3.5rem;
   font-size: 1.3rem;
   border-left: 0.4rem solid #eeeeee;
-}
-
-/* Clearfix from Nicolas Gallagher | http://nicolasgallagher.com/micro-clearfix-hack/ */
-.clearfix {
-  zoom: 1;
-}
-.clearfix:before {
-  content: "";
-  display: table;
-}
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /* Grid */
@@ -1372,6 +1354,20 @@ img.opacity {
 }
 
 /* Help classes */
+/* Clearfix from Nicolas Gallagher | http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .full-w {
   width: 100%;
 }
@@ -1550,7 +1546,7 @@ div.center-block {
 
 /* Buttons */
 .btn {
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
   padding: .5rem 1.8rem;
   border: .2rem solid transparent;
   border-radius: 0.25rem;
@@ -1558,7 +1554,6 @@ div.center-block {
   outline: none;
   color: #2780e3;
   background: none;
-  text-transform: uppercase;
 }
 .btn:hover, .btn:active {
   text-decoration: underline;
@@ -1743,7 +1738,7 @@ select {
   outline: 0;
   background: transparent;
   line-height: 2.5rem;
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 input[type=text]:hover, input[type=text]:focus,
 input[type=email]:hover,
@@ -1805,7 +1800,7 @@ select {
   color: #aaaaaa;
   pointer-events: none;
   transform: translateY(0.7rem);
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .form textarea:valid ~ label,
 .form input:valid ~ label,
@@ -1827,7 +1822,7 @@ select {
   left: -3rem;
   top: -.2rem;
   font-size: 2.5rem;
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .form.icon textarea:valid ~ i,
 .form.icon input:valid ~ i,
@@ -1968,7 +1963,7 @@ select {
   background-color: #aaaaaa;
   border-radius: 15px;
   margin-right: 10px;
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
   vertical-align: middle;
   margin: 0 16px;
 }
@@ -2124,7 +2119,7 @@ table > tbody > .table-row > td {
   padding: .8rem 1rem;
   color: white;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
   font-size: 1.2rem;
 }
 .dropdown > input:checked + label + div {
