@@ -15,14 +15,14 @@
 		<title>Название будущего сайта · Тестовая страница</title>
 	</head>
 	<body>
-		
+
 		<div class="container">
 			<div class="row">
 				<div class="block-xs-12">
 
 					<div class="center full-w" style="margin: 100px 0">
 						<h1>Framico</h1>
-						<h2 class="title">Данная страница полностью написана на Framico.</h2>
+						<h2 class="text-size-3">Данная страница полностью написана на Framico.</h2>
 					</div>
 
 					<h2 class="header">Блоки</h2>
@@ -309,9 +309,9 @@
 
 					<p><a href="#" class="title-article">Заголовок статьи</a></p>
 
-					<p class="text-size-1">Размер текста 1</p>
-					<p class="text-size-2">Размер текста 2</p>
-					<p class="text-size-3">Размер текста 3</p>
+					<p class="text-size-1">.text-size-1</p>
+					<p class="text-size-2">.text-size-2</p>
+					<p class="text-size-3">.text-size-3</p>
 
 					<h2 class="header">Картинки</h2>
 
@@ -324,9 +324,10 @@
 
 					<h2 class="header">Кнопки</h2>
 
-					<h3 class="title">Обычные кнопки</h3>
+					<h3 class="text-size-3">Обычные кнопки</h3>
 
 					<button type="button" class="btn">Обычная</button>
+					<button type="button" class="btn"><span class="white">Обычная</span></button>
 					<button type="button" class="btn white">Белая</button>
 					<button type="button" class="btn red">Красная</button>
 					<button type="button" class="btn blue">Синяя</button>
@@ -334,7 +335,7 @@
 					<button type="button" class="btn purple">Фиолетовая</button>
 					<button type="button" class="btn orange">Оранжевая</button>
 
-					<h3 class="title">Active <code>.active</code></h3>
+					<h3 class="text-size-3">Active <code>.active</code></h3>
 
 					<button type="button" class="btn white active">Белая</button>
 					<button type="button" class="btn red active">Красная</button>
@@ -343,7 +344,7 @@
 					<button type="button" class="btn purple active">Фиолетовая</button>
 					<button type="button" class="btn orange active">Оранжевая</button>
 
-					<h3 class="title">Flat <code>.flat</code></h3>
+					<h3 class="text-size-3">Flat <code>.flat</code></h3>
 
 					<button type="button" class="btn flat white">Белая</button>
 					<button type="button" class="btn flat red">Красная</button>
@@ -352,7 +353,7 @@
 					<button type="button" class="btn flat purple">Фиолетовая</button>
 					<button type="button" class="btn flat orange">Оранжевая</button>
 
-					<h3 class="title">Disabled</h3>
+					<h3 class="text-size-3">Disabled</h3>
 
 					<button type="button" class="btn" disabled>Обычная</button>
 					<button type="button" class="btn white" disabled>Белая</button>
@@ -362,14 +363,14 @@
 					<button type="button" class="btn purple active" disabled>Фиолетовая</button>
 					<button type="button" class="btn orange active" disabled>Оранжевая</button>
 
-					<h3 class="title">Размеры</h3>
+					<h3 class="text-size-3">Размеры</h3>
 
-					<button type="button" class="btn white small">Обычная</button>
+					<button type="button" class="btn white small">Белая</button>
 					<button type="button" class="btn red">Красная</button>
 					<button type="button" class="btn blue big">Синяя</button>
 
 					<h2 class="header">Выпадающий блок</h2>
-					<div class="block-dropdown">
+					<div class="dropdown">
 						<input type="checkbox" id="dropdown1" checked="checked">
 						<label for="dropdown1">нажать</label>
 						<div>Выпадающий контент</div>
@@ -378,12 +379,12 @@
 					<h2 class="header">Формы</h2>
 					<div class="flex">
 						<div class="block-md-4 block-sm-6 block-xs-12">
-							<h3 class="title">Поле</h3>
+							<h3 class="text-size-3">Поле</h3>
 							<input type="text" placeholder="Отличный текст">
 						</div>
 
 						<div class="block-md-4 block-sm-6 block-xs-12">
-							<h3 class="title">Поле с надписью <code>.form</code></h3>
+							<h3 class="text-size-3">Поле с надписью <code>.form</code></h3>
 							<div class="form">
 								<input type="text" required>
 								<label>Поле ввода</label>
@@ -391,7 +392,7 @@
 						</div>
 
 						<div class="block-md-4 block-sm-6 block-xs-12">
-							<h3 class="title">Поле с активированной надписью <code>.form .active</code></h3>
+							<h3 class="text-size-3">Поле с активированной надписью <code>.form .active</code></h3>
 							<div class="form active">
 								<input type="text" required>
 								<label>Поле ввода</label>
@@ -399,7 +400,7 @@
 						</div>
 
 						<div class="block-md-4 block-sm-6 block-xs-12">
-							<h3 class="title">Поле с иконкой <code>.form .icon</code></h3>
+							<h3 class="text-size-3">Поле с иконкой <code>.form .icon</code></h3>
 							<div class="form icon">
 								<input type="text" required>
 								<label>Поле ввода</label>
@@ -408,8 +409,8 @@
 						</div>
 
 						<div class="block-md-4 block-sm-6 block-xs-12">
-							<h3 class="title">Поле с кнопкой <code>.form .button</code></h3>
-							<div class="form button">
+							<h3 class="text-size-3">Поле с кнопкой <code>.form</code></h3>
+							<div class="form">
 								<input type="text" required>
 								<label>Поле ввода</label>
 								<button type="button" class="btn blue active">Синяя</button>
@@ -417,7 +418,7 @@
 						</div>
 
 						<div class="block-md-4 block-sm-6 block-xs-12">
-							<h3 class="title">Disabled <code>.form</code></h3>
+							<h3 class="text-size-3">Disabled <code>.form</code></h3>
 							<div class="form">
 								<input type="text" disabled required>
 								<label>Поле ввода</label>
@@ -427,41 +428,41 @@
 
 					<div class="marg-big"></div> <!-- Это чисто для отступа -->
 
-					<footer class="footer">
-						<div class="container">
-							<div class="row">
-								<div class="block-md-6 block-xs-12 pad-big">
-									<h5>Название для футера</h5>
-									<span class="light_gray">Описание Вашего сайта или компании.</span>
-								</div>
-								<div class="block-md-3 block-xs-12 offset-md-3 pad-big">
-									<h5>Информация</h5>
-									<ul>
-										<li><a href=""><i class="fa fa-link"></i> Ссылка</a></li>
-										<li><i class="fa fa-phone"></i> Телефон</li>
-										<li><i class="fa fa-envelope-o"></i> Email</li>
-										<li><i class="fa fa-skype"></i> Skype</li>
-										<li>Текст</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="footer-copy">
-							<div class="container">
-								<div class="row">
-									<div class="block-md-5 block-xs-12">
-										www.site.com, 2016 
-									</div>
-									<div class="block-md-3 offset-md-4 block-xs-12">
-										текст или ещё что 
-									</div>
-								</div>
-							</div>
-						</div>
-					</footer>
-
 				</div>
 			</div>
 		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="block-md-6 block-xs-12 pad-big">
+						<h5>Название для футера</h5>
+						<span class="light_gray">Описание Вашего сайта или компании.</span>
+					</div>
+					<div class="block-md-3 block-xs-12 offset-md-3 pad-big">
+						<h5>Информация</h5>
+						<ul>
+							<li><a href=""><i class="fa fa-link"></i> Ссылка</a></li>
+							<li><i class="fa fa-phone"></i> Телефон</li>
+							<li><i class="fa fa-envelope-o"></i> Email</li>
+							<li><i class="fa fa-skype"></i> Skype</li>
+							<li>Текст</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copy">
+				<div class="container">
+					<div class="row">
+						<div class="block-md-5 block-xs-12">
+							www.site.com, 2016 
+						</div>
+						<div class="block-md-3 offset-md-4 block-xs-12">
+							текст или ещё что 
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
