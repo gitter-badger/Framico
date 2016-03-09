@@ -8,7 +8,7 @@
 
 */
 /* Normalize.css */
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300&subset=latin,cyrillic);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -245,7 +245,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
   font-size: 1rem;
   background: white;
   color: #444;
@@ -256,14 +256,12 @@ a {
   text-decoration: none;
   color: #3891f4;
   cursor: pointer;
-  transition: 0.3s;
 }
 a:hover {
   color: #5ab3ff;
 }
 a:focus {
-  color: white;
-  background: #2780e3;
+  text-decoration: underline;
 }
 
 p {
@@ -274,11 +272,15 @@ img {
   max-width: 100%;
 }
 
+ul {
+  list-style: circle;
+}
+
 hr {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   border: 0;
-  border-top: 0.1rem solid #eeeeee;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
 }
 
 blockquote {
@@ -326,12 +328,10 @@ blockquote {
   margin-left: -1rem;
   margin-right: -1rem;
 }
-
 .row > .flex {
   padding: 0 !important;
 }
-
-[class*="block-"] {
+.row > [class*="block-"] {
   padding-left: 1rem;
   padding-right: 1rem;
   position: relative;
@@ -1240,7 +1240,7 @@ blockquote {
 .title-article {
   font-size: 2.2rem;
   background: linear-gradient(to left, transparent 50%, #2780e3 50%);
-  background-size: 200% 100%;
+  background-size: 250% 100%;
   background-position: right bottom;
   transition: color 1.2s, background-position 0.8s;
   display: inline;
@@ -1287,12 +1287,12 @@ h6, .h6, h6.header {
   margin: 0.5rem 0 0.4rem 0;
 }
 
-.title {
-  font-size: 2rem;
-}
-
 .default {
   color: #444;
+}
+
+.white {
+  color: white;
 }
 
 .light_gray {
@@ -1312,7 +1312,7 @@ h6, .h6, h6.header {
 }
 
 .blue {
-  color: #4486E8;
+  color: #2675EB;
 }
 
 .green {
@@ -1448,7 +1448,6 @@ div.center-block {
 
 .text-small {
   font-size: .8rem !important;
-  line-height: 1rem !important;
 }
 
 .text-size-1 {
@@ -1510,7 +1509,7 @@ div.center-block {
   background: #D42A30;
 }
 .bg.blue {
-  background: #4486E8;
+  background: #2675EB;
 }
 .bg.green {
   background: #3EBB42;
@@ -1540,7 +1539,6 @@ div.center-block {
 }
 .footer .footer-copy {
   background: rgba(0, 0, 0, 0.1);
-  padding: 0 1rem;
   line-height: 3rem;
   font-weight: lighter;
 }
@@ -1555,7 +1553,7 @@ div.center-block {
 
 /* Buttons */
 .btn {
-  transition: 0.3s;
+  transition: 0.2s ease-in-out;
   padding: .5rem 1.8rem;
   border: .2rem solid transparent;
   border-radius: 0.25rem;
@@ -1563,6 +1561,7 @@ div.center-block {
   outline: none;
   color: #2780e3;
   background: none;
+  text-transform: uppercase;
 }
 .btn:hover, .btn:active {
   text-decoration: underline;
@@ -1619,20 +1618,20 @@ div.center-block {
   background-image: radial-gradient(circle, #ff5d63 12%, #f64c52 13%);
 }
 .btn.blue {
-  border-color: #4486E8;
-  color: #4486E8;
+  border-color: #2675EB;
+  color: #2675EB;
 }
 .btn.blue.active {
-  background-color: #4486E8;
+  background-color: #2675EB;
 }
 .btn.blue:hover:not([disabled]) {
-  background-color: #5597f9;
-  border-color: #5597f9;
+  background-color: #3786fc;
+  border-color: #3786fc;
 }
 .btn.blue:active:not([disabled]) {
-  background-color: #77b9ff;
-  border-color: #77b9ff;
-  background-image: radial-gradient(circle, #77b9ff 12%, #66a8ff 13%);
+  background-color: #59a8ff;
+  border-color: #59a8ff;
+  background-image: radial-gradient(circle, #59a8ff 12%, #4897ff 13%);
 }
 .btn.green {
   border-color: #3EBB42;
@@ -1703,7 +1702,7 @@ div.center-block {
   color: #D42A30;
 }
 .btn[disabled].blue {
-  color: #4486E8;
+  color: #2675EB;
 }
 .btn[disabled].green {
   color: #3EBB42;
@@ -1747,7 +1746,7 @@ select {
   outline: 0;
   background: transparent;
   line-height: 2.5rem;
-  transition: 0.3s;
+  transition: 0.2s ease-in-out;
 }
 input[type=text]:hover, input[type=text]:focus,
 input[type=email]:hover,
@@ -1809,7 +1808,7 @@ select {
   color: #aaaaaa;
   pointer-events: none;
   transform: translateY(0.7rem);
-  transition: 0.3s;
+  transition: 0.2s ease-in-out;
 }
 .form textarea:valid ~ label,
 .form input:valid ~ label,
@@ -1831,17 +1830,13 @@ select {
   left: -3rem;
   top: -.2rem;
   font-size: 2.5rem;
-  transition: 0.3s;
+  transition: 0.2s ease-in-out;
 }
 .form.icon textarea:valid ~ i,
 .form.icon input:valid ~ i,
 .form.icon textarea:focus ~ i,
 .form.icon input:focus ~ i {
   color: #2780e3;
-}
-.form.button input:not([type=text]), .form.button button {
-  display: inline-block;
-  padding: .4rem 1.5rem;
 }
 
 .radio [type="radio"]:not(:checked), .radio [type="radio"]:checked {
@@ -1976,7 +1971,7 @@ select {
   background-color: #aaaaaa;
   border-radius: 15px;
   margin-right: 10px;
-  transition: 0.3s;
+  transition: 0.2s ease-in-out;
   vertical-align: middle;
   margin: 0 16px;
 }
@@ -2040,7 +2035,7 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
   background: #f2bec0;
 }
 .table.hov > tbody > .table-row.blue:hover {
-  background: #e3edfc;
+  background: #c9ddfa;
 }
 .table.hov > tbody > .table-row.green:hover {
   background: #c1eac2;
@@ -2100,7 +2095,7 @@ table > tbody > .table-row.red {
   background: #f6d4d5;
 }
 table > tbody > .table-row.blue {
-  background: #fafcfe;
+  background: #e1ecfc;
 }
 table > tbody > .table-row.green {
   background: #d4f1d5;
@@ -2120,29 +2115,31 @@ table > tbody > .table-row > td {
   border-right-color: rgba(0, 0, 0, 0.1) !important;
 }
 
-/* Dropdown */
-/* on css! */
-.block-dropdown > input, .block-dropdown > label {
+/* Dropdown                                  on css! */
+.dropdown > {
+  position: relative;
+}
+.dropdown > input, .dropdown > label {
   display: none;
 }
-.block-dropdown > input:checked + label, .block-dropdown > input:not(:checked) + label {
+.dropdown > input:checked + label, .dropdown > input:not(:checked) + label {
   display: block;
   padding: .8rem 1rem;
   color: white;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.2s ease-in-out;
   font-size: 1.2rem;
 }
-.block-dropdown > input:checked + label + div {
+.dropdown > input:checked + label + div {
   display: none;
 }
-.block-dropdown > input:checked + label {
+.dropdown > input:checked + label {
   background: #666;
 }
-.block-dropdown > input:not(:checked) + label {
+.dropdown > input:not(:checked) + label {
   background: #2780e3;
 }
-.block-dropdown > input:not(:checked) ~ div {
+.dropdown > input:not(:checked) ~ div {
   /* Insert styles here */
 }
 

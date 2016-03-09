@@ -82,12 +82,6 @@ select {
       color: $default_site_color;
     }
   }
-  &.button {
-    & input:not([type=text]), & button {
-      display: inline-block;
-      padding: .4rem 1.5rem;
-    }
-  }
 }
 
 .radio [type="radio"] {

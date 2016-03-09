@@ -11,7 +11,7 @@ select {
   outline: 0;
   background: transparent;
   line-height: 2.5rem;
-  transition: 0.3s;
+  transition: 0.2s ease-in-out;
 }
 input[type=text]:hover, input[type=text]:focus,
 input[type=email]:hover,
@@ -73,7 +73,7 @@ select {
   color: #aaaaaa;
   pointer-events: none;
   transform: translateY(0.7rem);
-  transition: 0.3s;
+  transition: 0.2s ease-in-out;
 }
 .form textarea:valid ~ label,
 .form input:valid ~ label,
@@ -95,17 +95,13 @@ select {
   left: -3rem;
   top: -.2rem;
   font-size: 2.5rem;
-  transition: 0.3s;
+  transition: 0.2s ease-in-out;
 }
 .form.icon textarea:valid ~ i,
 .form.icon input:valid ~ i,
 .form.icon textarea:focus ~ i,
 .form.icon input:focus ~ i {
   color: #2780e3;
-}
-.form.button input:not([type=text]), .form.button button {
-  display: inline-block;
-  padding: .4rem 1.5rem;
 }
 
 .radio [type="radio"]:not(:checked), .radio [type="radio"]:checked {
@@ -240,7 +236,7 @@ select {
   background-color: #aaaaaa;
   border-radius: 15px;
   margin-right: 10px;
-  transition: 0.3s;
+  transition: 0.2s ease-in-out;
   vertical-align: middle;
   margin: 0 16px;
 }

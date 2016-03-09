@@ -19,10 +19,10 @@ html {
   font-size: $default_font_size;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300&subset=latin,cyrillic);
 
 body {
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
     font-size: 1rem;
     background: $default_background;
     color: $default_text_color;
@@ -33,13 +33,11 @@ a {
   text-decoration: none;
   color: $default_site_color + #111;
   cursor: pointer;
-  transition: $global_transition;
   &:hover {
     color: $default_site_color + #333;
   }
   &:focus {
-    color: white;
-    background: $default_site_color;
+    text-decoration: underline;
   }
 }
 
@@ -51,11 +49,15 @@ img {
   max-width: 100%;
 }
 
+ul {
+  list-style: circle;
+}
+
 hr {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     border: 0;
-    border-top: .1rem solid $default_background - #111;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
 }
 
 blockquote {

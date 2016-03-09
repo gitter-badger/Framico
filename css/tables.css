@@ -27,7 +27,7 @@
   background: #f2bec0;
 }
 .table.hov > tbody > .table-row.blue:hover {
-  background: #e3edfc;
+  background: #c9ddfa;
 }
 .table.hov > tbody > .table-row.green:hover {
   background: #c1eac2;
@@ -87,7 +87,7 @@ table > tbody > .table-row.red {
   background: #f6d4d5;
 }
 table > tbody > .table-row.blue {
-  background: #fafcfe;
+  background: #e1ecfc;
 }
 table > tbody > .table-row.green {
   background: #d4f1d5;

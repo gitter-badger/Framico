@@ -1,12 +1,14 @@
 @import "config";
-/* Dropdown */                                /* on css! */
+/* Dropdown                                  on css! */
 
-.block-dropdown > {
+.dropdown > {
+  position: relative;
   input, label {
     display: none;
   }
   input {
-    &:checked + label, &:not(:checked) + label {
+    &:checked + label,
+    &:not(:checked) + label {
       display: block;
       padding: .8rem 1rem;
       color: white;

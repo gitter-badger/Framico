@@ -23,12 +23,10 @@
   margin-left: -1rem;
   margin-right: -1rem;
 }
-
 .row > .flex {
   padding: 0 !important;
 }
-
-[class*="block-"] {
+.row > [class*="block-"] {
   padding-left: 1rem;
   padding-right: 1rem;
   position: relative;

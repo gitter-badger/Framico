@@ -12,7 +12,7 @@
 .title-article {
   font-size: 2.2rem;
   background: linear-gradient(to left, transparent 50%, $default_site_color 50%);
-  background-size: 200% 100%;
+  background-size: 250% 100%;
   background-position: right bottom;
   transition: color 1.2s, background-position 0.8s;
   display: inline;
@@ -54,12 +54,12 @@ h6, .h6, h6.header {
   margin: 0.5rem 0 0.4rem 0
 }
 
-.title {
-  font-size: 2rem;
-}
-
 .default {
   color: $default_text_color;
+}
+
+.white {
+  color: white;
 }
 
 .light_gray {

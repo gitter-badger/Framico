@@ -1,5 +1,5 @@
 /* Default styles */
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300&subset=latin,cyrillic);
 *,
 *:after,
 *:before {
@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
   font-size: 1rem;
   background: white;
   color: #444;
@@ -29,14 +29,12 @@ a {
   text-decoration: none;
   color: #3891f4;
   cursor: pointer;
-  transition: 0.3s;
 }
 a:hover {
   color: #5ab3ff;
 }
 a:focus {
-  color: white;
-  background: #2780e3;
+  text-decoration: underline;
 }
 
 p {
@@ -47,11 +45,15 @@ img {
   max-width: 100%;
 }
 
+ul {
+  list-style: circle;
+}
+
 hr {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   border: 0;
-  border-top: 0.1rem solid #eeeeee;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
 }
 
 blockquote {

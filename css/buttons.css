@@ -1,6 +1,6 @@
 /* Buttons */
 .btn {
-  transition: 0.3s;
+  transition: 0.2s ease-in-out;
   padding: .5rem 1.8rem;
   border: .2rem solid transparent;
   border-radius: 0.25rem;
@@ -8,6 +8,7 @@
   outline: none;
   color: #2780e3;
   background: none;
+  text-transform: uppercase;
 }
 .btn:hover, .btn:active {
   text-decoration: underline;
@@ -64,20 +65,20 @@
   background-image: radial-gradient(circle, #ff5d63 12%, #f64c52 13%);
 }
 .btn.blue {
-  border-color: #4486E8;
-  color: #4486E8;
+  border-color: #2675EB;
+  color: #2675EB;
 }
 .btn.blue.active {
-  background-color: #4486E8;
+  background-color: #2675EB;
 }
 .btn.blue:hover:not([disabled]) {
-  background-color: #5597f9;
-  border-color: #5597f9;
+  background-color: #3786fc;
+  border-color: #3786fc;
 }
 .btn.blue:active:not([disabled]) {
-  background-color: #77b9ff;
-  border-color: #77b9ff;
-  background-image: radial-gradient(circle, #77b9ff 12%, #66a8ff 13%);
+  background-color: #59a8ff;
+  border-color: #59a8ff;
+  background-image: radial-gradient(circle, #59a8ff 12%, #4897ff 13%);
 }
 .btn.green {
   border-color: #3EBB42;
@@ -148,7 +149,7 @@
   color: #D42A30;
 }
 .btn[disabled].blue {
-  color: #4486E8;
+  color: #2675EB;
 }
 .btn[disabled].green {
   color: #3EBB42;
