@@ -30,11 +30,8 @@ a {
   color: #3891f4;
   cursor: pointer;
 }
-a:hover {
+a:hover, a:focus {
   color: #5ab3ff;
-}
-a:focus {
-  text-decoration: underline;
 }
 
 p {

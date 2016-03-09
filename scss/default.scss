@@ -22,22 +22,19 @@ html {
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300&subset=latin,cyrillic);
 
 body {
-    font-family: Roboto, Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    background: $default_background;
-    color: $default_text_color;
-    line-height: 1.5rem;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  background: $default_background;
+  color: $default_text_color;
+  line-height: 1.5rem;
 }
 
 a {
   text-decoration: none;
   color: $default_site_color + #111;
   cursor: pointer;
-  &:hover {
+  &:hover, &:focus {
     color: $default_site_color + #333;
-  }
-  &:focus {
-    text-decoration: underline;
   }
 }
 
@@ -54,10 +51,10 @@ ul {
 }
 
 hr {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    border: 0;
-    border-top: .1rem solid rgba(0, 0, 0, .1);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 0;
+  border-top: .1rem solid rgba(0, 0, 0, .1);
 }
 
 blockquote {
