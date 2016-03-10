@@ -1,5 +1,7 @@
 # [Framico](http://framico.thebrooons.ru)
 
+[![Join the chat at https://gitter.im/TheBrooonS/Framico](https://badges.gitter.im/TheBrooonS/Framico.svg)](https://gitter.im/TheBrooonS/Framico?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Framico - это свободный фреймворк для разработки адаптивных дизайнов для сайтов.
 
 Официальный сайт framico, там же Вы там сможете найти все инструкции по использованию <http://framico.thebrooons.ru>!
